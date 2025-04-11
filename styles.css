@@ -238,3 +238,23 @@ footer {
     flex: 1 1 100%;
   }
 }
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.menu-heading {
+  text-align: center;
+  font-size: 36px;
+  color: #6B3E26;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
