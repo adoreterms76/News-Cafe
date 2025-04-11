@@ -25,6 +25,18 @@ nav ul {
   display: flex;
   gap: 1.5rem;
 }
+.logo img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
 
 nav a {
   text-decoration: none;
