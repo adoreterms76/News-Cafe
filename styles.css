@@ -132,3 +132,61 @@ footer {
   font-size: 0.9rem;
   color: #4b3621;
 }
+
+/* General Styles */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f6f2;
+  color: #5e3b28;
+}
+
+header {
+  background-color: #b58e75;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+.menu-hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #d5b49f;
+}
+
+.menu-hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.menu-hero .quote {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.menu-category {
+  padding: 
