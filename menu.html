@@ -5,148 +5,194 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu | Boity's Cozy Corner Café</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="https://i.pinimg.com/736x/7f/d1/91/7fd191cb126945bb280488062f2b1132.jpg" alt="Boity's Cozy Corner Café Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html" class="active">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Our Menu</h1>
   </header>
 
-  <section class="menu-hero">
-    <h1>Our Menu</h1>
-    <p class="quote">"Brewed with love, served with a smile."</p>
-  </section>
+  <main class="menu-grid">
 
-  <!-- Breakfast -->
-  <section class="menu-category">
-    <div class="category-divider">
-      <i class="fas fa-mug-hot"></i>
-      <h2>Breakfast</h2>
-      <i class="fas fa-mug-hot"></i>
-    </div>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/736x/a1/12/fe/a112fe39ae907df263e6e73c6f31568b.jpg" alt="Pancakes">
-        <h3>Blueberry Pancakes</h3>
-        <p>A stack of fluffy bluebery pancakes drizzled in maple syrup & topped with blueberries & raspberrys</p>
-        <span class="price">P35</span>
+    <!-- Waffles and Pancakes -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Waffles</h2>
+        <ul>
+          <li>Classic Maple - P28</li>
+          <li>Berry Bliss - P35</li>
+          <li>Choco-Banana - P30</li>
+          <li>Chicken & Waffle - P42</li>
+        </ul>
+        <img src="images/waffles.jpg" alt="Waffles" />
       </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/736x/c9/5e/68/c95e68dedaa17eeae8701cffb6077c1b.jpg" alt="Omelette">
-        <h3>Omelet with Roasted Veggies</h3>
-        <p>Fluffy herb Omelet with roasted veggies</p>
-        <span class="price">P60</span>
-      </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/736x/c7/a6/e3/c7a6e36daae60b231e7da5824d2f5fa1.jpg" alt="French Toast">
-        <h3>French Toast</h3>
-        <p>The ultimate french toast with honey drizzle & strawberies</p>
-        <span class="price">P32</span>
-      </div>
-    </div>
-  </section>
 
-  <!-- Lunch -->
-  <section class="menu-category">
-    <div class="category-divider">
-      <i class="fas fa-utensils"></i>
-      <h2>Lunch</h2>
-      <i class="fas fa-utensils"></i>
-    </div>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/736x/09/c2/72/09c272d79eca1f1ab5cf2b9428673fa7.jpg" alt="Garlic Butter Chicken Pasta">
-        <h3>Garkic Butter Chicken Pasta</h3>
-        <p>Tender chicken, rich garlic butter sauce and perfectly cooked pasta</p>
-        <span class="price">P60</span>
+      <div class="menu-section">
+        <h2>Pancakes</h2>
+        <ul>
+          <li>Fluffy Stack - P25</li>
+          <li>Nutella Delight - P32</li>
+          <li>Banana Caramel - P30</li>
+          <li>Mini Pancake Platter - P35</li>
+        </ul>
+        <img src="images/pancakes.jpg" alt="Pancakes" />
       </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/79/64/31/796431b916cd90f3f3d34cd777134bc4.jpg" alt="Grilled Cheese">
-        <h3>Cheddar Grilled Cheese</h3>
-        <p>Melty cheese on crispy golden sourdough bread</p>
-        <span class="price">P28</span>
-      </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/c7/f2/2d/c7f22dc4a9cfe76f8de85c269e5535f2.jpg" alt="Quiche">
-        <h3>Spinach & Feta Quiche</h3>
-        <p>Light buttery crust filled with creamy egg custard</p>
-        <span class="price">P34</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Drinks -->
-  <section class="menu-category">
-    <div class="category-divider">
-      <i class="fas fa-coffee"></i>
-      <h2>Drinks</h2>
-      <i class="fas fa-coffee"></i>
-    </div>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/e5/5d/51/e55d517b2f627045b4e04f6a73010ea1.jpg" alt="Latte">
-        <h3>Vanilla Latte</h3>
-        <p>Espresso, steamed milk, and vanilla syrup blend</p>
-        <span class="price">P28</span>
+    <!-- Sandwiches and Salads -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Sandwiches</h2>
+        <ul>
+          <li>Grilled Chicken Panini - P40</li>
+          <li>Egg Mayo Sandwich - P30</li>
+          <li>Clubhouse - P45</li>
+          <li>Cheese & Tomato Toastie - P28</li>
+        </ul>
+        <img src="images/sandwiches.jpg" alt="Sandwiches" />
       </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/d8/f8/10/d8f8101f98e2f5fa43b19a8c415401d3.jpg" alt="Iced Mocha">
-        <h3>Iced Mocha</h3>
-        <p>Chilled espresso, chocolate, milk, and ice cubes</p>
-        <span class="price">P30</span>
-      </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/16/51/84/165184c17a5fc6c2f4b6b159d15b305e.jpg" alt="Berry Smoothie">
-        <h3>Berry Bliss Smoothie</h3>
-        <p>Mixed berries blended with yogurt & banana</p>
-        <span class="price">P25</span>
-      </div>
-    </div>
-  </section>
 
-  <!-- Desserts -->
-  <section class="menu-category">
-    <div class="category-divider">
-      <i class="fas fa-ice-cream"></i>
-      <h2>Desserts</h2>
-      <i class="fas fa-ice-cream"></i>
-    </div>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/5b/4a/1f/5b4a1f9df4f1a084d22b58f95d26df40.jpg" alt="Chocolate Cake">
-        <h3>Chocolate Dream Cake</h3>
-        <p>Rich, moist chocolate layered with ganache</p>
-        <span class="price">P30</span>
+      <div class="menu-section">
+        <h2>Salads</h2>
+        <ul>
+          <li>Caesar Salad - P38</li>
+          <li>Greek Salad - P34</li>
+          <li>Veggie Quinoa Bowl - P40</li>
+          <li>Chicken & Avocado - P42</li>
+        </ul>
+        <img src="images/salads.jpg" alt="Salads" />
       </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/79/17/b0/7917b0ec1d64ef22c032c5d9f09d13a1.jpg" alt="Strawberry Tart">
-        <h3>Strawberry Cream Tart</h3>
-        <p>Buttery crust, custard filling, topped with fresh berries</p>
-        <span class="price">P32</span>
+    </section>
+
+    <!-- Pastries and Bakery -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Pastries</h2>
+        <ul>
+          <li>Butter Croissant - P20</li>
+          <li>Chocolate Danish - P25</li>
+          <li>Muffin of the Day - P22</li>
+          <li>Cinnamon Roll - P28</li>
+        </ul>
+        <img src="images/pastries.jpg" alt="Pastries" />
       </div>
-      <div class="menu-card">
-        <img src="https://i.pinimg.com/564x/e5/0e/7d/e50e7d42f39057d84c3c00f185a6b66e.jpg" alt="Cupcake">
-        <h3>Vanilla Bean Cupcake</h3>
-        <p>Light vanilla sponge with creamy whipped topping</p>
-        <span class="price">P18</span>
+
+      <div class="menu-section">
+        <h2>Bakery</h2>
+        <ul>
+          <li>Banana Bread Slice - P18</li>
+          <li>Chocolate Chip Cookie - P12</li>
+          <li>Vanilla Cupcake - P15</li>
+          <li>Brioche Loaf - P30</li>
+        </ul>
+        <img src="images/bakery.jpg" alt="Bakery" />
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Desserts and Mocktails -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Desserts</h2>
+        <ul>
+          <li>Cheesecake Slice - P35</li>
+          <li>Tiramisu Cup - P38</li>
+          <li>Chocolate Lava Cake - P40</li>
+          <li>Berry Tart - P32</li>
+        </ul>
+        <img src="images/desserts.jpg" alt="Desserts" />
+      </div>
+
+      <div class="menu-section">
+        <h2>Mocktails</h2>
+        <ul>
+          <li>Virgin Mojito - P30</li>
+          <li>Peach Fizz - P28</li>
+          <li>Tropical Punch - P35</li>
+          <li>Berry Breeze - P32</li>
+        </ul>
+        <img src="images/mocktails.jpg" alt="Mocktails" />
+      </div>
+    </section>
+
+    <!-- Shakes and Latte -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Shakes</h2>
+        <ul>
+          <li>Vanilla Shake - P28</li>
+          <li>Chocolate Shake - P30</li>
+          <li>Oreo Shake - P32</li>
+          <li>Caramel Cookie Shake - P35</li>
+        </ul>
+        <img src="images/shakes.jpg" alt="Shakes" />
+      </div>
+
+      <div class="menu-section">
+        <h2>Latte</h2>
+        <ul>
+          <li>Vanilla Latte - P30</li>
+          <li>Caramel Latte - P32</li>
+          <li>Hazelnut Latte - P32</li>
+          <li>Mocha Latte - P35</li>
+        </ul>
+        <img src="images/latte.jpg" alt="Latte" />
+      </div>
+    </section>
+
+    <!-- Coffee & Tea and Juice -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Coffee & Tea</h2>
+        <ul>
+          <li>Espresso - P20</li>
+          <li>Americano - P22</li>
+          <li>Flat White - P25</li>
+          <li>Rooibos/Herbal Tea - P18</li>
+        </ul>
+        <img src="images/coffee-tea.jpg" alt="Coffee and Tea" />
+      </div>
+
+      <div class="menu-section">
+        <h2>Juice</h2>
+        <ul>
+          <li>Fresh Orange - P25</li>
+          <li>Berry Mix - P28</li>
+          <li>Pineapple Mint - P30</li>
+          <li>Green Detox - P32</li>
+        </ul>
+        <img src="images/juice.jpg" alt="Juice" />
+      </div>
+    </section>
+
+    <!-- Hot and Cold Drinks Side-by-Side -->
+    <section class="menu-row">
+      <div class="menu-section">
+        <h2>Hot Drinks</h2>
+        <ul>
+          <li>Chai Latte - P30</li>
+          <li>Hot Chocolate - P28</li>
+          <li>Cappuccino - P30</li>
+          <li>Matcha Latte - P35</li>
+        </ul>
+        <img src="images/hotdrinks.jpg" alt="Hot Drinks" />
+      </div>
+
+      <div class="menu-section">
+        <h2>Cold Drinks</h2>
+        <ul>
+          <li>Iced Latte - P32</li>
+          <li>Iced Tea - P28</li>
+          <li>Cold Brew - P35</li>
+          <li>Fruit Cooler - P30</li>
+        </ul>
+        <img src="images/colddrinks.jpg" alt="Cold Drinks" />
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2025 Boity's Cozy Corner Café | Follow us @boityscozycafe</p>
+    <p>© 2025 Boity's Cozy Corner Café</p>
   </footer>
 </body>
 </html>
