@@ -133,60 +133,109 @@ footer {
   color: #4b3621;
 }
 
-/* General Styles */
-body {
-  font-family: 'Playfair Display', serif;
+/* General Reset & Font Setup */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f6f2;
-  color: #5e3b28;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff8f0;
+  color: #4b2e2e;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
 header {
-  background-color: #b58e75;
-  padding: 1rem 0;
   text-align: center;
+  padding: 30px 10px 10px;
+  background-color: #fbe8d3;
+  border-bottom: 2px solid #d8c1a0;
 }
 
-header .logo img {
-  width: 150px;
+header h1 {
+  font-size: 3rem;
+  color: #6b3e26;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+/* Menu Grid Layout */
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px 0;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 20px;
+/* Menu Row = Two Sections Side by Side */
+.menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+/* Menu Section = One Category (e.g., Waffles) */
+.menu-section {
+  flex: 1 1 48%;
+  background-color: #fffdf9;
+  border: 1px solid #e5d2bc;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(204, 182, 155, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.menu-section:hover {
+  transform: scale(1.02);
+}
+
+/* Section Heading */
+.menu-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #804d24;
+}
+
+/* Menu Items */
+.menu-section ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.menu-section ul li {
+  margin: 8px 0;
   font-size: 1.1rem;
 }
 
-nav ul li a.active {
-  font-weight: bold;
+/* Section Image */
+.menu-section img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
-.menu-hero {
+/* Footer */
+footer {
   text-align: center;
-  padding: 2rem;
-  background-color: #d5b49f;
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #fbe8d3;
+  color: #6b3e26;
+  border-top: 2px solid #d8c1a0;
 }
 
-.menu-hero h1 {
-  font-size: 3rem;
-  margin: 0;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-row {
+    flex-direction: column;
+  }
 
-.menu-hero .quote {
-  font-style: italic;
-  font-size: 1.2rem;
+  .menu-section {
+    flex: 1 1 100%;
+  }
 }
-
-.menu-category {
-  padding: 
