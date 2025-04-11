@@ -15,10 +15,11 @@ header {
 }
 
 .logo {
-  font-family: 'Great Vibes', cursive;
-  font-size: 24px;
-  color: white
+  color: #6B3E26; /* warm brown or choose any other visible color */
+  font-family: 'Cursive', serif;
+  font-size: 28px;
 }
+
 
 nav ul {
   list-style: none;
@@ -195,16 +196,17 @@ header h1 {
 
 /* Section Heading */
 .menu-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #804d24;
+  margin-bottom: 10px; /* Adds space between heading and items */
+  font-size: 26px;
+  color: #6B3E26;
 }
 
-/* Menu Items */
-.menu-items {
-  flex: 1;
-  padding-right: 20px;
+.menu-items ul {
+  margin-top: 0;
+  padding-left: 20px;
+  line-height: 1.8;
 }
+
 
 .menu-section ul li {
   margin: 8px 0;
@@ -257,4 +259,7 @@ nav .nav-links a {
   color: #6B3E26;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+.menu-items ul li {
+  margin-bottom: 6px;
 }
