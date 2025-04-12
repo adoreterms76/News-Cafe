@@ -1,257 +1,181 @@
-/* Google Fonts: Great Vibes (script), Playfair Display (elegant serif) */
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background-color: #fdf6f0;
-  color: #5a4b41;
-}
-
-header {
-  background-color: #d8c3a5;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: #6B3E26; /* warm brown or choose any other visible color */
-  font-family: 'Cursive', serif;
-  font-size: 28px;
-}
-
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-.logo img {
-  max-height: 80px;
-  width: auto;
-  object-fit: contain;
+/* Reset & Base Styling */
+* {
   margin: 0;
   padding: 0;
-  display: block;
-}
-header .logo {
-  display: flex;
-  align-items: center;
+  box-sizing: border-box;
 }
 
-nav a {
-  text-decoration: none;
-  color: #4b3621;
-  font-weight: bold;
-}
-
-.hero {
-  background-image: url('images/coffee-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 5rem 2rem;
-  text-align: center;
-  position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(75, 54, 33, 0.6);
-}
-
-.hero-text {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  margin: auto;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.quote {
-  font-style: italic;
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-}
-
-.cta-button {
-  background-color: #f4a261;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #e76f51;
-}
-
-.intro {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4rem 2rem;
-  align-items: center;
-  gap: 2rem;
-  background-color: #fff9f4;
-}
-
-.intro-content {
-  flex: 1;
-  min-width: 300px;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #8b5e3c;
-}
-
-.intro p {
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fefaf6;
+  color: #4b2e2e;
   line-height: 1.6;
 }
 
-.intro-image {
-  flex: 1;
-  max-width: 500px;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-footer {
-  background-color: #d8c3a5;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #4b3621;
-}
-
-/* Fonts and Base Styles */
-body {
-  font-family: 'Playfair Display', serif;
-  background-color: #fff9f4;
-  color: #4b3832;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2 {
-  color: #5c4033;
-}
-
-/* Header Styles */
+/* Logo & Header */
 header {
-  background-color: #e9d5c0;
-  padding: 1rem 2rem;
+  background-color: #f6e7d8;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  font-style: italic;
+  display: flex;
+  align-items: center;
 }
 
-.nav-links {
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #6e4436;
+}
+
+/* Navigation */
+nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  margin: 0;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.nav-links li a {
+nav ul li a {
   text-decoration: none;
-  color: #4b3832;
-  font-weight: 500;
+  color: #6e4436;
+  font-weight: bold;
+  padding: 8px 14px;
+  transition: background 0.3s;
 }
 
-.nav-links li a:hover {
-  color: #a67c52;
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #d8bca1;
+  border-radius: 5px;
 }
 
-/* Page Heading */
-.menu-heading {
+/* Hero Section */
+.hero {
+  position: relative;
   text-align: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffaf5;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.hero-text h2 {
   font-size: 2.5rem;
-  margin: 2rem 0 1rem;
+  margin-bottom: 10px;
 }
 
-/* Menu Grid Layout */
-.menu-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 0 2rem 3rem;
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-/* Menu Section Rows */
-.menu-row {
+.hero-text .btn {
+  background-color: #a57164;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background-color: #8a5a4c;
+}
+
+/* Introduction Section */
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #6e4436;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+/* Highlights */
+.highlights {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #fff1e6;
 }
 
-/* Menu Sections */
-.menu-section {
-  flex: 1 1 48%;
-  background-color: #fef5e7;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1rem;
+.highlight-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
 }
 
-.menu-items {
-  flex: 1;
-}
-
-/* Headings */
-.menu-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Menu List */
-.menu-items ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-items li {
-  padding: 0.4rem 0;
-  font-size: 1.05rem;
-}
-
-/* Images */
-.menu-items img {
-  max-width: 160px;
+.highlight-box img {
+  width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-box h4 {
+  color: #6e4436;
+  font-size: 1.2rem;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background-color: #e9d5c0;
-  padding: 1rem;
-  font-size: 0.95rem;
-  color: #5c4033;
+  padding: 20px;
+  background-color: #f6e7d8;
+  color: #4b2e2e;
+  font-size: 0.9rem;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .highlight-box {
+    max-width: 90%;
+  }
+}
+
