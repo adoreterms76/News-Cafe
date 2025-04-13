@@ -2,219 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu | Boity's Cozy Corner Café</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Café | Menu</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Boity’s Cozy Corner Café</div>
-    <nav>
-      <ul class="nav-links">
-       <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-      </ul>
-    </nav>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">News Café</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="promo.html">Promos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menu Hero Section -->
+  <header class="menu-hero">
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2023/03/menu-feature.jpg" alt="Menu Banner" class="menu-banner"/>
+    <h1>Explore Our Menu</h1>
+    <p>Whether you're craving a cozy breakfast, hearty meals, or signature cocktails – we’ve got something for everyone.</p>
   </header>
 
-  <h1 class="menu-heading">Our Menu</h1>
+  <!-- Menu Buttons Section -->
+  <section class="menu-buttons">
+    <button onclick="window.location.href='breakfast.html'">View Breakfast Menu</button>
+    <button onclick="window.location.href='food.html'">View Food Menu</button>
+    <button onclick="window.location.href='cocktails.html'">View Cocktail Menu</button>
+  </section>
 
-  <main class="menu-grid">
-   
-    <!-- Coffee Section  -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Coffee</h2>
-          <ul>
-            <li>Espresso - P50.00</li>
-            <li>Double Esspresso- P55.00</li>
-            <li>Latte - P50.00</li>
-            <li>Americanon - P60.00</li>
-            <li>Flat White - P60.00</li>
-            <li>Cappuccino - P70.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/ac/4a/f9/ac4af9d7aa519ef75bc7fb806c42ff23.jpg" alt="Coffee" />
-        </div>
-      
-          <!-- Tea Section -->
-        <div class="menu-section">
-        <div class="menu-items">
-          <h2>Tea</h2>
-          <ul>
-            <li>Lemon Tea - P50.00</li>
-            <li>Mango Tea- P50.00</li>
-            <li>Matcha - P75.00</li>
-            <li>Jasmine - P60.00</li>
-            <li>Green Tea - P60.00</li>
-            <li>Mint Tea - P70.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/09/12/e7/0912e70c2b3d2785a48c2c7bfa32a79e.jpg" alt="Jasmine Tea" />
-        </div>
-        </div>
-      
-       <!-- Hot Drinks  -->
-    
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Hot Drinks</h2>
-          <ul>
-            <li>Hot Chocolate - P50.00</li>
-            <li>Mocha- P55.00</li>
-            <li>Chai Latte - P50.00</li>
-            <li>Pour Over- P65.00</li>
-            <li>Spiced Hot Cocoa - P50.00</li>
-            <li>Toasted Coconut Milk - P40.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/48/9f/9d/489f9d3cf43bfa9e96f275f7b1b5da1b.jpg" alt="Hot Drinks" />
-        </div>
-      </div>
-
-          <!-- Cold Drinks Section -->
-        <div class="menu-section">
-        <div class="menu-items">
-          <h2>Cold Drinks</h2>
-          <ul>
-            <li>Classic Iced Tea - P50.00</li>
-            <li>Cold Brew Coffee- P50.00</li>
-            <li>Iced Vanilla Latte - P53.00</li>
-            <li>Peach Iced Tea - P54.00</li>
-            <li>Hibiscus Iced Tea - P55.00</li>
-            <li>Iced Caramel Mocha - P57.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/50/c7/4f/50c74f382675018238595c24c2992f99.jpg" alt="Cold Drinks" />
-        </div>
-      </div>
-      
-         <!-- Mocktails -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Mocktails</h2>
-          <ul>
-            <li>Virgin Mojito - P53.00</li>
-            <li>Cucumber Mint Refresher - P40.00</li>
-            <li>Bery Smash - P56.00</li>
-            <li>Virgin Pina Colada - P50.00</li>
-            <li>Tropical Sunrise - P60.00</li>
-            <li>Virgin Strawberry Daiquiri - P64.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/91/57/e8/9157e8761e390dd43ba69196e60d2591.jpg" alt="Mocktails" />
-        </div>
-      </div>
-    
-          <!-- Shakes -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Shakes</h2>
-          <ul>
-            <li>Vanilla Shake - P50.00</li>
-            <li>Pistachio Shake - P60.00</li>
-            <li>Strawberry Shake - P50.00</li>
-            <li>Oreo Cookies & Cream Shake - P53.00</li>
-            <li>Biscoff Shake - P52.00</li>
-            <li>Mocha Fludge Shake - P54.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/b9/dc/42/b9dc427995a200028649799fc3c4caea.jpg" alt="Shakes" />
-        </div>
-      </div>
-    
-
-      <!-- Pancakes & Waffles  -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Pancakes & Waffles</h2>
-          <ul>
-            <li>Classic Buttermilk Pancakes - P50.00</li>
-            <li>Cinnamon Swirl Pancakes- P50.00</li>
-            <li>Berry Bliss Pancakes - P50.00</li>
-            <li>Red Velvet Pancakes - P52.00</li>
-            <li>Nutella Waffles - P550.00</li>
-            <li>Classic Golden Waffles</li> - P55.00</li>
-            <li>Spicy Chicken Waffles - P600.00</li>
-            <li>Maple Pecan Waffles</li> - P55.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/e0/e4/58/e0e4588c06bb9a2e948c0b37d6b2f0a2.jpg" alt="Pancakes & Waffles" />
-        </div>
-      </div>
- 
-         <!-- Deserts & Pastries -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Deserts & Pastries</h2>
-          <ul>
-            <li>Chocolate Fudge Brownie - P48.00</li>
-            <li>Cinnamon Rolls - P50.00</li>
-            <li>Tiramisu - P58.00</li>
-            <li>Chocolate Lava Cake - P53.00</li>
-            <li>Tarts - P45.00</li>
-            <li>Palmiers - P50.00</li>
-            <li>Danish Pastry - P52.00</li>
-            <li>Crossant - P45.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/3d/45/19/3d4519ea9be61d3d285755b460e1ca48.jpg" alt="Deserts & Pstries" />
-        </div>
-      </div>
-
-
-      <!-- Salads -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Salads</h2>
-          <ul>
-            <li>Chicken Caesar Salaf - P67.00</li>
-            <li>Avocado & Tomato Salad - P60.00</li>
-            <li>Beetrrot Salad - P60.00</li>
-            <li>Tuna Salad - P63.00</li>
-            <li>Mediterranean Salad - P65.00</li>
-            <li>Waldorf Salad - P64.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/6d/92/65/6d9265d54906c1f7cd7935b2fdf46178.jpg" alt="Salads" />
-        </div>
-      </div>
-    
-           <!-- Sandwiches -->
-      <div class="menu-section">
-        <div class="menu-items">
-          <h2>Sandwiches</h2>
-          <ul>
-            <li>Classic BLT- P70.00</li>
-            <li>Grilled Chicken Club - P80.00</li>
-            <li>Veggie Delight Sandwich - P71.00</li>
-            <li>Egg Salad Sandwich - P70.00</li>
-            <li>Falafel Wrap - P74.00</li>
-            <li>Vegan Caesar Wrap - P72.00</li>
-          </ul>
-        </div>
-        <div class="menu-items">
-          <img src="https://i.pinimg.com/736x/c2/fa/38/c2fa3843103e5a072a619471c2d2190e.jpg" alt="Sandwiches" />
-        </div>
-      </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Boity's Cozy Corner Café</p>
-  </footer>
 </body>
 </html>
