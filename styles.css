@@ -179,107 +179,224 @@ footer {
   }
 }
 
-/* General Styling */
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background-color: #fff8f2;
-  color: #4a3b2c;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Boity's Cozy Corner Café</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Boity’s Cozy Corner Café</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="order.html">Order Online</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-header {
-  background-color: #dcbfa6;
-  padding: 1.5rem;
-  text-align: center;
-}
+  <h1 class="menu-heading">Our Menu</h1>
 
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4a3b2c;
-}
+  <main class="menu-grid">
+    <!-- Coffee Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Coffee</h2>
+        <ul>
+          <li>Espresso - P50.00</li>
+          <li>Double Espresso - P55.00</li>
+          <li>Latte - P50.00</li>
+          <li>Americano - P60.00</li>
+          <li>Flat White - P60.00</li>
+          <li>Cappuccino - P70.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/ac/4a/f9/ac4af9d7aa519ef75bc7fb806c42ff23.jpg" alt="Coffee" />
+      </div>
+    </div>
+    
+    <!-- Tea Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Tea</h2>
+        <ul>
+          <li>Lemon Tea - P50.00</li>
+          <li>Mango Tea - P50.00</li>
+          <li>Matcha - P75.00</li>
+          <li>Jasmine - P60.00</li>
+          <li>Green Tea - P60.00</li>
+          <li>Mint Tea - P70.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/09/12/e7/0912e70c2b3d2785a48c2c7bfa32a79e.jpg" alt="Jasmine Tea" />
+      </div>
+    </div>
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
-}
+    <!-- Desserts Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Desserts</h2>
+        <ul>
+          <li>Chocolate Lava Cake - P50.00</li>
+          <li>Apple Pie - P40.00</li>
+          <li>Cheesecake - P60.00</li>
+          <li>Ice Cream - P30.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/59/c0/5c/59c05c15db0ea0b10222e03817f94cd1.jpg" alt="Desserts" />
+      </div>
+    </div>
 
-nav a {
-  text-decoration: none;
-  color: #4a3b2c;
-  font-weight: bold;
-}
+    <!-- Waffles Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Waffles</h2>
+        <ul>
+          <li>Chocolate Waffle - P50.00</li>
+          <li>Strawberry Waffle - P55.00</li>
+          <li>Banana Waffle - P60.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/8c/ea/a2/8ceaa23e6f20b9ec96b86c63b5288d26.jpg" alt="Waffles" />
+      </div>
+    </div>
 
-nav a.active, nav a:hover {
-  color: #6a4f3c;
-  text-decoration: underline;
-}
+    <!-- Sandwiches Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Sandwiches</h2>
+        <ul>
+          <li>Grilled Cheese - P40.00</li>
+          <li>Chicken Sandwich - P55.00</li>
+          <li>Veggie Sandwich - P50.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/df/d9/74/dfd974b878efcfe1d90901ab44796f28.jpg" alt="Sandwiches" />
+      </div>
+    </div>
 
-.menu-heading {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 2rem;
-}
+    <!-- Salads Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Salads</h2>
+        <ul>
+          <li>Caesar Salad - P45.00</li>
+          <li>Greek Salad - P50.00</li>
+          <li>Garden Salad - P40.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/56/0f/ea/560fea99f09ae10fcd8b4b6caa63237f.jpg" alt="Salads" />
+      </div>
+    </div>
 
-/* Flexbox for Menu Layout */
-.menu-grid {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to new rows */
-  justify-content: space-between; /* Distribute items evenly */
-  gap: 1.5rem; /* Spacing between items */
-  padding: 2rem;
-}
+    <!-- Pastries Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Pastries</h2>
+        <ul>
+          <li>Croissant - P30.00</li>
+          <li>Danish Pastry - P40.00</li>
+          <li>Chocolate Eclair - P45.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/52/3f/35/523f351b8e1d6076d47069b5a73cc6f5.jpg" alt="Pastries" />
+      </div>
+    </div>
 
-.menu-section {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  width: 48%; /* Each item takes 48% of the width */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+    <!-- Mocktails Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Mocktails</h2>
+        <ul>
+          <li>Virgin Mojito - P40.00</li>
+          <li>Strawberry Fizz - P45.00</li>
+          <li>Citrus Blast - P50.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/c7/5c/50/c75c50c9614c04edda351201dbfcdaf5.jpg" alt="Mocktails" />
+      </div>
+    </div>
 
-.menu-items h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: #815e4a;
-}
+    <!-- Shakes Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Shakes</h2>
+        <ul>
+          <li>Chocolate Shake - P55.00</li>
+          <li>Vanilla Shake - P55.00</li>
+          <li>Strawberry Shake - P60.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/9f/f9/34/9ff934a10722c3ec17394ec0345e1347.jpg" alt="Shakes" />
+      </div>
+    </div>
 
-.menu-items ul {
-  padding-left: 1rem;
-  margin: 0;
-}
+    <!-- Juice Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Juice</h2>
+        <ul>
+          <li>Orange Juice - P35.00</li>
+          <li>Pineapple Juice - P35.00</li>
+          <li>Mango Juice - P40.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/1e/98/7d/1e987df1c3c6efb8cfeb1c704aff8c6e.jpg" alt="Juices" />
+      </div>
+    </div>
 
-.menu-items li {
-  margin-bottom: 0.5rem;
-}
+    <!-- Latte Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Latte</h2>
+        <ul>
+          <li>Classic Latte - P50.00</li>
+          <li>Caramel Latte - P55.00</li>
+          <li>Vanilla Latte - P55.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/6c/eb/ea/6cebeaf20001d8583a6783b132f51c30.jpg" alt="Latte" />
+      </div>
+    </div>
 
-.menu-items img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: 1rem;
-}
+    <!-- Bakery Section -->
+    <div class="menu-section">
+      <div class="menu-items">
+        <h2>Bakery</h2>
+        <ul>
+          <li>Banana Bread - P30.00</li>
+          <li>Cinnamon Rolls - P40.00</li>
+          <li>Pecan Pie - P45.00</li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <img src="https://i.pinimg.com/736x/3e/c5/fe/3ec5fe2b67c04b4fe06300a32de88856.jpg" alt="Bakery" />
+      </div>
+    </div>
+  </main>
 
-/* Footer */
-footer {
-  background-color: #dcbfa6;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-}
+  <footer>
+    <p>© 2025 Boity's Cozy Corner Café</p>
+  </footer>
+</body>
+</html>
 
-/* Responsive Adjustment */
-@media (max-width: 600px) {
-  .menu-section {
-    width: 100%; /* Make sections stack full width on smaller screens */
-  }
-}
