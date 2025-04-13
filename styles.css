@@ -179,7 +179,7 @@ footer {
   }
 }
 
-/* General Reset and Styling */
+/* General Styling */
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
@@ -228,12 +228,11 @@ nav a.active, nav a:hover {
 /* Menu Grid Layout */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 300px is the min size for each column */
+  gap: 1.5rem; /* Space between items */
   padding: 2rem;
 }
 
-/* Menu Sections */
 .menu-section {
   background-color: #fff;
   border-radius: 12px;
@@ -279,7 +278,6 @@ footer {
 /* Responsive Adjustment */
 @media (max-width: 600px) {
   .menu-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
   }
 }
-
