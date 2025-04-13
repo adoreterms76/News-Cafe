@@ -3,61 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Boity’s Cozy Corner Café</title>
+  <title>Welcome to News Café</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="https://i.pinimg.com/736x/03/12/b3/0312b3f830e8905fe5ee4855ca3ae2b5.jpg" alt="Boity’s Café Logo">
-      <h1>Boity’s Cozy Corner Café</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-      </ul>
-    </nav>
+  
+ <!-- 🔥 Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">News Café</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="promo.html">Promos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- a. Welcome Message -->
+  <header class="welcome-section">
+    <h1>Welcome to News Café</h1>
+    <p>Your favorite spot for good vibes, bold brews, and tasty bites.</p>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="https://i.pinimg.com/736x/bd/78/42/bd78426e39a349432ca90522fdc660ae.jpg" alt="Warm coffee cup">
-      <div class="hero-text">
-        <h2>Welcome to Your Cozy Getaway</h2>
-        <p>Warm drinks, sweet treats, and cozy vibes await you at Boity’s Cozy Corner Café.</p>
-      </div>
-    </section>
+  <!-- b. Manual Slideshow: Café Images -->
+  <section class="slideshow" id="cafe-slideshow">
+    <img src="images/cafe1.jpg" alt="Café Image 1" class="slide active">
+    <img src="images/cafe2.jpg" alt="Café Image 2" class="slide">
+    <img src="images/cafe3.jpg" alt="Café Image 3" class="slide">
+    <button onclick="prevSlide('cafe-slideshow')">&#10094;</button>
+    <button onclick="nextSlide('cafe-slideshow')">&#10095;</button>
+  </section>
 
-    <section class="intro">
-      <h3>Why You'll Love Us</h3>
-      <p>At Boity’s, it’s more than just coffee. It’s a space to relax, connect, and indulge in everything from our signature pastries to heartwarming lattes.</p>
-    </section>
+  <!-- c. Message About the Café -->
+  <section class="about-message">
+    <p>At News Café, we blend the buzz of great coffee with the rhythm of relaxed conversations. Whether you're here for a quick espresso or a long brunch, our space is designed to feel like your second home.</p>
+    
+    <!-- d. About Page Button -->
+    <a href="about.html" class="btn">About Us</a>
+  </section>
 
-    <section class="highlights">
-      <div class="highlight-box">
-        <img src="https://i.pinimg.com/736x/53/e6/3b/53e63bd562e64eba395f8e541d7fece4.jpg" alt="Pastries">
-        <h4>Fresh Bakes Daily</h4>
-          <a href="menu.html" class="btn">Start Exploring</a>
-      </div>
-      <div class="highlight-box">
-        <img src="https://i.pinimg.com/736x/c0/73/a9/c073a9f89480d2412bda430dc19c30ca.jpg" alt="Cozy café vibe">
-        <h4>Charming Vibes</h4>
-      </div>
-    </section>
-  </main>
+  <!-- e. Manual Slideshow: Food/Drinks -->
+  <section class="slideshow" id="menu-slideshow">
+    <img src="images/food1.jpg" alt="Food Image 1" class="slide active">
+    <img src="images/drink1.jpg" alt="Drink Image 1" class="slide">
+    <img src="images/food2.jpg" alt="Food Image 2" class="slide">
+    <button onclick="prevSlide('menu-slideshow')">&#10094;</button>
+    <button onclick="nextSlide('menu-slideshow')">&#10095;</button>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Boity’s Cozy Corner Café | Designed with love</p>
-  </footer>
+  <!-- f. Menu Teaser Message -->
+  <section class="menu-teaser">
+    <p>Explore our menu, where every dish is a story and every drink a celebration.</p>
+    
+    <!-- g. Menu Page Button -->
+    <a href="menu.html" class="btn">View Menu</a>
+  </section>
 
 </body>
 </html>
-
- 
