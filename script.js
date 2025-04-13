@@ -16,21 +16,11 @@ function prevSlide(id) {
   slides[prevIndex].classList.add("active");
 }
 
-// Slideshow Navigation Functionality
-function nextSlide(slideshowId) {
-  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
-  const activeSlide = document.querySelector(`#${slideshowId} .slide.active`);
-  let nextSlide = activeSlide.nextElementSibling || slides[0];
-
-  activeSlide.classList.remove('active');
-  nextSlide.classList.add('active');
-}
-
-function prevSlide(slideshowId) {
-  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
-  const activeSlide = document.querySelector(`#${slideshowId} .slide.active`);
-  let prevSlide = activeSlide.previousElementSibling || slides[slides.length - 1];
-
-  activeSlide.classList.remove('active');
-  prevSlide.classList.add('active');
+function scrollCarousel(direction) {
+  const track = document.getElementById('carouselTrack');
+  const scrollAmount = 320; // Adjust based on image width + gap
+  track.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
 }
