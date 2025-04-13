@@ -225,11 +225,12 @@ nav a.active, nav a:hover {
   margin-top: 2rem;
 }
 
-/* Menu Grid Layout */
+/* Flexbox for Menu Layout */
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 300px is the min size for each column */
-  gap: 1.5rem; /* Space between items */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to new rows */
+  justify-content: space-between; /* Distribute items evenly */
+  gap: 1.5rem; /* Spacing between items */
   padding: 2rem;
 }
 
@@ -238,6 +239,7 @@ nav a.active, nav a:hover {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+  width: 48%; /* Each item takes 48% of the width */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -277,7 +279,7 @@ footer {
 
 /* Responsive Adjustment */
 @media (max-width: 600px) {
-  .menu-grid {
-    grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+  .menu-section {
+    width: 100%; /* Make sections stack full width on smaller screens */
   }
 }
