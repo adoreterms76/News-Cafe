@@ -15,3 +15,22 @@ function prevSlide(id) {
   let prevIndex = (current - 1 + slides.length) % slides.length;
   slides[prevIndex].classList.add("active");
 }
+
+// Slideshow Navigation Functionality
+function nextSlide(slideshowId) {
+  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
+  const activeSlide = document.querySelector(`#${slideshowId} .slide.active`);
+  let nextSlide = activeSlide.nextElementSibling || slides[0];
+
+  activeSlide.classList.remove('active');
+  nextSlide.classList.add('active');
+}
+
+function prevSlide(slideshowId) {
+  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
+  const activeSlide = document.querySelector(`#${slideshowId} .slide.active`);
+  let prevSlide = activeSlide.previousElementSibling || slides[slides.length - 1];
+
+  activeSlide.classList.remove('active');
+  prevSlide.classList.add('active');
+}
