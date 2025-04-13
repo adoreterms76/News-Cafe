@@ -1,402 +1,136 @@
-/* Reset & Base Styling */
+/* Reset & Fonts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body */
 body {
-  font-family: 'Georgia', serif;
-  background-color: #fefaf6;
-  color: #4b2e2e;
+  background-color: #fff8f0;
+  color: #4a3f35;
   line-height: 1.6;
 }
 
-/* Logo & Header */
-header {
-  background-color: #f6e7d8;
-  padding: 20px;
+/* Navbar */
+.navbar {
+  background-color: #3e2c23;
+  color: #fff;
+  padding: 1rem 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.logo img {
-  height: 60px;
-  margin-right: 15px;
-}
-
-.logo h1 {
-  font-size: 1.8rem;
-  color: #6e4436;
-}
-
-/* Navigation */
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  gap: 1rem;
 }
 
-nav ul li a {
+.nav-links a {
+  color: #fff;
   text-decoration: none;
-  color: #6e4436;
-  font-weight: bold;
-  padding: 8px 14px;
-  transition: background 0.3s;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background-color: #d8bca1;
-  border-radius: 5px;
+.nav-links a:hover {
+  color: #f4c17a;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
+/* Welcome Section */
+.welcome-section {
   text-align: center;
-  overflow: hidden;
+  padding: 3rem 1rem;
+  background: #fdf4e3;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  filter: brightness(70%);
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fffaf5;
-  text-shadow: 1px 1px 4px #000;
-}
-
-.hero-text h2 {
+.welcome-section h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
-.hero-text p {
+.welcome-section p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  color: #6b4f3a;
 }
 
-.hero-text .btn {
-  background-color: #a57164;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: background 0.3s;
+/* Slideshow */
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  margin: 2rem auto;
+  overflow: hidden;
+  padding: 0 1rem;
 }
 
-.hero-text .btn:hover {
-  background-color: #8a5a4c;
-}
-
-/* Introduction Section */
-.intro {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.intro h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #6e4436;
-}
-
-.intro p {
-  max-width: 700px;
-  margin: auto;
-  font-size: 1rem;
-}
-
-/* Highlights */
-.highlights {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px 20px;
-  background-color: #fff1e6;
-}
-
-.highlight-box {
-  flex: 1 1 250px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.highlight-box img {
+.slideshow img {
+  display: none;
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
-.highlight-box h4 {
-  color: #6e4436;
-  font-size: 1.2rem;
+.slideshow img.active {
+  display: block;
 }
 
-/* Footer */
-footer {
+.slideshow button {
+  position: absolute;
+  top: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slideshow button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow button:nth-of-type(1) {
+  left: 10px;
+}
+
+.slideshow button:nth-of-type(2) {
+  right: 10px;
+}
+
+/* About Message & Teasers */
+.about-message,
+.menu-teaser {
   text-align: center;
-  padding: 20px;
-  background-color: #f6e7d8;
-  color: #4b2e2e;
-  font-size: 0.9rem;
+  padding: 2rem;
+  background: #fff0dc;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
-  .highlight-box {
-    max-width: 90%;
-  }
+.about-message p,
+.menu-teaser p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu | Boity's Cozy Corner Café</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="logo">Boity’s Cozy Corner Café</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="order.html">Order Online</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-      </ul>
-    </nav>
-  </header>
+.btn {
+  background-color: #c57c3c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
 
-  <h1 class="menu-heading">Our Menu</h1>
-
-  <main class="menu-grid">
-    <!-- Coffee Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Coffee</h2>
-        <ul>
-          <li>Espresso - P50.00</li>
-          <li>Double Espresso - P55.00</li>
-          <li>Latte - P50.00</li>
-          <li>Americano - P60.00</li>
-          <li>Flat White - P60.00</li>
-          <li>Cappuccino - P70.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/ac/4a/f9/ac4af9d7aa519ef75bc7fb806c42ff23.jpg" alt="Coffee" />
-      </div>
-    </div>
-    
-    <!-- Tea Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Tea</h2>
-        <ul>
-          <li>Lemon Tea - P50.00</li>
-          <li>Mango Tea - P50.00</li>
-          <li>Matcha - P75.00</li>
-          <li>Jasmine - P60.00</li>
-          <li>Green Tea - P60.00</li>
-          <li>Mint Tea - P70.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/09/12/e7/0912e70c2b3d2785a48c2c7bfa32a79e.jpg" alt="Jasmine Tea" />
-      </div>
-    </div>
-
-    <!-- Desserts Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Desserts</h2>
-        <ul>
-          <li>Chocolate Lava Cake - P50.00</li>
-          <li>Apple Pie - P40.00</li>
-          <li>Cheesecake - P60.00</li>
-          <li>Ice Cream - P30.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/59/c0/5c/59c05c15db0ea0b10222e03817f94cd1.jpg" alt="Desserts" />
-      </div>
-    </div>
-
-    <!-- Waffles Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Waffles</h2>
-        <ul>
-          <li>Chocolate Waffle - P50.00</li>
-          <li>Strawberry Waffle - P55.00</li>
-          <li>Banana Waffle - P60.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/8c/ea/a2/8ceaa23e6f20b9ec96b86c63b5288d26.jpg" alt="Waffles" />
-      </div>
-    </div>
-
-    <!-- Sandwiches Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Sandwiches</h2>
-        <ul>
-          <li>Grilled Cheese - P40.00</li>
-          <li>Chicken Sandwich - P55.00</li>
-          <li>Veggie Sandwich - P50.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/df/d9/74/dfd974b878efcfe1d90901ab44796f28.jpg" alt="Sandwiches" />
-      </div>
-    </div>
-
-    <!-- Salads Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Salads</h2>
-        <ul>
-          <li>Caesar Salad - P45.00</li>
-          <li>Greek Salad - P50.00</li>
-          <li>Garden Salad - P40.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/56/0f/ea/560fea99f09ae10fcd8b4b6caa63237f.jpg" alt="Salads" />
-      </div>
-    </div>
-
-    <!-- Pastries Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Pastries</h2>
-        <ul>
-          <li>Croissant - P30.00</li>
-          <li>Danish Pastry - P40.00</li>
-          <li>Chocolate Eclair - P45.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/52/3f/35/523f351b8e1d6076d47069b5a73cc6f5.jpg" alt="Pastries" />
-      </div>
-    </div>
-
-    <!-- Mocktails Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Mocktails</h2>
-        <ul>
-          <li>Virgin Mojito - P40.00</li>
-          <li>Strawberry Fizz - P45.00</li>
-          <li>Citrus Blast - P50.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/c7/5c/50/c75c50c9614c04edda351201dbfcdaf5.jpg" alt="Mocktails" />
-      </div>
-    </div>
-
-    <!-- Shakes Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Shakes</h2>
-        <ul>
-          <li>Chocolate Shake - P55.00</li>
-          <li>Vanilla Shake - P55.00</li>
-          <li>Strawberry Shake - P60.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/9f/f9/34/9ff934a10722c3ec17394ec0345e1347.jpg" alt="Shakes" />
-      </div>
-    </div>
-
-    <!-- Juice Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Juice</h2>
-        <ul>
-          <li>Orange Juice - P35.00</li>
-          <li>Pineapple Juice - P35.00</li>
-          <li>Mango Juice - P40.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/1e/98/7d/1e987df1c3c6efb8cfeb1c704aff8c6e.jpg" alt="Juices" />
-      </div>
-    </div>
-
-    <!-- Latte Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Latte</h2>
-        <ul>
-          <li>Classic Latte - P50.00</li>
-          <li>Caramel Latte - P55.00</li>
-          <li>Vanilla Latte - P55.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/6c/eb/ea/6cebeaf20001d8583a6783b132f51c30.jpg" alt="Latte" />
-      </div>
-    </div>
-
-    <!-- Bakery Section -->
-    <div class="menu-section">
-      <div class="menu-items">
-        <h2>Bakery</h2>
-        <ul>
-          <li>Banana Bread - P30.00</li>
-          <li>Cinnamon Rolls - P40.00</li>
-          <li>Pecan Pie - P45.00</li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <img src="https://i.pinimg.com/736x/3e/c5/fe/3ec5fe2b67c04b4fe06300a32de88856.jpg" alt="Bakery" />
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Boity's Cozy Corner Café</p>
-  </footer>
-</body>
-</html>
-
+.btn:hover {
+  background-color: #a85d29;
+}
