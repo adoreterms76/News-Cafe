@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lunch Menu | News Café</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ff/59/9d/logo.jpg?w=1000&h=-1&s=1" alt="News Café Logo" class="logo-img">
+</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="promo.html">Promos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="section-header">
+    <h1>Midday Delights</h1>
+    <p>Explore our delicious lunch options, perfect for any craving.</p>
+  </header>
+
+  <!-- Manual Slideshow (2 Images per Slide) -->
+  <section class="lunch-slideshow-container">
+    <div class="slide-group active">
+      <img src="images/lunch1.jpg" alt="Lunch Item 1" class="slide-img">
+      <img src="images/lunch2.jpg" alt="Lunch Item 2" class="slide-img">
+    </div>
+    <div class="slide-group">
+      <img src="images/lunch3.jpg" alt="Lunch Item 3" class="slide-img">
+      <img src="images/lunch4.jpg" alt="Lunch Item 4" class="slide-img">
+    </div>
+    <div class="slide-group">
+      <img src="images/lunch5.jpg" alt="Lunch Item 5" class="slide-img">
+      <img src="images/lunch6.jpg" alt="Lunch Item 6" class="slide-img">
+    </div>
+    <div class="slide-group">
+      <img src="images/lunch7.jpg" alt="Lunch Item 7" class="slide-img">
+      <img src="images/lunch8.jpg" alt="Lunch Item 8" class="slide-img">
+    </div>
+
+    <div class="slide-controls">
+      <button onclick="prevSlide('lunch-slideshow-container')">&#10094;</button>
+      <button onclick="nextSlide('lunch-slideshow-container')">&#10095;</button>
+    </div>
+  </section>
+
+</body>
+</html>
