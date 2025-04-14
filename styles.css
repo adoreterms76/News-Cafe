@@ -452,3 +452,110 @@ form button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Lunch Page Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff9f2;
+  color: #3e2c23;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #5a3e36;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #f9caa7;
+}
+
+.section-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f3e3d3;
+  color: #5a3e36;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide-group {
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.slide-group.active {
+  display: flex;
+}
+
+.slide-group img {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Slide controls */
+.slide-controls {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.slide-controls button {
+  background-color: #5a3e36;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slide-controls button:hover {
+  background-color: #d88b6d;
+}
