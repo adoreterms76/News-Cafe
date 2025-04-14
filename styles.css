@@ -28,6 +28,11 @@ body {
   font-weight: bold;
 }
 
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -160,6 +165,12 @@ body {
   font-weight: bold;
   color: #fff;
 }
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
 
 .nav-links {
   list-style: none;
