@@ -11,10 +11,8 @@
 
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div class="logo">
-  <img src="images/logo.png" alt="News Café Logo" class="logo-img">
-</div>
-   <ul class="nav-links">
+    <div class="logo">News Café</div>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="about.html">About</a></li>
@@ -30,22 +28,29 @@
     <p>Our breakfast menu is a fresh twist on your morning favorites.</p>
   </header>
 
-  <!-- Scrollable Slideshow Section -->
-  <section class="carousel-container">
-    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
-
-    <div class="carousel-track" id="carouselTrack">
-      <img src="https://i.pinimg.com/1200x/6b/b9/52/6bb9523267a410bbb89443d96831f3b1.jpg" alt="Breakfast">
-      <img src="https://i.pinimg.com/1200x/07/c3/b8/07c3b844c9f614d6ff3ecdaba935568a.jpg" alt="Classics">
-      <img src="https://i.pinimg.com/1200x/3e/f8/de/3ef8dee87c1b7d146a87a369ef2bbfa9.jpg" alt="Bowls">
-      <img src="https://i.pinimg.com/1200x/01/83/b1/0183b1c9009dcedcc002c30a0a1d4a12.jpg" alt="CAFE">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREulO6eKwkgIlFzqZYN3lS6zpFJPxGVoFuSg&s" alt="Breakfast Platter">
-      <img src="https://i.pinimg.com/1200x/bd/f9/ed/bdf9ed9c22eef51001fe602d7e3584c2.jpg" alt="Coffee">
-      <img src="https://i.pinimg.com/1200x/ae/47/57/ae475799bda9e9248a262fcaba52ffb4.jpg" alt="CAFFE">
-      <img src="https://i.pinimg.com/1200x/9c/99/1f/9c991f577c45e2e4742e628db5d6fb6e.jpg" alt="Smoothies">
+  <!-- Manual Slideshow (2 images per slide) -->
+  <section class="slideshow">
+    <div class="slide-group active">
+      <img src="https://i.pinimg.com/1200x/6b/b9/52/6bb9523267a410bbb89443d96831f3b1.jpg" alt="Breakfast 1">
+      <img src="https://i.pinimg.com/1200x/07/c3/b8/07c3b844c9f614d6ff3ecdaba935568a.jpg" alt="Breakfast 2">
+    </div>
+    <div class="slide-group">
+      <img src="https://i.pinimg.com/1200x/3e/f8/de/3ef8dee87c1b7d146a87a369ef2bbfa9.jpg" alt="Breakfast 3">
+      <img src="https://i.pinimg.com/1200x/01/83/b1/0183b1c9009dcedcc002c30a0a1d4a12.jpg" alt="Breakfast 4">
+    </div>
+    <div class="slide-group">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREulO6eKwkgIlFzqZYN3lS6zpFJPxGVoFuSg&s" alt="Breakfast 5">
+      <img src="https://i.pinimg.com/1200x/bd/f9/ed/bdf9ed9c22eef51001fe602d7e3584c2.jpg" alt="Breakfast 6">
+    </div>
+    <div class="slide-group">
+      <img src="https://i.pinimg.com/1200x/ae/47/57/ae475799bda9e9248a262fcaba52ffb4.jpg" alt="Breakfast 7">
+      <img src="https://i.pinimg.com/1200x/9c/99/1f/9c991f577c45e2e4742e628db5d6fb6e.jpg" alt="Breakfast 8">
     </div>
 
-    <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+    <div class="slide-controls">
+      <button id="prev">&#10094; Prev</button>
+      <button id="next">Next &#10095;</button>
+    </div>
   </section>
 
 </body>
