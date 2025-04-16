@@ -1,151 +1,139 @@
 /* index layout */
-
-/* Reset some basic styles */
+/* Reset & Fonts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #fff8f0;
-  color: #333;
 }
 
-/* Navigation Bar */
+/* Body */
+body {
+  background-color: #fff8f0;
+  color: #4a3f35;
+  line-height: 1.6;
+}
+
+/* Navbar */
 .navbar {
-  background-color: #2c2c2c;
+  background-color: #3e2c23;
+  color: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-img {
-  height: 60px;
-  border-radius: 50%;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.nav-links li a {
+.nav-links a {
+  color: #fff;
   text-decoration: none;
-  color: #f4f4f4;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-  color: #ff9900;
+.nav-links a:hover {
+  color: #f4c17a;
 }
 
 /* Welcome Section */
 .welcome-section {
   text-align: center;
-  padding: 4rem 2rem 2rem;
-  background: #fff0e6;
+  padding: 3rem 1rem;
+  background: #fdf4e3;
 }
 
 .welcome-section h1 {
-  font-size: 3rem;
-  color: #b35900;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .welcome-section p {
   font-size: 1.2rem;
-  color: #555;
+  color: #6b4f3a;
 }
 
 /* Slideshow */
 .slideshow {
   position: relative;
-  max-width: 90%;
+  max-width: 100%;
   margin: 2rem auto;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
 }
 
-.slide {
+.slideshow img {
   display: none;
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.slide.active {
+.slideshow img.active {
   display: block;
 }
 
 .slideshow button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.4);
-  color: white;
+  top: 45%;
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  padding: 10px;
-  font-size: 24px;
+  color: white;
+  padding: 10px 15px;
   cursor: pointer;
-  z-index: 1;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
 }
 
-.slideshow .prev {
+.slideshow button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow button:nth-of-type(1) {
   left: 10px;
 }
 
-.slideshow .next {
+.slideshow button:nth-of-type(2) {
   right: 10px;
 }
 
-}
-
-/* About Message */
-.about-message {
+/* About Message & Teasers */
+.about-message,
+.menu-teaser {
   text-align: center;
-  padding: 3rem 2rem;
-  background-color: #fffaf5;
+  padding: 2rem;
+  background: #fff0dc;
 }
 
-.about-message p {
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
+.about-message p,
+.menu-teaser p {
   font-size: 1.1rem;
-  color: #444;
+  margin-bottom: 1rem;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #b35900;
-  color: #fff;
+  background-color: #c57c3c;
+  color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 25px;
   text-decoration: none;
+  border-radius: 25px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #ff8000;
+  background-color: #a85d29;
 }
++
 
-/* Menu Teaser */
-.menu-teaser {
-  text-align: center;
-  padding: 3rem 2rem;
-  background-color: #fef3e6;
-}
-
-.menu-teaser p {
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  font-size: 1.1rem;
-  color: #444;
-}
