@@ -2,75 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | News Café</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | News Café</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ff/59/9d/logo.jpg?w=1000&h=-1&s=1" alt="News Café Logo" class="logo-img">
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="promo.html">Promos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Contact Section -->
   <section class="contact-section">
     <div class="contact-content">
-      <h1>Get in Touch with News Café</h1>
-      <p>We'd love to hear from you! Whether it's feedback, suggestions, or questions — we’re here to help.</p>
+      <h1>Contact</h1>
+      <p>For any head office enquiries, reach out to us using the details below.</p>
+      <p>If you would like to contact one of our stores directly, click here to find the specific News Café you're looking for.</p>
 
-      <h2>Contact Details</h2>
-      <p><strong>Head Office:</strong> Gaborone, Botswana</p>
-      <p><strong>Phone:</strong> +267 71 234 567</p>
-      <p><strong>Email:</strong> contact@newscafe.com</p>
+      <div class="contact-row">
+        <!-- HEAD OFFICE INFO -->
+        <div class="head-office">
+          <h2>HEAD OFFICE</h2>
+          <p><strong>Phone:</strong> +27 11 452 8770</p>
+          <p><strong>Email:</strong> info@newscafe.co.za</p>
+          <p><strong>Address:</strong> 2 Rutland Mews, Cnr. Main & Keymer Roads, Eastleigh, Edenvale</p>
+        </div>
 
-      <h2>Let's Get Social</h2>
-      <a href="#" target="_blank">Instagram</a>
-      <a href="#" target="_blank">TikTok</a>
+          <!-- SOCIAL SECTION -->
+      <div class="social-section">
+        <h2>LET'S GET SOCIAL</h2>
+        <ul>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+        </ul>
+      </div>
+        
+        <!-- GENERAL ENQUIRY FORM -->
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Surname" required />
+          <input type="text" placeholder="Contact Number" required />
+          <input type="email" placeholder="Email Address" required />
+          <select required>
+            <option value="">- Please Select -</option>
+            <option value="complaint">Complaint</option>
+            <option value="compliment">Compliment</option>
+            <option value="suggestion">Suggestion</option>
+          </select>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
 
-      <h2>General Enquiry</h2>
-      <form class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    
 
-        <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" required>
-
-        <label for="contact">Contact Number:</label>
-        <input type="tel" id="contact" name="contact" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="category">Please Select:</label>
-        <select id="category" name="category" required>
-          <option value="">Select an option</option>
-          <option value="complaint">Complaint</option>
-          <option value="compliment">Compliment</option>
-          <option value="suggestion">Suggestion</option>
-        </select>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 News Café. All rights reserved.</p>
-  </footer>
-
 </body>
 </html>
+
+ 
