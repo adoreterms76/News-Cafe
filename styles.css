@@ -88,26 +88,23 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
   border: none;
-  color: #fff;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 10px;
+  font-size: 24px;
   cursor: pointer;
-  z-index: 2;
-  border-radius: 8px;
+  z-index: 1;
 }
 
-.slideshow button:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.slideshow button:nth-of-type(1) {
+.slideshow .prev {
   left: 10px;
 }
 
-.slideshow button:nth-of-type(2) {
+.slideshow .next {
   right: 10px;
+}
+
 }
 
 /* About Message */
