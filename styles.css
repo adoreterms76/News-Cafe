@@ -643,3 +643,112 @@ body {
   color: #2e2e2e;
 }
 
+/* about layout */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf8f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e2723;
+  padding: 10px 20px;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fdf8f4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d7ccc8;
+}
+
+/* Header Section with Background */
+.intro-section {
+  background-image: url('https://images.unsplash.com/photo-1523978591478-c753949ff840');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.intro-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.intro-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Image Below Intro */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.about-section.alt {
+  background-color: #f7eee7;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #5d4037;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #3e2723;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
