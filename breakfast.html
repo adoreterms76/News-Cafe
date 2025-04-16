@@ -30,28 +30,22 @@
     <p>Our breakfast menu is a fresh twist on your morning favorites.</p>
   </header>
 
-  <!-- Manual Slideshow (2 images per slide) -->
-  <section class="slideshow">
-    <div class="slide-group active">
-      <img src="https://i.pinimg.com/1200x/6b/b9/52/6bb9523267a410bbb89443d96831f3b1.jpg" alt="Breakfast 1">
-      <img src="https://i.pinimg.com/1200x/07/c3/b8/07c3b844c9f614d6ff3ecdaba935568a.jpg" alt="Breakfast 2">
-    </div>
-    <div class="slide-group">
-      <img src="https://i.pinimg.com/1200x/3e/f8/de/3ef8dee87c1b7d146a87a369ef2bbfa9.jpg" alt="Breakfast 3">
-      <img src="https://i.pinimg.com/1200x/01/83/b1/0183b1c9009dcedcc002c30a0a1d4a12.jpg" alt="Breakfast 4">
-    </div>
-    <div class="slide-group">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREulO6eKwkgIlFzqZYN3lS6zpFJPxGVoFuSg&s" alt="Breakfast 5">
-      <img src="https://i.pinimg.com/1200x/bd/f9/ed/bdf9ed9c22eef51001fe602d7e3584c2.jpg" alt="Breakfast 6">
-    </div>
-    <div class="slide-group">
-      <img src="https://i.pinimg.com/1200x/ae/47/57/ae475799bda9e9248a262fcaba52ffb4.jpg" alt="Breakfast 7">
-      <img src="https://i.pinimg.com/1200x/9c/99/1f/9c991f577c45e2e4742e628db5d6fb6e.jpg" alt="Breakfast 8">
-    </div>
+   <!--  Manual Slideshow: Café Images -->
+  <section class="slideshow" id="cafe-slideshow">
+    <img src="https://i.pinimg.com/1200x/6b/b9/52/6bb9523267a410bbb89443d96831f3b1.jpg" alt="Breakfast" class="slide active">
+    <img src="https://i.pinimg.com/1200x/07/c3/b8/07c3b844c9f614d6ff3ecdaba935568a.jpg" alt="Breakfast Menu 1" class="slide">
+    <img src="https://i.pinimg.com/1200x/3e/f8/de/3ef8dee87c1b7d146a87a369ef2bbfa9.jpg" alt="Breakfast Menu 2" class="slide">
+    <img src="https://i.pinimg.com/1200x/5d/e8/ba/5de8ba2075499c64dd664753ae39176f.jpg" alt="Breakfast Menu 3" class="slide">
+    <img src="https://i.pinimg.com/1200x/01/83/b1/0183b1c9009dcedcc002c30a0a1d4a12.jpg" alt="Breakfast Menu 4" class="slide">
+    <img src="https://i.pinimg.com/1200x/bd/f9/ed/bdf9ed9c22eef51001fe602d7e3584c2.jpg" alt="Coffee" class="slide">
+    <img src="https://i.pinimg.com/736x/ae/47/57/ae475799bda9e9248a262fcaba52ffb4.jpg" alt="Coffee Menu 1" class="slide">
+    <img src="https://i.pinimg.com/1200x/9c/99/1f/9c991f577c45e2e4742e628db5d6fb6e.jpg" alt="Granitas & Smoothies" class="slide"> 
+    <button onclick="prevSlide('cafe-slideshow')">&#10094;</button>
+    <button onclick="nextSlide('cafe-slideshow')">&#10095;</button>
+    
+  </section>
 
-    <div class="slide-controls">
-      <button id="prev">&#10094; Prev</button>
-      <button id="next">Next &#10095;</button>
+  
     </div>
   </section>
 
