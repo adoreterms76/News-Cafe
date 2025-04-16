@@ -1029,34 +1029,47 @@ body {
   max-width: 600px;
 }
 
-/* Newsletter Sign-Up */
-form {
-  text-align: center;
+/* Newsletter Form */
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
 
-form input[type="email"] {
+#signup-form input[type="email"] {
   padding: 10px;
-  width: 300px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #ddd;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
+  font-size: 1em;
 }
 
-form button {
+#signup-form button {
   padding: 10px 20px;
-  background-color: #4d2c2c;
-  color: #fff;
+  background-color: #e68949;
+  color: white;
   border: none;
   border-radius: 5px;
+  font-size: 1.2em;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-form button:hover {
-  background-color: #8b4513;
+#signup-form button:hover {
+  background-color: #d4773c;
 }
 
+/* Thank You Message */
+#thank-you-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #28a745;
+  font-weight: bold;
+}
 /* Footer */
 .footer {
   background-color: #4d2c2c;
