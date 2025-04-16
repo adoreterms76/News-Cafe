@@ -34,3 +34,24 @@ document.addEventListener("DOMContentLoaded", () => {
   initSlideshow("cafe-slideshow");
   initSlideshow("menu-slideshow");
 });
+
+// breakfast layout
+function nextSlide(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+
+  slides[current].classList.remove('active');
+  const nextIndex = (current + 1) % slides.length;
+  slides[nextIndex].classList.add('active');
+}
+
+function prevSlide(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+
+  slides[current].classList.remove('active');
+  const prevIndex = (current - 1 + slides.length) % slides.length;
+  slides[prevIndex].classList.add('active');
+}
