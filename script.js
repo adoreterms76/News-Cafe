@@ -99,20 +99,29 @@ function prevSlide(slideshowId) {
 }
 
 // contact layout
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contact-form');
-  const messageBox = document.getElementById('form-message');
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("enquiry-form");
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form from submitting normally
 
-    // Simple success message
-    messageBox.textContent = 'Thank you for your enquiry! We’ll be in touch shortly.';
-    
-    // Optionally clear the form
+    // Collect form data (you can log or process it here if needed)
+    const name = document.getElementById("name").value;
+    const surname = document.getElementById("surname").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const reason = document.getElementById("reason").value;
+    const message = document.getElementById("message").value;
+
+    // Show a success message (for now, just an alert)
+    alert(`Thank you, ${name}! Your enquiry has been received.`);
+
+    // Optionally reset the form
     form.reset();
   });
 });
+
 
 // promos layout
 // Grab the form and the success message element
