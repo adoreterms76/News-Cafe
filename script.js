@@ -113,3 +113,26 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 });
+
+// promos layout
+// Grab the form and the success message element
+const form = document.getElementById('signup-form');
+const successMessage = document.getElementById('success-message');
+
+// Handle form submission
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    const email = document.getElementById('email').value; // Get the email value
+    
+    if (email) {
+        // Save the email to localStorage (or you could use another method to send it to a backend)
+        localStorage.setItem('newsletterEmail', email);
+
+        // Display the success message
+        successMessage.style.display = 'block';
+
+        // Optionally, clear the input field
+        document.getElementById('email').value = '';
+    }
+});
