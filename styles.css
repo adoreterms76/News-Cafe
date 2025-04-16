@@ -887,6 +887,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center; /* Center text by default */
 }
 
 .navbar {
@@ -905,6 +906,7 @@ body {
 .nav-links {
     list-style-type: none;
     display: flex;
+    justify-content: center; /* Center navigation links */
 }
 
 .nav-links li {
@@ -918,7 +920,6 @@ body {
 }
 
 .promo-title {
-    text-align: center;
     padding: 50px 0;
     background-color: #f8b400;
 }
@@ -935,9 +936,11 @@ body {
 
 .promo-section {
     padding: 30px;
-    text-align: center;
     background-color: #fff;
     margin: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .promo-section h2 {
@@ -947,7 +950,7 @@ body {
 
 .promo-item {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -973,6 +976,7 @@ body {
 form {
     max-width: 400px;
     margin: 0 auto;
+    text-align: center; /* Ensure form elements are centered */
 }
 
 form input[type="email"] {
@@ -981,22 +985,25 @@ form input[type="email"] {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 form button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #f8b400;
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 form button:hover {
     background-color: #e39e00;
 }
 
+/* Success message */
 #success-message {
     color: green;
     font-size: 18px;
@@ -1004,9 +1011,11 @@ form button:hover {
     font-weight: bold;
 }
 
+/* Footer styles */
 .footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em;
+    margin-top: 40px;
 }
