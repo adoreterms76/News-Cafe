@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | News Café</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="contact.js" defer></script>
+  <script src="contact-script.js" defer></script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ff/59/9d/logo.jpg?w=1000&h=-1&s=1" alt="News Café Logo" class="logo-img">
@@ -20,65 +20,77 @@
       <li><a href="about.html">About</a></li>
       <li><a href="promo.html">Promos</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Contact Hero Section -->
+  <!-- Contact Hero -->
   <section class="contact-hero">
     <div class="contact-hero-text">
-      <h1>Contact News Café</h1>
-      <p>We’d love to hear from you! Whether it’s feedback, questions, or suggestions — reach out below.</p>
+      <h1>Get in Touch with News Café</h1>
+      <p>We’d love to hear from you! Whether it’s feedback, suggestions, or questions — we’re here to help.</p>
     </div>
   </section>
 
-  <!-- Contact Details Section -->
-  <section class="contact-details">
-    <div class="details-box">
-      <h2>Head Office</h2>
-      <p>Plot 123, Café Avenue, Gaborone</p>
-      <p><strong>Email:</strong> info@newscafe.co.za</p>
-      <p><strong>Phone:</strong> +27 11 452 8770</p>
-      <p><strong>Hours:</strong> Mon–Sun | 7AM – 10PM</p>
+  <!-- Contact Info Row -->
+  <section class="contact-row">
+    <!-- Contact Details -->
+    <div class="contact-column">
+      <h2>Contact Details</h2>
+      <p><strong>Head Office:</strong> Gaborone, Botswana</p>
+      <p><strong>Phone:</strong> +267 71 234 567</p>
+      <p><strong>Email:</strong> contact@newscafe.com</p>
     </div>
 
-    <div class="social-box">
-      <h2>Let’s Get Social</h2>
-      <p>Follow us and stay connected:</p>
-      <ul class="social-links">
-        <li><a href="https://www.facebook.com/NewsCafeZA">Facebook</a></li>
-        <li><a href="https://www.instagram.com/newscafeza/?hl=en">Instagram</a></li>
-        <li><a href="https://www.tiktok.com/@newscafeza?_t=ZM-8uEVwuFkf3d&_r=1">TikTok</a></li>
-      </ul>
+    <!-- Social Links -->
+    <div class="contact-column">
+      <h2>Let's Get Social</h2>
+      <p><a href="https://www.instagram.com/newscafebw" target="_blank">Instagram</a></p>
+      <p><a href="https://www.tiktok.com/@newscafebw" target="_blank">TikTok</a></p>
     </div>
   </section>
 
   <!-- Feedback Form -->
   <section class="feedback-form">
-    <h2>General Enquiry Form</h2>
-    <form id="contact-form">
+    <h2>General Enquiry</h2>
+    <form id="enquiry-form">
       <div class="form-group">
-        <input type="text" name="name" placeholder="First Name" required>
-        <input type="text" name="surname" placeholder="Surname" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
       </div>
+
       <div class="form-group">
-        <input type="tel" name="phone" placeholder="Contact Number" required>
-        <input type="email" name="email" placeholder="Email" required>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required />
       </div>
+
       <div class="form-group">
-        <select name="feedback-type" required>
-          <option value="" disabled selected>Please Select</option>
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="reason">Please Select:</label>
+        <select id="reason" name="reason" required>
+          <option value="" disabled selected>Select an option</option>
           <option value="complaint">Complaint</option>
           <option value="compliment">Compliment</option>
           <option value="suggestion">Suggestion</option>
         </select>
       </div>
+
       <div class="form-group">
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
       </div>
-      <button type="submit" class="submit-btn">Send Message</button>
+
+      <button type="submit">Send Message</button>
     </form>
-    <div id="form-message"></div>
   </section>
 
   <!-- Footer -->
