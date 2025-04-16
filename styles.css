@@ -690,7 +690,8 @@ body {
 
 /* Header Section with Background */
 .intro-section {
-  background-image: url('https://images.unsplash.com/photo-1523978591478-c753949ff840');
+  .intro-section {
+  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/RF_sdPqGS7Ld5djMeUrNSg/o.jpg');
   background-size: cover;
   background-position: center;
   padding: 60px 20px;
