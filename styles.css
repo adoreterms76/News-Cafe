@@ -516,3 +516,130 @@ body {
 .menu-btn:hover {
   background-color: #e5533c;
 }
+
+/* liquids layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2e2e;
+  padding: 10px 20px;
+}
+
+.logo-img {
+  height: 50px;
+  border-radius: 6px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f4c542;
+}
+
+/* Header */
+.section-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #fdf3e7;
+}
+
+.section-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+}
+
+.section-header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slide.active {
+  display: inline-block;
+}
+
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slideshow button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow button:nth-of-type(1) {
+  left: 20px;
+}
+
+.slideshow button:nth-of-type(2) {
+  right: 20px;
+}
+
+/* Menu Buttons */
+.menu-buttons {
+  text-align: center;
+  padding: 30px 20px 50px;
+}
+
+.menu-btn {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 15px 30px;
+  background-color: #2e2e2e;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: #f4c542;
+  color: #2e2e2e;
+}
+
