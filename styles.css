@@ -806,7 +806,7 @@ body {
 
 /* Intro with background image */
 .contact-introduction {
-  background-image: url('your-background-image.jpg'); /* Replace with your actual image path */
+  background-image: (https://img.p.mapq.st/?url=https://media-cdn.tripadvisor.com/media/photo-o/27/ac/49/91/news-cafe-sandton.jpg?w=3840&q=75;) /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
