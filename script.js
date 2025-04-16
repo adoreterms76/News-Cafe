@@ -72,4 +72,24 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Foood Layout
+function nextSlide(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.getElementsByClassName("slide");
+  let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains("active"));
+  
+  slides[currentIndex].classList.remove("active");
+  const nextIndex = (currentIndex + 1) % slides.length;
+  slides[nextIndex].classList.add("active");
+}
+
+function prevSlide(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.getElementsByClassName("slide");
+  let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains("active"));
+  
+  slides[currentIndex].classList.remove("active");
+  const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+  slides[prevIndex].classList.add("active");
+}
 
