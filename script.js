@@ -114,3 +114,17 @@ function prevSlide(slideshowId) {
   slides[prev].classList.add('active');
 }
 
+// Promo Layout
+<!-- JavaScript -->
+  <script>
+    // JavaScript for handling form submission
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent page reload on form submit
+      
+      const email = event.target.querySelector("input[type=email]").value;
+      if (email) {
+        document.getElementById("thank-you-message").style.display = "block";  // Show thank-you message
+        event.target.reset();  // Clear the form
+      }
+    }
+  
