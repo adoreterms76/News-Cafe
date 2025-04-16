@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | News Café</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="logo">
       <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ff/59/9d/logo.jpg?w=1000&h=-1&s=1" alt="News Café Logo" class="logo-img">
@@ -20,68 +19,58 @@
       <li><a href="about.html">About</a></li>
       <li><a href="promo.html">Promos</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Contact Section -->
   <section class="contact-section">
-    <div class="contact-container">
-
-      <!-- Contact Info -->
-     <div class="contact-details">
+    <div class="contact-content">
       <h1>Get in Touch with News Café</h1>
-      <p>We’d love to hear from you! Whether it’s feedback, suggestions, or questions — we’re here to help.</p>
-   
-        
+      <p>We'd love to hear from you! Whether it's feedback, suggestions, or questions — we’re here to help.</p>
+
       <h2>Contact Details</h2>
       <p><strong>Head Office:</strong> Gaborone, Botswana</p>
       <p><strong>Phone:</strong> +267 71 234 567</p>
       <p><strong>Email:</strong> contact@newscafe.com</p>
-    </div>
 
       <h2>Let's Get Social</h2>
-      <p><a href="https://www.instagram.com/newscafebw" target="_blank">Instagram</a></p>
-      <p><a href="https://www.tiktok.com/@newscafebw" target="_blank">TikTok</a></p>
-    </div>
-  </section>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">TikTok</a>
 
-  <!-- Enquiry Form -->
-  <section class="Contact-form">
-    <h3>General Enquiry</h3>
-    <form>
-     <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+      <h2>General Enquiry</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-          <label for="surname">Surname:</label>
-          <input type="text" id="surname" name="surname" required>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
 
-          <label for="contact">Contact Number:</label>
-          <input type="tel" id="contact" name="contact" required>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required>
 
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-          <label for="type">Please Select:</label>
-          <select id="type" name="type" required>
-            <option value="">Select an option</option>
-            <option value="complaint">Complaint</option>
-            <option value="compliment">Compliment</option>
-            <option value="suggestion">Suggestion</option>
-          </select>
+        <label for="category">Please Select:</label>
+        <select id="category" name="category" required>
+          <option value="">Select an option</option>
+          <option value="complaint">Complaint</option>
+          <option value="compliment">Compliment</option>
+          <option value="suggestion">Suggestion</option>
+        </select>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 News Café. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
