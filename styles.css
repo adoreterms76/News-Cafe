@@ -237,3 +237,147 @@ body {
   transform: translateY(-3px);
   color: white;
 }
+
+/* breakfast layout */
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f3;
+  color: #4e342e;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff3e0;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c49b83;
+}
+
+/* Header */
+.section-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fcefe7;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #6d4c41;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  max-width: 90%;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+.slideshow .active {
+  display: block;
+}
+
+/* Slideshow Buttons */
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.slideshow button:hover {
+  background-color: #d7b49e;
+  color: white;
+}
+
+.slideshow button:nth-of-type(1) {
+  left: 10px;
+}
+
+.slideshow button:nth-of-type(2) {
+  right: 10px;
+}
+
+/* Menu Buttons Section (same as menu.html) */
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.menu-btn {
+  padding: 14px 28px;
+  background-color: #d7b49e; /* soft latte-beige tone */
+  color: #4e342e;
+  text-decoration: none;
+  border: 2px solid #c49b83;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn:hover {
+  background-color: #c49b83;
+  transform: translateY(-3px);
+  color: white;
+}
