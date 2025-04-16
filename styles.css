@@ -71,7 +71,6 @@ body {
   position: relative;
   max-width: 90%;
   margin: 30px auto;
-  overflow: hidden;
   border-radius: 12px;
 }
 
@@ -217,7 +216,7 @@ body {
 /* Hero Section */
 .menu-hero {
   text-align: center;
-  padding: 2rem;
+  padding: 20;
   background-color: #fef8f4;
 }
 
@@ -1062,13 +1061,14 @@ body {
   background-color: #d4773c;
 }
 
-/* Thank You Message */
 #thank-you-message {
   text-align: center;
   margin-top: 20px;
   font-size: 1.2em;
   color: #28a745;
   font-weight: bold;
+}
+
 }
 /* Footer */
 .footer {
