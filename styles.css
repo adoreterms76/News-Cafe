@@ -106,21 +106,22 @@ body {
   margin-bottom: 15px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 18px;
+.menu-btn {
   background-color: #d18f47;
   color: white;
-  border: none;
   text-decoration: none;
+  padding: 12px 22px;
+  font-size: 1rem;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
-.btn:hover {
+.menu-btn:hover {
   background-color: #b8743a;
 }
+
 
 /* ===== RESPONSIVE FOR PHONES ===== */
 @media (max-width: 600px) {
@@ -248,6 +249,7 @@ body {
 .menu-btn:hover {
   background-color: #b8743a;
 }
+
 
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -572,40 +574,22 @@ body {
   padding: 2rem;
 }
 
-.menu-buttons button {
-  padding: 1.2rem 2.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 300px;
-  text-transform: uppercase;
+.menu-btn {
+  background-color: #d18f47;
   color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
-/* Button Colors */
-.menu-buttons button:nth-child(1) {
-  background-color: #f39c12;
-}
-.menu-buttons button:nth-child(1):hover {
-  background-color: #e67e22;
+.menu-btn:hover {
+  background-color: #b8743a;
 }
 
-.menu-buttons button:nth-child(2) {
-  background-color: #27ae60;
-}
-.menu-buttons button:nth-child(2):hover {
-  background-color: #219150;
-}
-
-.menu-buttons button:nth-child(3) {
-  background-color: #9b59b6;
-}
-.menu-buttons button:nth-child(3):hover {
-  background-color: #8e44ad;
-}
 
 
 /* Responsive */
@@ -746,41 +730,21 @@ body {
   padding: 2rem;
 }
 
-.menu-buttons button {
-  padding: 1.2rem 2.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 300px;
-  text-transform: uppercase;
+.menu-btn {
+  background-color: #d18f47;
   color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
-/* Button Colors */
-.menu-buttons button:nth-child(1) {
-  background-color: #f39c12;
+.menu-btn:hover {
+  background-color: #b8743a;
 }
-.menu-buttons button:nth-child(1):hover {
-  background-color: #e67e22;
-}
-
-.menu-buttons button:nth-child(2) {
-  background-color: #27ae60;
-}
-.menu-buttons button:nth-child(2):hover {
-  background-color: #219150;
-}
-
-.menu-buttons button:nth-child(3) {
-  background-color: #9b59b6;
-}
-.menu-buttons button:nth-child(3):hover {
-  background-color: #8e44ad;
-}
-
 
 /* about layout */
 /* Reset default styles */
