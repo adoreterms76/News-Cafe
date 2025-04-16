@@ -93,3 +93,24 @@ function prevSlide(slideshowId) {
   slides[prevIndex].classList.add("active");
 }
 
+// Liquids Layout
+function nextSlide(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+
+  slides[current].classList.remove('active');
+  let next = (current + 1) % slides.length;
+  slides[next].classList.add('active');
+}
+
+function prevSlide(slideshowId) {
+  const slideshow = document.getElementById(slideshowId);
+  const slides = slideshow.querySelectorAll('.slide');
+  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+
+  slides[current].classList.remove('active');
+  let prev = (current - 1 + slides.length) % slides.length;
+  slides[prev].classList.add('active');
+}
+
