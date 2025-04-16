@@ -1,103 +1,99 @@
 /* index layout */
-/* Reset & Fonts */
+/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body */
 body {
-  background-color: #fff8f0;
-  color: #4a3f35;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
+  background-color: #fffaf5;
+  color: #333;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #3e2c23;
-  color: #fff;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #3e2f1c;
+  padding: 1rem 2rem;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.navbar .logo-img {
+  height: 50px;
+  border-radius: 8px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
-  color: #f4c17a;
+  color: #ffcc99;
 }
 
 /* Welcome Section */
 .welcome-section {
   text-align: center;
-  padding: 3rem 1rem;
-  background: #fdf4e3;
+  padding: 4rem 2rem;
+  background-color: #ffeedd;
 }
 
 .welcome-section h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #3e2f1c;
 }
 
-.welcome-section p {
-  font-size: 1.2rem;
-  color: #6b4f3a;
-}
-
-/* Slideshow */
+/* Slideshow Style */
 .slideshow {
   position: relative;
-  max-width: 100%;
+  max-width: 1000px;
   margin: 2rem auto;
   overflow: hidden;
-  padding: 0 1rem;
+  border-radius: 12px;
 }
 
-.slideshow img {
+.slide {
   display: none;
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 500px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
-.slideshow img.active {
+.slide.active {
   display: block;
 }
 
+/* Slideshow Buttons */
 .slideshow button {
   position: absolute;
-  top: 45%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 50%;
+  top: 50%;
   transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
 }
 
 .slideshow button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .slideshow button:nth-of-type(1) {
@@ -108,12 +104,12 @@ body {
   right: 10px;
 }
 
-/* About Message & Teasers */
+/* About Message */
 .about-message,
 .menu-teaser {
   text-align: center;
   padding: 2rem;
-  background: #fff0dc;
+  background-color: #fff5eb;
 }
 
 .about-message p,
@@ -123,17 +119,17 @@ body {
 }
 
 .btn {
-  background-color: #c57c3c;
-  color: white;
-  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #3e2f1c;
+  color: #fff;
   text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+  border-radius: 30px;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #a85d29;
+  background-color: #7a5e42;
 }
-+
+
 
