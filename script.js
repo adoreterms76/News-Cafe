@@ -115,16 +115,25 @@ function prevSlide(slideshowId) {
 }
 
 // Promo Layout
-<!-- JavaScript -->
-  <script>
-    // JavaScript for handling form submission
-    document.getElementById("signup-form").addEventListener("submit", function(event) {
-      event.preventDefault();  // Prevent page reload on form submit
-      
-      const email = event.target.querySelector("input[type=email]").value;
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("signup-form");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // prevent page reload
+      const emailInput = form.querySelector("input[type='email']");
+      const email = emailInput.value;
+
       if (email) {
-        document.getElementById("thank-you-message").style.display = "block";  // Show thank-you message
-        event.target.reset();  // Clear the form
+        // Hide the form
+        form.style.display = "none";
+
+        // Show thank-you message
+        const thankYou = document.createElement("p");
+        thankYou.id = "thank-you-message";
+        thankYou.textContent = "Thank you for signing up!";
+        form.parentNode.appendChild(thankYou);
       }
-    }
-  
+    });
+  });
+</script>
