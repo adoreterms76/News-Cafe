@@ -233,21 +233,22 @@ body {
   background-color: #fff7f0;
 }
 
-.menu-buttons button {
+.menu-btn {
   background-color: #d18f47;
   color: white;
-  border: none;
+  text-decoration: none;
   padding: 12px 22px;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+  display: inline-block;
 }
 
-.menu-buttons button:hover {
+.menu-btn:hover {
   background-color: #b8743a;
 }
+
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
