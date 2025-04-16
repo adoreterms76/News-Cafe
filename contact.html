@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | News Café</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="contact.js" defer></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
     </ul>
   </nav>
 
-  <!-- Contact Header Section -->
+  <!-- Contact Hero Section -->
   <section class="contact-hero">
     <div class="contact-hero-text">
       <h1>Contact News Café</h1>
@@ -45,9 +46,9 @@
       <h2>Let’s Get Social</h2>
       <p>Follow us and stay connected:</p>
       <ul class="social-links">
-        <li><a href="https://www.facebook.com/NewsCafeZA"></a></li>
-        <li><a href="https://www.instagram.com/newscafeza/?hl=en"></a></li>
-        <li><a href="https://www.tiktok.com/@newscafeza?_t=ZM-8uEVwuFkf3d&_r=1"></a></li>
+        <li><a href="https://www.facebook.com/NewsCafeZA">Facebook</a></li>
+        <li><a href="https://www.instagram.com/newscafeza/?hl=en">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@newscafeza?_t=ZM-8uEVwuFkf3d&_r=1">TikTok</a></li>
       </ul>
     </div>
   </section>
@@ -55,7 +56,7 @@
   <!-- Feedback Form -->
   <section class="feedback-form">
     <h2>General Enquiry Form</h2>
-    <form action="send_message.php" method="POST">
+    <form id="contact-form">
       <div class="form-group">
         <input type="text" name="name" placeholder="First Name" required>
         <input type="text" name="surname" placeholder="Surname" required>
@@ -77,6 +78,7 @@
       </div>
       <button type="submit" class="submit-btn">Send Message</button>
     </form>
+    <div id="form-message"></div>
   </section>
 
   <!-- Footer -->
@@ -86,3 +88,5 @@
 
 </body>
 </html>
+
+
