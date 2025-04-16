@@ -879,3 +879,134 @@ textarea {
   font-size: 1rem;
   color: green;
 }
+
+/* promos layout */
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.promo-title {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8b400;
+}
+
+.promo-title h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.promo-title p {
+    font-size: 18px;
+    color: white;
+}
+
+.promo-section {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.promo-section h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.promo-item {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.promo-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.promo-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.promo-item p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8b400;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #e39e00;
+}
+
+#success-message {
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
