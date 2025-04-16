@@ -1,129 +1,153 @@
 // Index Layout
-// script.js
-
-function nextSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let index = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-
-  slides[index].classList.remove('active');
-  index = (index + 1) % slides.length;
-  slides[index].classList.add('active');
+// basic styles 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-function prevSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let index = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-
-  slides[index].classList.remove('active');
-  index = (index - 1 + slides.length) % slides.length;
-  slides[index].classList.add('active');
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  color: #333;
 }
 
-
-// Breakfast Layout
-// Initialize slide index
-let slideIndices = {};
-
-// Function to show slides
-function showSlide(slideshowId, index) {
-  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
-  if (!slideIndices[slideshowId]) slideIndices[slideshowId] = 0;
-
-  if (index >= slides.length) slideIndices[slideshowId] = 0;
-  else if (index < 0) slideIndices[slideshowId] = slides.length - 1;
-  else slideIndices[slideshowId] = index;
-
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === slideIndices[slideshowId]) {
-      slide.classList.add('active');
-    }
-  });
+/* Navigation Bar */
+.navbar {
+  background-color: #2c2c2c;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-// Next/Prev control functions
-function nextSlide(slideshowId) {
-  showSlide(slideshowId, slideIndices[slideshowId] + 1);
+.logo-img {
+  height: 60px;
+  border-radius: 50%;
 }
 
-function prevSlide(slideshowId) {
-  showSlide(slideshowId, slideIndices[slideshowId] - 1);
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-// Initialize on page load
-window.addEventListener("DOMContentLoaded", () => {
-  const slideshows = document.querySelectorAll(".slideshow");
-  slideshows.forEach(slideshow => {
-    const id = slideshow.getAttribute("id");
-    slideIndices[id] = 0;
-    showSlide(id, 0);
-  });
-});
-
-// Foood Layout
-function nextSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.getElementsByClassName("slide");
-  let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains("active"));
-  
-  slides[currentIndex].classList.remove("active");
-  const nextIndex = (currentIndex + 1) % slides.length;
-  slides[nextIndex].classList.add("active");
+.nav-links li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-function prevSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.getElementsByClassName("slide");
-  let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains("active"));
-  
-  slides[currentIndex].classList.remove("active");
-  const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-  slides[prevIndex].classList.add("active");
+.nav-links li a:hover {
+  color: #ff9900;
 }
 
-// Liquids Layout
-function nextSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-
-  slides[current].classList.remove('active');
-  let next = (current + 1) % slides.length;
-  slides[next].classList.add('active');
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: #fff0e6;
 }
 
-function prevSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-
-  slides[current].classList.remove('active');
-  let prev = (current - 1 + slides.length) % slides.length;
-  slides[prev].classList.add('active');
+.welcome-section h1 {
+  font-size: 3rem;
+  color: #b35900;
+  margin-bottom: 1rem;
 }
 
-// Promo Layout
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("signup-form");
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
 
-    form.addEventListener("submit", function (event) {
-      event.preventDefault(); // prevent page reload
-      const emailInput = form.querySelector("input[type='email']");
-      const email = emailInput.value;
+/* Slideshow */
+.slideshow {
+  position: relative;
+  max-width: 90%;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
 
-      if (email) {
-        // Hide the form
-        form.style.display = "none";
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 
-        // Show thank-you message
-        const thankYou = document.createElement("p");
-        thankYou.id = "thank-you-message";
-        thankYou.textContent = "Thank you for signing up!";
-        form.parentNode.appendChild(thankYou);
-      }
-    });
-  });
-</script>
+.slide.active {
+  display: block;
+}
+
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.slideshow button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow button:nth-of-type(1) {
+  left: 10px;
+}
+
+.slideshow button:nth-of-type(2) {
+  right: 10px;
+}
+
+/* About Message */
+.about-message {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fffaf5;
+}
+
+.about-message p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #b35900;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff8000;
+}
+
+/* Menu Teaser */
+.menu-teaser {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fef3e6;
+}
+
+.menu-teaser p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
