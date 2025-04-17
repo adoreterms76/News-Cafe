@@ -830,21 +830,51 @@ body {
 }
 
 /* Grid layout */
+/* Contact Row as Grid */
 .contact-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  padding: 2rem;
+  background-color: #fffaf5;
 }
 
-/* Card style for each section */
-.head-office,
-.social-section,
-.contact-form {
-  background-color: #fff5eb;
+/* Style each section inside the grid */
+.contact-row > div,
+.contact-row form {
+  background-color: #fff;
   padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Optional: Style form inputs */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+/* Style the submit button */
+.contact-form button {
+  background-color: #3e2f1c;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #7a5e42;
+}
+
 
 /* Section Headings */
 .head-office h2,
