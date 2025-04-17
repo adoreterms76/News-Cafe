@@ -664,7 +664,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5e9d3;
+  background-color: #fff;
   color: #333
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -686,7 +686,7 @@ body {
 /* Intro Section with Background */
 .intro-section {
   padding: 40px;
-  background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/b6/da/b1/news-cafe-interior.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -791,7 +791,7 @@ body {
 /* Intro with background image */
 .contact-introduction {
   padding: 40px;
-  background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/b6/da/b1/news-cafe-interior.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -817,7 +817,7 @@ body {
 
 /* Grid layout */
 /* Grid Layout for Info Sections */
-.contact-box {
+.contact-rox {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -825,7 +825,7 @@ body {
 }
 
 /* Individual Grid Items */
-.contact-grid .info-box {
+.contact-row .info-box {
   background-color: #fff8f2;
   padding: 20px;
   border-radius: 10px;
@@ -933,7 +933,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f6f2;
     text-align: center; /* Center text by default */
 }
 
@@ -968,7 +968,7 @@ body {
 
 .promo-title {
     padding: 50px 0;
-    background-color: #f8b400;
+    background-color: #fffaf5;
 }
 
 .promo-title h1 {
