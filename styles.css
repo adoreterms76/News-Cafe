@@ -664,7 +664,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #f5e9d3;
+  color: #333
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
