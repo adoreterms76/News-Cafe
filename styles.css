@@ -644,31 +644,29 @@ body {
 }
 
 /* about layout */
-/* General Reset */
-* {
+/* about.css */
+
+/* General resets */
+body, h1, h2, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdf8f4;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
+  color: #333;
+  background-color: #fdfaf6;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3e2723;
+  background-color: #fff;
   padding: 10px 20px;
-}
-
-.logo-img {
-  height: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .nav-links {
@@ -677,82 +675,67 @@ body {
   gap: 20px;
 }
 
-.nav-links a {
-  color: #fdf8f4;
+.nav-links li a {
   text-decoration: none;
+  color: #333;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #d7ccc8;
+.nav-links li a.active {
+  color: #d2691e;
 }
 
-/* Header Section with Background */
+/* Intro Section with Background */
 .intro-section {
-  .intro-section {
-  background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/RF_sdPqGS7Ld5djMeUrNSg/o.jpg');
+  background-image: url('images/news-cafe-bg.jpg'); /* <-- Replace this with your own image path */
   background-size: cover;
   background-position: center;
-  padding: 60px 20px;
   text-align: center;
+  padding: 100px 20px;
   color: white;
 }
 
 .intro-section h1 {
-  font-size: 3rem;
+  font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 .intro-section p {
+  font-size: 20px;
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
-/* Image Below Intro */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* About Section Styling */
-.about-section {
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
   padding: 50px 20px;
-  text-align: center;
-  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .about-section.alt {
-  background-color: #f7eee7;
-}
-
-.about-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #5d4037;
-}
-
-.about-section p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
+  background-color: #f4f1ec;
 }
 
 /* Footer */
 .footer {
-  background-color: #3e2723;
-  color: #fff;
+  background-color: #222;
+  color: #f5f5f5;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
+  padding: 20px;
+  margin-top: 60px;
 }
+
 
 /* contact layout */
 /* Reset & Base Styles */
