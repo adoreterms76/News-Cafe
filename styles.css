@@ -678,7 +678,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #5b3924;
   font-weight: bold;
 }
 
@@ -688,7 +688,7 @@ body {
 
 /* Intro Section with Background */
 .intro-section {
-  background-image: url('images/news-cafe-bg.jpg'); /* <-- Replace this with your own image path */
+  background-image: https://cdn.vox-cdn.com/thumbor/nbPr2_q78xlRM17G7KoEePy1vIU=/0x0:4014x3000/920x0/filters:focal(0x0:4014x3000):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/24489038/_DSC9038.JPG.jpg; /* <-- Replace this with your own image path */
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -790,7 +790,7 @@ body {
 
 /* Intro with background image */
 .contact-introduction {
-  background-image: (https://img.p.mapq.st/?url=https://media-cdn.tripadvisor.com/media/photo-o/27/ac/49/91/news-cafe-sandton.jpg?w=3840&q=75;) /* Replace with your actual image path */
+  background-image: https://cdn.vox-cdn.com/thumbor/nbPr2_q78xlRM17G7KoEePy1vIU=/0x0:4014x3000/920x0/filters:focal(0x0:4014x3000):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/24489038/_DSC9038.JPG.jpg; /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
