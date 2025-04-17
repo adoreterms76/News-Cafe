@@ -1365,15 +1365,18 @@ body {
 }
 
 .nav-links li a {
+  background-color: #d6b89c; /* deep beige */
+  color: #4a2f22; /* optional: dark mocha/brown for text */
+  padding: 10px 15px;
+  border-radius: 5px;
   text-decoration: none;
-  color: #5d3a00;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #c17c52;
+  background-color: #c3a889; /* slightly darker on hover */
 }
+
 
 /* Blog Post Styling */
 .blog-post {
