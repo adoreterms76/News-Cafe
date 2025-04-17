@@ -682,13 +682,10 @@ body {
   font-weight: bold;
 }
 
-.nav-links li a.active {
-  color: #d2691e;
-}
 
 /* Intro Section with Background */
 .intro-section {
-  background-image: https://cdn.vox-cdn.com/thumbor/nbPr2_q78xlRM17G7KoEePy1vIU=/0x0:4014x3000/920x0/filters:focal(0x0:4014x3000):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/24489038/_DSC9038.JPG.jpg; /* <-- Replace this with your own image path */
+  background-image: (https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png); /* <-- Replace this with your own image path */
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -790,7 +787,7 @@ body {
 
 /* Intro with background image */
 .contact-introduction {
-  background-image: https://cdn.vox-cdn.com/thumbor/nbPr2_q78xlRM17G7KoEePy1vIU=/0x0:4014x3000/920x0/filters:focal(0x0:4014x3000):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/24489038/_DSC9038.JPG.jpg; /* Replace with your actual image path */
+  background-image: (https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -1061,4 +1058,99 @@ form button:hover {
     text-align: center;
     padding: 1em;
     margin-top: 40px;
+}
+
+/* blog layout */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f6f2;
+  color: #3e2c23; /* Dark mocha text */
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5e7d6; /* Light beige */
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #5a3e36; /* Dark brown mocha */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #a85f3e; /* Warm highlight on hover */
+}
+
+/* Blog Main */
+.blog-main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Blog Headings */
+.blog-main h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #3e2c23;
+}
+
+.blog-main h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #4d382e;
+}
+
+/* Blog Paragraphs */
+.blog-main p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+/* Blog Images */
+.blog-main img {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: #f5e7d6;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #5a3e36;
 }
