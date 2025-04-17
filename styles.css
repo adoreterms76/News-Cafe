@@ -787,15 +787,16 @@ body {
 
 /* Intro with background image */
 .contact-introduction {
-  background-image: (https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png); /* Replace with your actual image path */
+  padding: 40px;
+  background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 4rem 2rem;
-  text-align: center;
-  color: white;
-  border-radius: 12px;
-  margin-bottom: 3rem;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
+
 
 .contact-introduction h1 {
   font-size: 2.5rem;
@@ -811,24 +812,21 @@ body {
 }
 
 /* Grid layout */
-/* Contact Row as Grid */
-.contact-row {
+/* Grid Layout for Info Sections */
+.contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  background-color: #fffaf5;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
-/* Style each section inside the grid */
-.contact-row > div,
-.contact-row form {
-  background-color: #fff;
-  padding: 1.5rem;
+/* Individual Grid Items */
+.contact-grid .info-box {
+  background-color: #fff8f2;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 /* Optional: Style form inputs */
 .contact-form input,
 .contact-form select,
@@ -884,10 +882,15 @@ body {
   text-decoration: underline;
 }
 
-/* Form Styles */
+/* Form Styling */
 .contact-form {
-  display: grid;
-  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff8f2;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .contact-form input,
