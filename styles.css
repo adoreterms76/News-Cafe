@@ -1054,7 +1054,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #e39e00;
+    background-color: #d7b49e;
 }
 
 /* Success message */
@@ -1343,7 +1343,7 @@ footer {
 }
 
 /* brunch-pro layout */
-/* Reset & Base Styling */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -1351,26 +1351,24 @@ footer {
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: #fdf6f0;
-  color: #4b2e2e;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf7f0; /* soft beige */
+  color: #3e2723; /* deep brown for text */
   line-height: 1.6;
-  padding: 20px;
+  padding-bottom: 50px;
 }
 
-/* Navigation Bar */
+/* Navigation */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #f5e7da;
+  justify-content: space-between;
+  background-color: #6d4c41; /* warm brown */
   padding: 15px 30px;
-  border-bottom: 2px solid #e0cfc2;
 }
 
-.navbar .logo-img {
-  height: 50px;
-  
+.logo-img {
+  height: 60px;
 }
 
 .nav-links {
@@ -1380,53 +1378,53 @@ body {
 }
 
 .nav-links li a {
-  color: #5d3a00 /* rich brown */
-    font weight: 600;
+  color: #fff8f0; /* light beige */
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-color: #c17c52; /* warm accentr */
+  color: #ffd8b1; /* pastel peach */
 }
 
-
-/* Blog Post Styling */
-.blog-post {
+/* Blog Post Section */
+main {
   max-width: 800px;
   margin: 40px auto;
-  text-align: center;
   padding: 20px;
-  background-color: #fffaf6;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: #fffaf5; /* light cream */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .blog-post h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #3d2618;
+  color: #4e342e; /* dark mocha */
 }
 
 .blog-post img {
-  max-width: 100%;
-  height: auto;
-  margin: 20px 0;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .blog-post p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #4a2e2e;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #5d4037; /* smooth brown */
 }
 
 /* Footer */
 footer {
+  background-color: #6d4c41; /* warm brown */
+  color: #fefefe;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  background-color: #f5e7da;
-  color: #5a3c2e;
-  font-size: 0.9em;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
