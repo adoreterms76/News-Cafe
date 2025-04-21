@@ -99,28 +99,31 @@ function prevSlide(slideshowId) {
 }
 
 // contact layout
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("enquiry-form");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-form");
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form from submitting normally
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission
 
-    // Collect form data (you can log or process it here if needed)
-    const name = document.getElementById("name").value;
-    const surname = document.getElementById("surname").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const reason = document.getElementById("reason").value;
-    const message = document.getElementById("message").value;
+    // Optional: Grab form values
+    const name = form.querySelector("input[placeholder='Name']").value.trim();
+    const email = form.querySelector("input[type='email']").value.trim();
+    const message = form.querySelector("textarea").value.trim();
 
-    // Show a success message (for now, just an alert)
-    alert(`Thank you, ${name}! Your enquiry has been received.`);
+    // Basic validation (you can expand this)
+    if (!name || !email || !message) {
+      alert("Please fill in all required fields.");
+      return;
+    }
 
-    // Optionally reset the form
+    // Simulate form submission (you can later hook this up to a real backend or email service)
+    alert("Thank you for your message! We'll get back to you soon.");
+
+    // Reset the form
     form.reset();
   });
 });
+
 
 
 // promos layout
