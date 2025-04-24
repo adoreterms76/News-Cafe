@@ -24,32 +24,72 @@
     </ul>
   </nav>
 
-  <!-- Header -->
-  <header class="section-header">
-    <h1>Start Your Day Right</h1>
-    <p>Our breakfast menu is a fresh twist on your morning favorites.</p>
+ <header>
+    <h1>Breakfast Menu</h1>
   </header>
 
-   <!--  Manual Slideshow: Café Images -->
-  <section class="slideshow" id="cafe-slideshow">
-    <img src="https://i.pinimg.com/736x/bd/f9/ed/bdf9ed9c22eef51001fe602d7e3584c2.jpg" alt="Coffee" class="slide active">
-    <img src="https://i.pinimg.com/736x/ae/47/57/ae475799bda9e9248a262fcaba52ffb4.jpg" alt="Coffe Menu 1" class="slide">
-    <img src="https://i.pinimg.com/736x/6b/b9/52/6bb9523267a410bbb89443d96831f3b1.jpg" alt="Breakfast" class="slide">
-    <img src="https://i.pinimg.com/736x/07/c3/b8/07c3b844c9f614d6ff3ecdaba935568a.jpg" alt="Breakfast Menu 1" class="slide">
-    <img src="https://i.pinimg.com/736x/3e/f8/de/3ef8dee87c1b7d146a87a369ef2bbfa9.jpg" alt="Breakfast Menu 2" class="slide">
-    <img src="https://i.pinimg.com/736x/6a/75/3f/6a753ff1075188e1f5e06ca0777bc256.jpg" alt="Breakfast Menu 3" class="slide">
-    <img src="https://i.pinimg.com/736x/01/83/b1/0183b1c9009dcedcc002c30a0a1d4a12.jpg" alt="Breakfast Menu 4" class="slide">
-    <img src="https://i.pinimg.com/736x/9c/99/1f/9c991f577c45e2e4742e628db5d6fb6e.jpg" alt="Granitas & Smoothies" class="slide"> 
-    <button onclick="prevSlide('cafe-slideshow')">&#10094;</button>
-    <button onclick="nextSlide('cafe-slideshow')">&#10095;</button>
-  </section>
+    <div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_01-scaled.jpg" alt="Breakfast"> 
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04257.jpg" alt="Classics">
+    </div>
+      
+       <!-- Slide 2 -->
+    <div class="slide active">
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_03-scaled.jpg" alt="Coffee"> 
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04253.jpg" alt="Caffe">
+    </div>
+
+       <!-- Slide 3 -->
+    <div class="slide active">
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04254.jpg" alt="Granitas & Smoothies"> 
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04255.jpg" alt="Omelettes">
+    </div>
+
+      <!-- Slide 3 -->
+    <div class="slide active"> 
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04256.jpg" alt="Bowls"> 
+    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_08-scaled.jpg" alt="News Cafe">
+    </div>
+      
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+
+  
     <!-- Menu Buttons Section -->
   <section class="menu-buttons">
     <a href="food.html" class="menu-btn">View Food Menu</a>
     <a href="liquids.html" class="menu-btn">View Liquids Menu</a>
-    
-  </div>
+   </div>
   </section>
 
+  <footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>News Café</h3>
+      <p>Serving vibes and breakfasts since 1995.</p>
+    </div>
+    <div class="footer-center">
+      <p><strong>Contact Us</strong></p>
+      <p>Email: info@newscafe.co.za</p>
+      <p>Phone: +267 123 4567</p>
+    </div>
+    <div class="footer-right">
+      <p><strong>Follow Us</strong></p>
+      <a href="https://www.instagram.com/newscafeza/?hl=en">Instagram</a> | 
+      <a href="https://www.facebook.com/NewsCafeZA">Facebook</a> | 
+      <a href="https://www.tiktok.com/@newscafeza?_t=ZM-8uEVwuFkf3d&_r=1">TikTok</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 News Café. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="breakfast.js"></script>
+  
 </body>
 </html>
