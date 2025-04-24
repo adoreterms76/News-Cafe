@@ -1,39 +1,32 @@
 // Index Layout
-function initSlideshow(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll(".slide");
-  const prevBtn = slideshow.querySelector("button:first-of-type");
-  const nextBtn = slideshow.querySelector("button:last-of-type");
-
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove("active");
-      if (i === index) {
-        slide.classList.add("active");
-      }
-    });
-  }
-
-  prevBtn.addEventListener("click", () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-  });
-
-  nextBtn.addEventListener("click", () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  });
-
-  showSlide(currentSlide); // Show the first slide initially
+<script>
+// Function to show the previous slide
+function prevSlide(slideshowId) {
+  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
+  let activeIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+  
+  // Hide the current active slide
+  slides[activeIndex].classList.remove('active');
+  
+  // Show the previous slide (looping to the end if at the first slide)
+  activeIndex = (activeIndex - 1 + slides.length) % slides.length;
+  slides[activeIndex].classList.add('active');
 }
 
-// Initialize both slideshows
-document.addEventListener("DOMContentLoaded", () => {
-  initSlideshow("cafe-slideshow");
-  initSlideshow("menu-slideshow");
-});
+// Function to show the next slide
+function nextSlide(slideshowId) {
+  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
+  let activeIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+  
+  // Hide the current active slide
+  slides[activeIndex].classList.remove('active');
+  
+  // Show the next slide (looping to the beginning if at the last slide)
+  activeIndex = (activeIndex + 1) % slides.length;
+  slides[activeIndex].classList.add('active');
+}
+</script>
+
 
 // breakfast layout
 let slideIndex = 0;
