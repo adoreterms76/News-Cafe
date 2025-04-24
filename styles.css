@@ -306,7 +306,7 @@ header h1 {
 }
 
 .slide img {
-  max-width: 48%;
+  max-width: 50%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -456,7 +456,7 @@ header h1 {
 }
 
 .slide img {
-  width: 48%;
+  width: 50%;
   border-radius: 10px;
   object-fit: cover;
   max-height: 500px;
