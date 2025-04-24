@@ -36,24 +36,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // breakfast layout
-function nextSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
 
-  slides[current].classList.remove('active');
-  const nextIndex = (current + 1) % slides.length;
-  slides[nextIndex].classList.add('active');
+// Show the first slide on load
+showSlide(slideIndex);
+
+// Function to show a slide based on index
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'flex' : 'none';
+  });
 }
 
-function prevSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+// Move to the next or previous slide
+function plusSlides(n) {
+  slideIndex += n;
 
-  slides[current].classList.remove('active');
-  const prevIndex = (current - 1 + slides.length) % slides.length;
-  slides[prevIndex].classList.add('active');
+  // Loop around if out of bounds
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  } else if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  }
+
+  showSlide(slideIndex);
 }
 
 // food layout
