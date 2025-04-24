@@ -1,31 +1,22 @@
 // Index Layout
-<script>
-// Function to show the previous slide
-function prevSlide(slideshowId) {
-  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
-  let activeIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-  
-  // Hide the current active slide
-  slides[activeIndex].classList.remove('active');
-  
-  // Show the previous slide (looping to the end if at the first slide)
-  activeIndex = (activeIndex - 1 + slides.length) % slides.length;
-  slides[activeIndex].classList.add('active');
-}
-
-// Function to show the next slide
-function nextSlide(slideshowId) {
-  const slides = document.querySelectorAll(`#${slideshowId} .slide`);
-  let activeIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-  
-  // Hide the current active slide
-  slides[activeIndex].classList.remove('active');
-  
-  // Show the next slide (looping to the beginning if at the last slide)
-  activeIndex = (activeIndex + 1) % slides.length;
-  slides[activeIndex].classList.add('active');
-}
-</script>
+// For café image slideshow
+let cafeIndex = 0;
+const cafeSlides = document.querySelectorAll('.cafe-slideshow .slide');
+const showCafeSlide = (index) => {
+  cafeSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+};
+document.getElementById('cafe-prev').addEventListener('click', () => {
+  cafeIndex = (cafeIndex - 1 + cafeSlides.length) % cafeSlides.length;
+  showCafeSlide(cafeIndex);
+});
+document.getElementById('cafe-next').addEventListener('click', () => {
+  cafeIndex = (cafeIndex + 1) % cafeSlides.length;
+  showCafeSlide(cafeIndex);
+});
+showCafeSlide(cafeIndex);
+ 
 
 
 // breakfast layout
