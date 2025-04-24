@@ -64,25 +64,33 @@ function plusSlides(n) {
 }
 
 // food layout
-function nextSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+let foodSlideIndex = 0;
+const foodSlides = document.querySelectorAll(".slide");
 
-  slides[current].classList.remove('active');
-  const nextIndex = (current + 1) % slides.length;
-  slides[nextIndex].classList.add('active');
+function showFoodSlide(index) {
+  foodSlides.forEach((slide, i) => {
+    slide.style.display = i === index ? "flex" : "none";
+  });
 }
 
-function prevSlide(slideshowId) {
-  const slideshow = document.getElementById(slideshowId);
-  const slides = slideshow.querySelectorAll('.slide');
-  let current = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+function plusSlides(n) {
+  foodSlideIndex += n;
 
-  slides[current].classList.remove('active');
-  const prevIndex = (current - 1 + slides.length) % slides.length;
-  slides[prevIndex].classList.add('active');
+  if (foodSlideIndex >= foodSlides.length) {
+    foodSlideIndex = 0;
+  } else if (foodSlideIndex < 0) {
+    foodSlideIndex = foodSlides.length - 1;
+  }
+
+  showFoodSlide(foodSlideIndex);
 }
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", () => {
+  showFoodSlide(foodSlideIndex);
+});
+
+
 
 // luqiuds layout
 function nextSlide(slideshowId) {
