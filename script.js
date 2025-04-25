@@ -1,25 +1,26 @@
 // Index Layout
-function nextSlide(sectionId) {
-  const section = document.getElementById(sectionId);
-  const slides = section.querySelectorAll(".slide");
-  const activeIndex = [...slides].findIndex(slide => slide.classList.contains("active"));
-  slides[activeIndex].classList.remove("active");
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
 
-  const nextIndex = (activeIndex + 1) % slides.length;
-  slides[nextIndex].classList.add("active");
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
 }
 
-function prevSlide(sectionId) {
-  const section = document.getElementById(sectionId);
-  const slides = section.querySelectorAll(".slide");
-  const activeIndex = [...slides].findIndex(slide => slide.classList.contains("active"));
-  slides[activeIndex].classList.remove("active");
-
-  const prevIndex = (activeIndex - 1 + slides.length) % slides.length;
-  slides[prevIndex].classList.add("active");
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
 }
 
- 
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(currentSlide);
+});
+
 
 // breakfast layout
 let slideIndex = 0;
