@@ -1,23 +1,25 @@
 // Index Layout
-// For café image slideshow
-let cafeIndex = 0;
-const cafeSlides = document.querySelectorAll('.cafe-slideshow .slide');
-const showCafeSlide = (index) => {
-  cafeSlides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-};
-document.getElementById('cafe-prev').addEventListener('click', () => {
-  cafeIndex = (cafeIndex - 1 + cafeSlides.length) % cafeSlides.length;
-  showCafeSlide(cafeIndex);
-});
-document.getElementById('cafe-next').addEventListener('click', () => {
-  cafeIndex = (cafeIndex + 1) % cafeSlides.length;
-  showCafeSlide(cafeIndex);
-});
-showCafeSlide(cafeIndex);
- 
+function nextSlide(sectionId) {
+  const section = document.getElementById(sectionId);
+  const slides = section.querySelectorAll(".slide");
+  const activeIndex = [...slides].findIndex(slide => slide.classList.contains("active"));
+  slides[activeIndex].classList.remove("active");
 
+  const nextIndex = (activeIndex + 1) % slides.length;
+  slides[nextIndex].classList.add("active");
+}
+
+function prevSlide(sectionId) {
+  const section = document.getElementById(sectionId);
+  const slides = section.querySelectorAll(".slide");
+  const activeIndex = [...slides].findIndex(slide => slide.classList.contains("active"));
+  slides[activeIndex].classList.remove("active");
+
+  const prevIndex = (activeIndex - 1 + slides.length) % slides.length;
+  slides[prevIndex].classList.add("active");
+}
+
+ 
 
 // breakfast layout
 let slideIndex = 0;
