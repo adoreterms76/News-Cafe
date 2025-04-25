@@ -57,51 +57,29 @@ body {
   font-weight: 600;
 }
 
-/* Slideshow */
-.slideshow {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  margin: 20px auto;
-  overflow: hidden;
+/* Café Gallery (Replaces slideshow) */
+.cafe-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
-.slide {
-  display: none;
-  width: 100%;
+.cafe-gallery img {
+  width: 300px;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.slide.active {
-  display: block;
+.cafe-gallery img:hover {
+  transform: scale(1.05);
 }
 
-.slideshow button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  font-size: 2em;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 2;
-  border-radius: 50%;
-}
 
-.slideshow button:hover {
-  background: #b3541e;
-}
-
-.slideshow button:first-of-type {
-  left: 10px;
-}
-
-.slideshow button:last-of-type {
-  right: 10px;
-}
 
 /* About Message */
 .about-message {
