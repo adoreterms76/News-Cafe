@@ -1,67 +1,61 @@
 /* index layout */
-/* General Reset */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #fff8f0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Navbar */
 .navbar {
-  background-color: #fff;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 20px;
 }
 
 .logo-img {
-  height: 60px;
-  border-radius: 5px;
+  height: 50px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+}
+
+.nav-links li {
+  margin-left: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-weight: bold;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #b3541e;
 }
 
 /* Welcome Section */
 .welcome-section {
-  background-color: #f4e9dc;
-  padding: 30px;
   text-align: center;
-  font-size: 1.5em;
-  font-weight: 600;
+  padding: 40px 20px;
+  background-color: #eee;
+  font-size: 1.5rem;
 }
 
+/* Unified Slideshow */
 .unified-slideshow {
   position: relative;
-  max-width: 50%;
-  margin: auto;
+  max-width: 1000px;
+  margin: 40px auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .slides-container {
@@ -70,26 +64,34 @@ body {
 }
 
 .slide {
-  min-width: 50%;
-  height: auto;
+  min-width: 100%;
+  height: 500px;
+  object-fit: cover;
   display: none;
+  border-radius: 10px;
 }
 
 .slide.active {
   display: block;
 }
 
+/* Navigation buttons */
 .unified-slideshow button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0,0,0,0.5);
-  color: white;
+  color: #fff;
+  font-size: 2rem;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  font-size: 18px;
+  padding: 10px;
   border-radius: 50%;
+  z-index: 10;
+}
+
+.unified-slideshow button:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .unified-slideshow button:first-of-type {
@@ -100,47 +102,31 @@ body {
   right: 10px;
 }
 
-
-/* About Message */
+/* About Section */
 .about-message {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #fdf6f1;
+  padding: 60px 20px;
 }
 
-.about-message h1 {
-  font-size: 2em;
-  color: #b3541e;
-  margin-bottom: 10px;
-}
-
-.about-message p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto 20px;
-}
-
-.btn {
+.about-message .btn {
   display: inline-block;
-  padding: 12px 25px;
-  background-color: #b3541e;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #111;
   color: #fff;
-  border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s;
+  border-radius: 5px;
 }
 
-.btn:hover {
-  background-color: #8e3c11;
-}
-
-/* Menu Images */
+/* Image Row */
 .image-row {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 30px 20px;
+  align-items: center;
+  margin: 40px auto;
+  gap: 20px;
   flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .image-row img {
@@ -151,57 +137,45 @@ body {
 /* Menu Teaser */
 .menu-teaser {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #fff2e6;
+  padding: 60px 20px;
 }
 
-.menu-teaser h2 {
-  font-size: 2em;
-  color: #b3541e;
-  margin-bottom: 10px;
-}
-
-.menu-teaser p {
-  max-width: 700px;
-  margin: 0 auto 20px;
+.menu-teaser .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: #f4f4f4;
-  padding: 30px 20px 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 60px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
   flex: 1;
-  min-width: 200px;
-}
-
-.footer-right a {
-  color: #f4f4f4;
-  margin: 0 5px;
-  text-decoration: none;
-}
-
-.footer-right a:hover {
-  text-decoration: underline;
+  min-width: 250px;
+  margin: 10px;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  font-size: 0.9em;
-  color: #aaa;
+  font-size: 0.9rem;
 }
 
 
