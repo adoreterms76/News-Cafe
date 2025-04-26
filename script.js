@@ -144,30 +144,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // promos layout
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("signup-form");
-  const emailInput = document.getElementById("email");
-  const successMessage = document.getElementById("success-message");
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const email = emailInput.value.trim();
-
-    // Basic email validation
-    if (!validateEmail(email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
-
-    // Simulate successful submission
-    successMessage.style.display = "block";
-    form.reset();
-  });
-
-  function validateEmail(email) {
-    // Simple email regex
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  }
-});
+<script>
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting to server
+        
+        // Show success message
+        document.getElementById('success-message').style.display = 'block';
+        
+        // Hide form
+        document.getElementById('signup-form').style.display = 'none';
+        
+        // Reset form (optional)
+        document.getElementById('signup-form').reset();
+    });
+</script>
