@@ -1227,6 +1227,30 @@ body {
     margin-top: 15px;
     font-weight: bold;
 }
+/* Success message styling */
+.newsletter-message {
+    color: green; /* Success message color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Space above the message */
+    text-align: center; /* Center the message */
+    background-color: #e0f7e0; /* Light green background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Initially hidden */
+}
+
+/* Optional: Style form after submission (if hidden) */
+#signup-form {
+    display: block; /* Ensure it's visible initially */
+    text-align: center;
+}
+
+/* Optional: Style the form when hidden */
+#signup-form.hidden {
+    display: none; /* Hide the form if you choose to do so */
+}
+
 
 
 /* blog layout */
