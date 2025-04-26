@@ -1,37 +1,40 @@
 // Index Layout
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
 
-function showSlide(index) {
-  // Hide all slides
-  slides.forEach(slide => {
-    slide.classList.remove('active');
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
 
-  // Wrap around if needed
-  if (index >= slides.length) {
-    currentSlide = 0;
-  } else if (index < 0) {
-    currentSlide = slides.length - 1;
-  } else {
-    currentSlide = index;
+  function showSlide(index) {
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+
+    if (index >= slides.length) {
+      currentSlide = 0;
+    } else if (index < 0) {
+      currentSlide = slides.length - 1;
+    } else {
+      currentSlide = index;
+    }
+
+    slides[currentSlide].classList.add('active');
   }
 
-  // Show the current slide
-  slides[currentSlide].classList.add('active');
-}
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
 
-function nextSlide() {
-  showSlide(currentSlide + 1);
-}
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
 
-function prevSlide() {
-  showSlide(currentSlide - 1);
-}
+  // Initialize
+  showSlide(currentSlide);
 
-// Initialize
-showSlide(currentSlide);
-
+  // Make nextSlide and prevSlide global so HTML buttons can call them
+  window.nextSlide = nextSlide;
+  window.prevSlide = prevSlide;
+});
 
 
 // breakfast layout
