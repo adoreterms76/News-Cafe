@@ -1,29 +1,37 @@
 // Index Layout
-
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
 function showSlide(index) {
-  slides.forEach((slide, i) => {
+  // Hide all slides
+  slides.forEach(slide => {
     slide.classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
-    }
   });
+
+  // Wrap around if needed
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  // Show the current slide
+  slides[currentSlide].classList.add('active');
 }
 
 function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
+  showSlide(currentSlide + 1);
 }
 
 function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
+  showSlide(currentSlide - 1);
 }
 
-// Auto-slide every 3 seconds
-setInterval(nextSlide, 3000);
+// Initialize
+showSlide(currentSlide);
+
 
 
 // breakfast layout
