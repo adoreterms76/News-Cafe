@@ -1115,151 +1115,119 @@ body {
 }
 
 /* promos layout */
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    text-align: center; /* Center text by default */
-}
-
-.navbar {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar .logo img {
-    height: 50px;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: center; /* Center navigation links */
-}
-
-.nav-links li {
-    margin: 0 1em;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
+/* Promo Section */
 .promo-title {
- padding: 40px;
-  background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
-}  
-
+    padding: 40px 0;
+    background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
 
 .promo-title h1 {
     font-size: 36px;
-    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .promo-title p {
     font-size: 18px;
     color: white;
+    margin-top: 10px;
 }
 
+/* Promo Section - General */
 .promo-section {
-    padding: 30px;
-    background-color: #ffeedd;
+    padding: 40px;
+    background-color: #fff9f0; /* Light background to contrast with title */
     margin: 20px 0;
-    display: inline-block;
-    width: 100%;
     text-align: center;
 }
 
-.promo-section h2 {
-    font-size: 28px;
-    color: #333;
+/* Promo Items */
+.promo-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .promo-item {
-    display: inline-block;
+    width: 300px;
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 30px; /* Bottom margin for spacing between rows */
+    background-color: #f9f9f9; /* Light background for each promo item */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 .promo-item img {
     width: 100%;
-    max-width: 400px;
     height: auto;
-    border-radius: 8px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd; /* Subtle line separating image and text */
 }
 
 .promo-item h3 {
     font-size: 22px;
-    color: #333;
-    margin-top: 10px;
+    color: #5c4033; /* Darker warm color for headings */
+    margin-top: 15px;
 }
 
 .promo-item p {
-    color: #555;
     font-size: 16px;
-    margin-top: 10px;
-}
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center; /* Ensure form elements are centered */
-}
-
-form input[type="email"] {
-    width: 100%;
+    color: #777; /* Soft gray text */
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
 }
 
-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #f8b400;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #7a5e42;
-}
-
-/* Success message */
-#success-message {
-    color: green;
-    font-size: 18px;
-    margin-top: 10px;
+/* For Evening Combo Section */
+.promo-item p {
+    color: #333;
     font-weight: bold;
 }
 
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 40px;
+/* Newsletter Form */
+.promo-section form {
+    max-width: 400px;
+    margin: 30px auto;
 }
+
+.promo-section input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.promo-section button {
+    padding: 12px;
+    width: 100%;
+    background-color: #5c4033;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promo-section button:hover {
+    background-color: #3e2d23;
+}
+
+/* Success Message */
+.newsletter-message {
+    font-size: 18px;
+    color: #5c4033;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 
 /* blog layout */
 /* General Reset */
