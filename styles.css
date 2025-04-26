@@ -59,7 +59,7 @@ body {
 
 .unified-slideshow {
   position: relative;
-  max-width: 100%;
+  max-width: 50%;
   margin: auto;
   overflow: hidden;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .slide {
-  min-width: 100%;
+  min-width: 50%;
   height: auto;
   display: none;
 }
