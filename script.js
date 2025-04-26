@@ -1,29 +1,28 @@
 // Index Layout
-let slideIndex = 0;
-let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.style.display = (i === index) ? 'block' : 'none';
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
   });
 }
 
 function nextSlide() {
-  slideIndex = (slideIndex + 1) % slides.length;
-  showSlide(slideIndex);
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
 }
 
 function prevSlide() {
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  showSlide(slideIndex);
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
 }
 
-// Auto-slide every 4 seconds
-setInterval(nextSlide, 4000);
-
-// Initial display
-showSlide(slideIndex);
-
+// Auto-slide every 3 seconds
+setInterval(nextSlide, 3000);
 
 
 // breakfast layout
