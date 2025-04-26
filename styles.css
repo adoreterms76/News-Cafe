@@ -823,10 +823,10 @@ body {
 
 /* Intro Section with Background Image */
 .intro-section {
-  background-image: url('https://lh3.googleusercontent.com/p/AF1QipOJnVyC73-_8yEbqYaQgssuHOZXC5sEEj-WU1CD=s680-w680-h510');
+  background-image: url('https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-gaborone-thumb.jpg');
   background-size: cover;
   background-position: center;
-  padding: 80px 20px;
+  padding: 80px 10px;
   color: white;
   text-align: center;
 }
@@ -848,7 +848,7 @@ body {
 
 /* About Sections */
 .about-section {
-  padding: 60px 20px;
+  padding: 80px 10px;
   max-width: 1000px;
   margin: auto;
 }
@@ -978,7 +978,7 @@ body {
 /* Intro with background image */
 .contact-introduction {
   padding: 40px;
-  background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
+  background-image: url('https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-gaborone-thumb.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
