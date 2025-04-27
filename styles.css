@@ -1115,141 +1115,202 @@ body {
 }
 
 /* promos layout */
-/* Promo Section */
-.promo-title {
-    padding: 40px 0;
-    background-image: url('https://newscafesouthbeach.com/wp-content/uploads/2023/03/newscafe8-300x225.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+}
+
+.navbar .logo-img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFB703;
+}
+
+/* Promo Title Section */
+.promo-title {
     text-align: center;
+    padding: 50px 20px 20px 20px;
 }
 
 .promo-title h1 {
-    font-size: 36px;
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 10px;
 }
 
 .promo-title p {
-    font-size: 18px;
-    color: white;
-    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666;
 }
 
-/* Promo Section - General */
+/* Promo Section */
 .promo-section {
-    padding: 40px;
-    background-color: #fff9f0; /* Light background to contrast with title */
-    margin: 20px 0;
-    text-align: center;
+    padding: 50px 20px;
 }
 
-/* Promo Items */
+.promo-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* Promo Row */
 .promo-row {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between items */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 30px;
+    flex-wrap: wrap; /* Responsive: allows wrap on smaller screens */
 }
 
+/* Promo Items */
 .promo-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
     width: 300px;
     text-align: center;
-    margin-bottom: 30px; /* Bottom margin for spacing between rows */
-    background-color: #f9f9f9; /* Light background for each promo item */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .promo-item img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 2px solid #ddd; /* Subtle line separating image and text */
+    height: 250px; /* Fixed height for all promo images */
+    object-fit: cover; /* Ensures images cover area without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .promo-item h3 {
-    font-size: 22px;
-    color: #5c4033; /* Darker warm color for headings */
-    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
 }
 
 .promo-item p {
-    font-size: 16px;
-    color: #777; /* Soft gray text */
-    padding: 10px;
+    font-size: 1rem;
+    color: #666;
 }
 
-/* For Evening Combo Section */
-.promo-item p {
-    color: #333;
-    font-weight: bold;
+.promo-item:hover {
+    transform: translateY(-5px);
 }
 
-/* Newsletter Form */
-.promo-section form {
-    max-width: 400px;
-    margin: 30px auto;
-}
-
-.promo-section input {
-    padding: 12px;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.promo-section button {
-    padding: 12px;
-    width: 100%;
-    background-color: #5c4033;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.promo-section button:hover {
-    background-color: #3e2d23;
-}
-
-/* Success Message */
-.newsletter-message {
-    font-size: 18px;
-    color: #5c4033;
-    margin-top: 15px;
-    font-weight: bold;
-}
-/* Success message styling */
-.newsletter-message {
-    color: green; /* Success message color */
-    font-size: 18px; /* Font size */
-    font-weight: bold; /* Bold text */
-    margin-top: 20px; /* Space above the message */
-    text-align: center; /* Center the message */
-    background-color: #e0f7e0; /* Light green background */
-    padding: 10px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    display: none; /* Initially hidden */
-}
-
-/* Optional: Style form after submission (if hidden) */
+/* Newsletter Section */
 #signup-form {
-    display: block; /* Ensure it's visible initially */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Optional: Style the form when hidden */
-#signup-form.hidden {
-    display: none; /* Hide the form if you choose to do so */
+#signup-form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
 }
+
+#signup-form button {
+    padding: 10px 20px;
+    background-color: #FFB703;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#signup-form button:hover {
+    background-color: #fb8500;
+}
+
+.newsletter-message {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-left h3, .footer-center p, .footer-right p {
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px;
+    font-size: 14px;
+}
+
 
 
 
