@@ -38,35 +38,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // breakfast layout
-let currentSlide = 0;
+function scrollImages(direction) {
+  const row = document.getElementById('imageRow');
+  const scrollAmount = 400; // Adjust scroll step
 
-function showSlide(index) {
-  const slides = document.querySelectorAll('.slide');
-  if (index >= slides.length) {
-    currentSlide = 0;
-  } else if (index < 0) {
-    currentSlide = slides.length - 1;
-  } else {
-    currentSlide = index;
-  }
-
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === currentSlide);
+  row.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
   });
 }
 
-document.querySelector('.prev').addEventListener('click', () => {
-  showSlide(currentSlide - 1);
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-  showSlide(currentSlide + 1);
-});
-
-// Initialize on page load
-window.addEventListener('DOMContentLoaded', () => {
-  showSlide(currentSlide);
-});
 
 
 // food layout
