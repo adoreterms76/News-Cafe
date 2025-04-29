@@ -4,10 +4,7 @@ const slides = document.querySelectorAll(".slide");
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) {
-      slide.classList.add("active");
-    }
+    slide.classList.toggle("active", i === index);
   });
 }
 
@@ -21,7 +18,6 @@ function prevSlide() {
   showSlide(slideIndex);
 }
 
-// Show the first slide on load
 document.addEventListener("DOMContentLoaded", () => {
   showSlide(slideIndex);
 });
