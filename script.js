@@ -1,25 +1,28 @@
 // Index Layout
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === index);
+document.addEventListener('DOMContentLoaded', function () {
+  const slidePairs = document.querySelectorAll('.slide-pair');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slidePairs.forEach((pair, i) => {
+      pair.classList.toggle('active', i === index);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slidePairs.length) % slidePairs.length;
+    showSlide(currentSlide);
   });
-}
 
-function nextSlide() {
-  slideIndex = (slideIndex + 1) % slides.length;
-  showSlide(slideIndex);
-}
+  nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slidePairs.length;
+    showSlide(currentSlide);
+  });
 
-function prevSlide() {
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  showSlide(slideIndex);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  showSlide(slideIndex);
+  showSlide(currentSlide); // Show initial slide
 });
 
 
