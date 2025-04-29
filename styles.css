@@ -358,8 +358,9 @@ header h1 {
 .slide {
   display: none;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .slide.active {
