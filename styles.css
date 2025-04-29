@@ -348,54 +348,47 @@ header h1 {
   color: #4d2e2e;
 }
 
-/* SLIDESHOW */
-.slideshow-container {
-  max-width: 1000px;
-  margin: 30px auto;
+.scroll-slideshow {
   position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px auto;
 }
 
-.slide {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: nowrap;
-}
-
-.slide.active {
+.image-row {
   display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
 }
 
-.slide img {
-  width: 48%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.image-row img {
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 8px;
 }
 
-/* SLIDESHOW ARROWS */
-.prev, .next {
+.scroll-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #3b2f2f;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  padding: 10px 15px;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
   cursor: pointer;
-  font-size: 18px;
-  border-radius: 50%;
   z-index: 10;
-  transition: background-color 0.3s ease;
 }
 
-.prev:hover, .next:hover {
-  background-color: #5c4747;
+.scroll-btn.left {
+  left: 0;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.scroll-btn.right {
+  right: 0;
+}
+
 
 /* PDF DOWNLOAD SECTION */
 .download-section {
