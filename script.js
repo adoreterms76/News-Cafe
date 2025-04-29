@@ -1,29 +1,26 @@
 // Index Layout
 
-document.addEventListener('DOMContentLoaded', function () {
-  const slidePairs = document.querySelectorAll('.slide-pair');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const slideContainers = document.querySelectorAll(".slides-container");
 
-  function showSlide(index) {
-    slidePairs.forEach((pair, i) => {
-      pair.classList.toggle('active', i === index);
+  slideContainers.forEach((container) => {
+    const prevButton = container.parentElement.querySelector(".prevBtn");
+    const nextButton = container.parentElement.querySelector(".nextBtn");
+
+    // Scroll amount per click (adjust as needed)
+    const scrollAmount = 320;
+
+    nextButton.addEventListener("click", () => {
+      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
-  }
 
-  prevBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slidePairs.length) % slidePairs.length;
-    showSlide(currentSlide);
+    prevButton.addEventListener("click", () => {
+      container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
   });
-
-  nextBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slidePairs.length;
-    showSlide(currentSlide);
-  });
-
-  showSlide(currentSlide); // Show initial slide
 });
+
+
 
 
 // breakfast layout
