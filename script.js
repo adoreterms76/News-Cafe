@@ -38,32 +38,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // breakfast layout
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
 
-// Show the first slide on load
-showSlide(slideIndex);
-
-// Function to show a slide based on index
 function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+
   slides.forEach((slide, i) => {
-    slide.style.display = i === index ? 'flex' : 'none';
+    slide.classList.toggle('active', i === currentSlide);
   });
 }
 
-// Move to the next or previous slide
-function plusSlides(n) {
-  slideIndex += n;
+document.querySelector('.prev').addEventListener('click', () => {
+  showSlide(currentSlide - 1);
+});
 
-  // Loop around if out of bounds
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  } else if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
-  }
+document.querySelector('.next').addEventListener('click', () => {
+  showSlide(currentSlide + 1);
+});
 
-  showSlide(slideIndex);
-}
+// Initialize on page load
+window.addEventListener('DOMContentLoaded', () => {
+  showSlide(currentSlide);
+});
+
 
 // food layout
 let foodSlideIndex = 0;
