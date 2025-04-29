@@ -1,39 +1,29 @@
 // Index Layout
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
 
-document.addEventListener("DOMContentLoaded", function() {
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slide');
-
-  function showSlide(index) {
-    slides.forEach(slide => {
-      slide.classList.remove('active');
-    });
-
-    if (index >= slides.length) {
-      currentSlide = 0;
-    } else if (index < 0) {
-      currentSlide = slides.length - 1;
-    } else {
-      currentSlide = index;
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
     }
+  });
+}
 
-    slides[currentSlide].classList.add('active');
-  }
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
 
-  function nextSlide() {
-    showSlide(currentSlide + 1);
-  }
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
 
-  function prevSlide() {
-    showSlide(currentSlide - 1);
-  }
-
-  // Initialize
-  showSlide(currentSlide);
-
-  // Make nextSlide and prevSlide global so HTML buttons can call them
-  window.nextSlide = nextSlide;
-  window.prevSlide = prevSlide;
+// Show the first slide on load
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(slideIndex);
 });
 
 
