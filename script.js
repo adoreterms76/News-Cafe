@@ -1,27 +1,3 @@
-// Index Layout
-
-document.addEventListener("DOMContentLoaded", function () {
-  const slideContainers = document.querySelectorAll(".slides-container");
-
-  slideContainers.forEach((container) => {
-    const prevButton = container.parentElement.querySelector(".prevBtn");
-    const nextButton = container.parentElement.querySelector(".nextBtn");
-
-    // Scroll amount per click (adjust as needed)
-    const scrollAmount = 320;
-
-    nextButton.addEventListener("click", () => {
-      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
-
-    prevButton.addEventListener("click", () => {
-      container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    });
-  });
-});
-
-
-
 
 // breakfast layout
 function scrollImages(direction) {
