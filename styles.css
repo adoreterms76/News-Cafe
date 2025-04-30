@@ -1,5 +1,6 @@
 /* index layout */
-/*Global reset */
+/* index layout */
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,6 @@ body {
 }
 
 .nav-links {
-  color: #333; 
   list-style: none;
   display: flex;
   gap: 25px;
@@ -37,14 +37,14 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: #f0f0f0; /* Improved contrast */
   font-weight: bold;
   font-size: 16px;
 }
 
 /* Welcome section */
 .welcome-section {
-  background-color: #ffffff; /* White background for contrast */
+  background-color: #ffffff;
   text-align: center;
   padding: 60px 20px;
 }
@@ -66,6 +66,12 @@ body {
   height: 100vh;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .Image-section img {
+    height: auto;
+  }
 }
 
 /* About message section */
@@ -96,6 +102,19 @@ body {
   font-weight: bold;
 }
 
+.about-message .btn:hover,
+.menu-teaser .btn:hover {
+  background-color: #b9838a; /* Slightly darker Dusty Rose */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-message .btn:focus,
+.menu-teaser .btn:focus {
+  outline: 2px solid #6A7F94;
+  outline-offset: 3px;
+}
+
 /* Image row gallery */
 .image-row {
   display: flex;
@@ -110,7 +129,7 @@ body {
   width: 200px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Menu teaser */
@@ -155,7 +174,9 @@ footer {
   gap: 30px;
 }
 
-.footer-left, .footer-center, .footer-right {
+.footer-left,
+.footer-center,
+.footer-right {
   flex: 1;
   min-width: 200px;
 }
@@ -164,10 +185,12 @@ footer {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 15px;
- 
 }
+
+
+
 
 
 
