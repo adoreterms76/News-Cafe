@@ -380,33 +380,28 @@ header h1 {
 
 /* Carousel Styles */
 /* Carousel */
-/* Carousel container */
 .carousel-inner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* Carousel item for individual slide */
 .carousel-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 10px;
-  flex-direction: row; /* Arrange images side by side */
 }
 
-/* Each image in the carousel */
 .carousel-item img {
-  width: 48%; /* Ensure two images fit on one slide */
-  height: auto; /* Automatically adjust height based on width */
-  object-fit: contain; /* Make sure the image fits without cropping */
-  max-height: 100%; /* Prevent image from stretching out of the container */
+  width: 48%; /* Adjust to fit two images per slide */
+  object-fit: contain; /* Ensures the full image is displayed without cropping */
   border-radius: 8px;
+  height: auto; /* Ensure the height scales naturally */
 }
 
 /* Optional: Adjust carousel height if necessary */
 .carousel {
-  height: 500px; /* Adjust to your preferred carousel height */
+  height: 800px; /* Adjust to your preferred carousel height */
 }
 
 /* Carousel control buttons */
