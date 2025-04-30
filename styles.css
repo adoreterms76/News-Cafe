@@ -379,18 +379,26 @@ header h1 {
 }
 
 /* Carousel Styles */
-.carousel-item {
+/* Carousel */
+.carousel-inner {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* Ensure images fit side by side */
-.carousel-item img {
-  width: 50%;
-  object-fit: cover;  /* Maintain aspect ratio and fill the space */
-  margin: 0 10px; /* Add spacing between images */
+.carousel-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
+
+.carousel-item img {
+  width: 48%; /* Adjust to fit two images per slide */
+  object-fit: contain; /* Ensures the full image is displayed without cropping */
+  border-radius: 8px;
+  height: auto; /* Ensure the height scales naturally */
+}
+
 
 /* Optional: Adjust the size of the carousel */
 .carousel {
