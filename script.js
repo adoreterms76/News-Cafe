@@ -1,6 +1,5 @@
 
 // breakfast layout
-// breakfast-slideshow.js
 
 document.addEventListener('DOMContentLoaded', () => {
   const imageRow = document.querySelector('.image-row');
