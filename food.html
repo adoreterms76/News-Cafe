@@ -28,49 +28,59 @@
     <h1>Food Menu</h1>
   </header>
 
-    <div class="slideshow-container">
-
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
     <!-- Slide 1 -->
-    <div class="slide active">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_01-scaled.jpg" alt="Food"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04252.jpg" alt="Cafe">
-    </div>
-      
-       <!-- Slide 2 -->
-    <div class="slide active">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_03-scaled.jpg" alt="Food Image"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04254.jpg" alt="Burgers">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="d-flex">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_01-scaled.jpg" class="d-block w-50" alt="Food">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04252.jpg" class="d-block w-50" alt="Classics - Cafe">
+      </div>
     </div>
 
-
-        <!-- Slide 3 -->
-    <div class="slide active">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_05-scaled.jpg" alt="Tapas & Plaeters"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04256.jpg" alt="Tapas">
+    <!-- Slide 2 -->
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="d-flex">
+        <img src="" class="d-block w-50" alt="Coffee - Breakfast 3">
+        <img src="" class="d-block w-50" alt="Caffe - Breakfast 4">
+      </div>
     </div>
 
-      <!-- Slide 4 -->
-    <div class="slide active">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_07-scaled.jpg" alt="Food Image"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04258.jpg" alt="Platters">
-    </div>
-      
-      <!-- Slide 5 -->
-    <div class="slide active"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04259.jpg" alt="Signature Steak"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-042510.jpg" alt="Grills & Favorites">
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="" class="d-block w-50" alt="Granitas & Smoothies - Breakfast 5">
+        <img src="" class="d-block w-50" alt="Omelettes - Breakfast 6">
+      </div>
     </div>
 
-       <!-- Slide 6 -->
-    <div class="slide active"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-042511.jpg" alt="Granitas"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_12-scaled.jpg" alt="News Cafe">
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-food-menu_april-2025_03-scaled.jpg" class="d-block w-50" alt="Bowls - Breakfast 7">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Main-Menu-Tappas-March-Price-Update-Digital-04254.jpg" class="d-block w-50" alt="News Cafe - Breakfast 8">
+      </div>
     </div>
-      
-    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button>
   </div>
 
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+    <!-- PDF Download -->
+<div class="download-section">
+  <a href="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-April-2025.pdf" class="pdf-button" target="_blank">Download As PDF</a>
+</div>
+  
   
     <!-- Menu Buttons Section -->
   <section class="menu-buttons">
