@@ -29,7 +29,6 @@ body {
 }
 
 .nav-links {
-  background-color: #C72C48;
   color: #333; 
   list-style: none;
   display: flex;
@@ -167,7 +166,7 @@ footer {
   font-size: 14px;
   border-top: 1px solid rgba(255,255,255,0.2);
   padding-top: 15px;
-  background-color: #C72C48;
+ 
 }
 
 
