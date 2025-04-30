@@ -1,14 +1,40 @@
 
 // breakfast layout
-function scrollImages(direction) {
-  const row = document.getElementById('imageRow');
-  const scrollAmount = 400; // Adjust scroll step
+// breakfast-slideshow.js
 
-  row.scrollBy({
-    left: direction * scrollAmount,
-    behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', () => {
+  const imageRow = document.querySelector('.image-row');
+  const images = document.querySelectorAll('.image-row img');
+  const leftBtn = document.querySelector('.scroll-btn.left');
+  const rightBtn = document.querySelector('.scroll-btn.right');
+
+  const imagesPerSlide = 2;
+  const totalSlides = Math.ceil(images.length / imagesPerSlide);
+  let currentSlide = 0;
+
+  function updateSlidePosition() {
+    const slideWidth = images[0].offsetWidth + 20; // image width + gap
+    const offset = currentSlide * slideWidth * imagesPerSlide;
+    imageRow.style.transform = `translateX(-${offset}px)`;
+  }
+
+  leftBtn.addEventListener('click', () => {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlidePosition();
+    }
   });
-}
+
+  rightBtn.addEventListener('click', () => {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateSlidePosition();
+    }
+  });
+
+  window.addEventListener('resize', updateSlidePosition);
+});
+
 
 
 
