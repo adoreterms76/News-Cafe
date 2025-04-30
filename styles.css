@@ -393,7 +393,7 @@ header h1 {
 }
 
 .carousel-item img {
-  width: 48%; /* Adjust to fit two images per slide */
+  width: 60%; /* Adjust to fit two images per slide */
   object-fit: contain; /* Ensures the full image is displayed without cropping */
   border-radius: 8px;
   height: 1000; /* Ensure the height scales naturally */
@@ -401,7 +401,7 @@ header h1 {
 
 /* Optional: Adjust carousel height if necessary */
 .carousel {
-  height: 800px; /* Adjust to your preferred carousel height */
+  height: 1000px; /* Adjust to your preferred carousel height */
 }
 
 /* Carousel control buttons */
