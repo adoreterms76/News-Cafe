@@ -1,6 +1,5 @@
 
 // breakfast layout
-
 document.addEventListener('DOMContentLoaded', () => {
   const imageRow = document.querySelector('.image-row');
   const images = document.querySelectorAll('.image-row img');
@@ -8,11 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const rightBtn = document.querySelector('.scroll-btn.right');
 
   const imagesPerSlide = 2;
-  const totalSlides = Math.ceil(images.length / imagesPerSlide);
   let currentSlide = 0;
 
+  function getSlideWidth() {
+    if (images.length === 0) return 0;
+    return images[0].offsetWidth + 20; // include gap
+  }
+
   function updateSlidePosition() {
-    const slideWidth = images[0].offsetWidth + 20; // image width + gap
+    const slideWidth = getSlideWidth();
     const offset = currentSlide * slideWidth * imagesPerSlide;
     imageRow.style.transform = `translateX(-${offset}px)`;
   }
@@ -25,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   rightBtn.addEventListener('click', () => {
-    if (currentSlide < totalSlides - 1) {
+    const maxSlide = Math.ceil(images.length / imagesPerSlide) - 1;
+    if (currentSlide < maxSlide) {
       currentSlide++;
       updateSlidePosition();
     }
@@ -33,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('resize', updateSlidePosition);
 });
-
 
 
 
