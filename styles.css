@@ -381,41 +381,28 @@ header h1 {
 /* Slideshow */
 .slideshow-container {
   position: relative;
-  max-width: 1000px;
-  margin: 30px auto;
   overflow: hidden;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 10px;
+  max-width: 100%;
 }
 
 .image-row {
   display: flex;
-  transition: transform 0.5s ease-in-out;
   gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
-.image-row img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Manual Scroll Buttons */
 .scroll-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #D3A6A1; /* Dusty Rose */
-  color: white;
+  background-color: #D3A6A1;
   border: none;
-  padding: 12px;
+  color: white;
+  padding: 10px 15px;
   cursor: pointer;
-  border-radius: 50%;
   font-size: 24px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .scroll-btn.left {
@@ -425,6 +412,7 @@ header h1 {
 .scroll-btn.right {
   right: 10px;
 }
+
 
 /* PDF Download Section */
 .download-section {
