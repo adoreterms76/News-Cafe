@@ -396,7 +396,7 @@ header h1 {
   width: 48%; /* Adjust to fit two images per slide */
   object-fit: contain; /* Ensures the full image is displayed without cropping */
   border-radius: 8px;
-  height: 800; /* Ensure the height scales naturally */
+  height: 1000; /* Ensure the height scales naturally */
 }
 
 /* Optional: Adjust carousel height if necessary */
