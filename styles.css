@@ -378,39 +378,36 @@ header h1 {
   font-size: 42px;
 }
 
-/* Slideshow */
-.slideshow-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.image-row {
+/* Carousel Styles */
+.carousel-item {
   display: flex;
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
+  justify-content: center;
+  align-items: center;
 }
 
-.scroll-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #D3A6A1;
-  border: none;
-  color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 1;
+/* Ensure images fit side by side */
+.carousel-item img {
+  width: 50%;
+  object-fit: cover;  /* Maintain aspect ratio and fill the space */
+  margin: 0 10px; /* Add spacing between images */
 }
 
-.scroll-btn.left {
-  left: 10px;
+/* Optional: Adjust the size of the carousel */
+.carousel {
+  max-width: 100%;  /* Ensure it fits within its container */
+  margin: 0 auto;  /* Center the carousel */
 }
 
-.scroll-btn.right {
-  right: 10px;
+/* Carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for controls */
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);  /* Make the icon white for better visibility */
 }
 
 
