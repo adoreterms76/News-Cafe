@@ -393,22 +393,22 @@ header h1 {
 }
 
 .carousel-item img {
-  width: 60%; /* Adjust to fit two images per slide */
+  width: 30%; /* Adjust to fit two images per slide */
   object-fit: contain; /* Ensures the full image is displayed without cropping */
   border-radius: 8px;
-  height: 1000; /* Ensure the height scales naturally */
+  height: 200; /* Ensure the height scales naturally */
 }
 
 /* Optional: Adjust carousel height if necessary */
 .carousel {
-  height: 1000px; /* Adjust to your preferred carousel height */
+  height: 200px; /* Adjust to your preferred carousel height */
 }
 
 /* Carousel control buttons */
 .carousel-control-prev,
 .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for controls */
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .carousel-control-prev-icon,
