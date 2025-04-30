@@ -26,27 +26,52 @@
  <header>
     <h1>Breakfast Menu</h1>
   </header>
-
-      <!-- Slideshow Container -->
-    <div class="slideshow-container">
-      
-
-    <div class="slideshow-container scroll-slideshow">
-    <div class="image-row" id="imageRow">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_01-scaled.jpg" alt="Breakfast 1"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04257.jpg" alt="Classics - Breakfast 2 ">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_03-scaled.jpg" alt="Coffee - Breakfast 3"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04253.jpg" alt="Caffe - Breakfast 4">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04254.jpg" alt="Granitas & Smoothies - Breakfast 5"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04255.jpg" alt="Omelettes - Breakfast 6">
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04256.jpg" alt="Bowls - Breakfast 7"> 
-    <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_08-scaled.jpg" alt="News Cafe - Breakfast 8">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="d-flex">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_01-scaled.jpg" class="d-block w-50" alt="Breakfast 1">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04257.jpg" class="d-block w-50" alt="Classics - Breakfast 2">
+      </div>
     </div>
-      
-     <!-- Scroll Buttons -->
-  <button class="scroll-btn left" onclick="scrollImages(-1)">&#10094;</button>
-  <button class="scroll-btn right" onclick="scrollImages(1)">&#10095;</button>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="d-flex">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_01-scaled.jpg" class="d-block w-50" alt="Coffee - Breakfast 3">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04257.jpg" class="d-block w-50" alt="Caffe - Breakfast 4">
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04254.jpg" class="d-block w-50" alt="Granitas & Smoothies - Breakfast 5">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04255.jpg" class="d-block w-50" alt="Omelettes - Breakfast 6">
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="d-flex">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/NC-Breakfast-Menu-Coffee-March-Price-Update-04256.jpg" class="d-block w-50" alt="Bowls - Breakfast 7">
+        <img src="https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-breakfast-menu_april-2025_08-scaled.jpg" class="d-block w-50" alt="News Cafe - Breakfast 8">
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+
 
 
     <!-- PDF Download -->
