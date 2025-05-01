@@ -48,7 +48,7 @@ body {
   object-fit: cover;
   display: block;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 @media (max-width: 768px) {
@@ -367,6 +367,7 @@ header h1 {
 .carousel-inner img {
   height: auto;
   object-fit: cover;
+  gap: 5px;
 }
 
 /* Download Button */
@@ -492,6 +493,7 @@ header h1 {
 .carousel-item img {
   object-fit: cover;
   height: 500px;
+  gap: 5px;
 }
 
 @media (max-width: 768px) {
