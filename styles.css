@@ -883,7 +883,7 @@ footer {
 
 
 /* about layout */
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -892,18 +892,17 @@ footer {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fffdf9;
-  color: #333;
+  background-color: var(--white);
+  color: var(--dark);
   line-height: 1.6;
 }
 
-/* Navbar */
+/* Navigation Bar */
 .navbar {
-  background-color: #111;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--slate-blue);
   padding: 1rem 2rem;
 }
 
@@ -914,123 +913,116 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
-.nav-links li a {
-  color: white;
+.nav-links a {
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  color: var(--white);
+  font-weight: 500;
 }
 
-.nav-links li a:hover {
-  color: #ffa500;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-/* Intro Section with Background Image */
+/* Intro Section */
 .intro-section {
-  background-image: url('https://www.newscafe.co.za/wp-content/uploads/2025/04/news-cafe-gaborone-thumb.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 80px 10px;
-  color: white;
   text-align: center;
+  background-color: var(--misty-lavender);
+  color: var(--white);
+  padding: 3rem 1rem;
 }
 
 .intro-section h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .intro-section p {
-  font-size: 1.2rem;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
-  background-color: rgba(0,0,0,0.4);
-  padding: 20px;
-  border-radius: 10px;
+  font-size: 1.1rem;
 }
 
-/* About Sections */
-.about-section {
-  padding: 80px 10px;
+/* Enlarged Top Image */
+.about-img {
+  width: 100%;
   max-width: 1000px;
-  margin: auto;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+/* About Section Containers */
+.about-section {
+  background-color: var(--dusty-rose);
+  color: var(--dark);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-section.alt {
+  background-color: var(--smoky-mauve);
 }
 
 .about-section h2 {
   font-size: 2rem;
-  margin-bottom: 15px;
-  color: #222;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .about-section p {
-  margin-bottom: 15px;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.about-section.alt {
-  background-color: #f9f9f9;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Footer */
 footer {
-  background-color: #111;
-  color: white;
-  padding: 30px 20px;
+  background-color: var(--slate-blue);
+  color: var(--white);
+  padding: 2rem 1rem;
+  margin-top: 3rem;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  text-align: center;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.footer-container div {
-  margin: 10px;
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 250px;
 }
 
-.footer-container a {
-  color: #ffa500;
+.footer-right a {
+  color: var(--white);
   text-decoration: none;
   margin: 0 5px;
 }
 
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
 .footer-bottom {
   text-align: center;
-  padding-top: 10px;
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
   font-size: 0.9rem;
-  border-top: 1px solid #444;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .intro-section h1 {
-    font-size: 2.2rem;
-  }
-
-  .intro-section p {
-    font-size: 1rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
 
 /* contact layout */
 /* Reset & Base Styles */
