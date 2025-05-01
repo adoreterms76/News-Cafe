@@ -41,24 +41,6 @@ body {
   font-size: 16px;
 }
 
-/* Welcome section */
-.welcome-section {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.welcome-section h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
-  color: #6A7F94; /* Slate Blue */
-}
-
-.welcome-section p {
-  font-size: 20px;
-  color: #333;
-}
-
 /* Main image section (full screen) */
 .Image-section img {
   width: 100%;
@@ -281,8 +263,7 @@ body {
 }
 
 /* Buttons */
-.btn {
-  display: inline-block;
+.menu-btn {
   padding: 12px 24px;
   background-color: #D3A6A1; /* Dusty Rose */
   color: white;
@@ -290,10 +271,11 @@ body {
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
 }
-
-.btn:hover {
-  background-color: #b27b87;
+.menu-btn:hover {
+  background-color: #b27b87; /* Slightly darker on hover */
   cursor: pointer;
 }
 
