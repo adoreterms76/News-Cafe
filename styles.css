@@ -276,7 +276,7 @@ body {
   margin-top: 10px;
 }
 .menu-btn:hover {
-  background-color: #b27b87; /* Slightly darker on hover */
+  background-color: #b9838a; /* Slightly darker Dusty Rose */
   cursor: pointer;
 }
 
@@ -369,25 +369,25 @@ header h1 {
 .carousel-inner {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .carousel-item {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .carousel-item img {
-  width: 30%; /* Adjust to fit two images per slide */
+  width: 50%; /* Adjust to fit two images per slide */
   object-fit: contain; /* Ensures the full image is displayed without cropping */
-  border-radius: 8px;
-  height: 200; /* Ensure the height scales naturally */
+  border-radius: 10px;
+  height: 300; /* Ensure the height scales naturally */
 }
 
 /* Optional: Adjust carousel height if necessary */
 .carousel {
-  height: 200px; /* Adjust to your preferred carousel height */
+  height: 300px; /* Adjust to your preferred carousel height */
 }
 
 /* Carousel control buttons */
