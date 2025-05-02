@@ -834,27 +834,28 @@ footer {
 
 
 /* about layout */
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--white);
-  color: var(--dark);
   line-height: 1.6;
+  background-color: #F6F4F8;
+  color: #333;
 }
 
-/* Navigation Bar */
+/* Navbar */
 .navbar {
+  background-color: #6A7F94; /* Slate Blue */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--slate-blue);
-  padding: 1rem 2rem;
+  padding: 15px 30px;
 }
 
 .logo-img {
@@ -864,101 +865,100 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--white);
+  color: white;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #D8A7B1; /* Smoky Mauve */
 }
 
-/* Intro Section */
+/* Intro Section with Background Image */
 .intro-section {
+  background: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  color: white;
   text-align: center;
-  background-color: var(--misty-lavender);
-  color: var(--white);
-  padding: 3rem 1rem;
+  padding: 100px 20px 80px;
 }
 
 .intro-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .intro-section p {
+  font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto;
-  font-size: 1.1rem;
+  background-color: rgba(106, 127, 148, 0.7); /* Slate Blue overlay */
+  padding: 15px 20px;
+  border-radius: 10px;
 }
 
-/* Enlarged Top Image */
-.about-img {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-  border-radius: 12px;
-}
-
-/* About Section Containers */
+/* About Sections */
 .about-section {
-  background-color: var(--dusty-rose);
-  color: var(--dark);
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: rgba(211, 166, 161, 0.85); /* Semi-transparent Dusty Rose */
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .about-section.alt {
-  background-color: var(--smoky-mauve);
+  background-color: rgba(179, 160, 214, 0.85); /* Semi-transparent Misty Lavender */
 }
 
 .about-section h2 {
+  color: #6A7F94; /* Slate Blue */
+  margin-bottom: 20px;
   font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
 }
 
 .about-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
-  background-color: var(--slate-blue);
-  color: var(--white);
-  padding: 2rem 1rem;
-  margin-top: 3rem;
+  background-color: #6A7F94; /* Slate Blue */
+  color: white;
+  padding: 30px 20px 10px;
+  margin-top: 40px;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 20px;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  flex: 1 1 250px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h3,
+.footer p,
+.footer strong {
+  margin-bottom: 10px;
 }
 
 .footer-right a {
-  color: var(--white);
+  color: #D8A7B1; /* Smoky Mauve */
   text-decoration: none;
   margin: 0 5px;
 }
@@ -969,11 +969,12 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 1rem;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
+  padding: 10px 0;
   font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
 }
+
 
 /* contact layout */
 /* Reset & Base Styles */
