@@ -381,6 +381,11 @@ header h1 {
   object-fit: cover;
 }
 
+.menu-gallery {
+  display: flex;
+}
+
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: var(--secondary);
@@ -526,6 +531,11 @@ header h1 {
   max-height: 500px;
   object-fit: cover;
 }
+
+.menu-gallery {
+  display: flex;
+}
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -677,6 +687,11 @@ header h1 {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+.menu-gallery {
+  display: flex;
+}
+
 
 /* Carousel Buttons */
 .carousel-control-prev-icon,
