@@ -897,29 +897,29 @@ body {
   font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto;
-  background-color: rgba(106, 127, 148, 0.7); /* Slate Blue overlay */
+  background-color: white;
   padding: 15px 20px;
   border-radius: 10px;
 }
 
 /* About Sections */
 .about-section {
-  background-color: rgba(211, 166, 161, 0.85); /* Semi-transparent Dusty Rose */
-  max-width: 90%;
-  margin: 40px auto;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  max-width: 95%;
+  margin: 50px auto;
+  padding: 60px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
 .about-section.alt {
-  background-color: rgba(179, 160, 214, 0.85); /* Semi-transparent Misty Lavender */
+  background-color: white;
 }
 
 .about-section h2 {
   color: #6A7F94; /* Slate Blue */
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .about-section p {
@@ -1083,7 +1083,7 @@ body {
 
 /* Style the submit button */
 .contact-form button {
-  background-color: #3e2f1c;
+ background-color: #B3A0D6; /* Misty Lavender */
   color: #fff;
   border: none;
   padding: 0.8rem 1.2rem;
@@ -1093,7 +1093,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #7a5e42;
+  background-color: #B3A0D6; /* Misty Lavender */
 }
 
 
@@ -1277,6 +1277,8 @@ body {
 .promo-item p {
     font-size: 1rem;
     color: #666;
+   text-align: center;
+  
 }
 
 .promo-item:hover {
@@ -1300,7 +1302,7 @@ body {
 
 #signup-form button {
     padding: 10px 20px;
-    background-color: #FFB703;
+   background-color: #B3A0D6; /* Misty Lavender */
     color: #fff;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -1310,7 +1312,7 @@ body {
 }
 
 #signup-form button:hover {
-    background-color: #fb8500;
+  background-color: #B3A0D6; /* Misty Lavender */ 
 }
 
 .newsletter-message {
