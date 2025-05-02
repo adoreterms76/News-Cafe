@@ -374,24 +374,41 @@ header h1 {
 }
 
 /* Carousel */
-.carousel-inner img {
-  border-radius: 10px;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
+.carousel-inner {
+  margin: 20px auto;
+  max-width: 1000px;
 }
 
-.menu-gallery {
-  display: flex;
+.carousel-item {
+  text-align: center;
 }
 
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: var(--secondary);
-  border-radius: 50%;
+.image-row {
   padding: 10px;
 }
+
+.image-row img {
+  max-height: 400px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Carousel Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #B3A0D6; /* Misty Lavender */
+  border-radius: 50%;
+  padding: 15px;
+  
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
 
 /* Download Button */
 .download-section {
@@ -525,23 +542,44 @@ header h1 {
   color: #6A7F94;
 }
 
+
 /* Carousel */
-.carousel-inner img {
+.carousel-inner {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.image-row {
+  padding: 10px;
+}
+
+.image-row img {
+  max-height: 400px;
+  width: auto;
   border-radius: 10px;
-  max-height: 500px;
-  object-fit: cover;
-}
-
-.menu-gallery {
-  display: flex;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 
+/* Carousel Buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #6A7F94;
+  background-color: #B3A0D6; /* Misty Lavender */
   border-radius: 50%;
+  padding: 15px;
+  
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+
 
 /* Download Button */
 .download-section {
@@ -676,20 +714,24 @@ header h1 {
 }
 
 /* Carousel */
-.carousel {
-  margin: 40px auto;
-  max-width: 1200px;
+.carousel-inner {
+  margin: 20px auto;
+  max-width: 1000px;
 }
 
-.carousel-inner img {
-  max-height: 500px;
-  object-fit: contain;
+.carousel-item {
+  text-align: center;
+}
+
+.image-row {
+  padding: 10px;
+}
+
+.image-row img {
+  max-height: 400px;
+  width: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.menu-gallery {
-  display: flex;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 
@@ -698,7 +740,13 @@ header h1 {
 .carousel-control-next-icon {
   background-color: #B3A0D6; /* Misty Lavender */
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
+  
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
 }
 
 /* PDF Download Section */
