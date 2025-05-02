@@ -905,7 +905,7 @@ body {
 /* About Sections */
 .about-section {
   background-color: white;
-  max-width: 95%;
+  max-width: 100%;
   margin: 50px auto;
   padding: 60px;
   border-radius: 25px;
@@ -1152,7 +1152,7 @@ body {
 
 .contact-form button {
   padding: 0.8rem 1.5rem;
-  background-color: #3e2f1c;
+  background-color: #B3A0D6; /* Misty Lavender */
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -1162,7 +1162,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #7a5e42;
+  background-color: #B3A0D6; /* Misty Lavender */
 }
 
 /* promos layout */
@@ -1288,7 +1288,7 @@ body {
 /* Newsletter Section */
 #signup-form {
     display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 20px;
 }
 
