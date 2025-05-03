@@ -278,7 +278,7 @@ body {
 /* Buttons */
 .menu-btn {
   padding: 12px 24px;
-  background-color: #D3A6A1; /* Dusty Rose */
+  background-color: #B3A0D6;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -288,7 +288,7 @@ body {
   margin-top: 10px;
 }
 .menu-btn:hover {
-  background-color: #b9838a; /* Slightly darker Dusty Rose */
+  background-color: #a28ec7;
   cursor: pointer;
 }
 
@@ -407,7 +407,7 @@ header h1 {
 /* Carousel Buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #B3A0D6; /* Misty Lavender */
+  background-color: #B3A0D6;
   border-radius: 50%;
   padding: 15px;
   
@@ -578,7 +578,7 @@ header h1 {
 /* Carousel Buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #B3A0D6; /* Misty Lavender */
+  background-color: #B3A0D6;
   border-radius: 50%;
   padding: 15px;
   
@@ -753,7 +753,7 @@ header h1 {
 /* Carousel Buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #B3A0D6; /* Misty Lavender */
+  background-color: #B3A0D6;
   border-radius: 50%;
   padding: 15px;
   
@@ -1252,9 +1252,16 @@ body {
   text-decoration: underline;
 }
 
+/* Headings */
+.heading-slateblue {
+  color: #6A7F94;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 /* Promo Title */
 .promo-title {
-  background-color: #F8F8F8; /* optional light background */
+  background-color: #D8A7B1; /* Smoky Mauve */
   color: #6A7F94; /* Slate Blue for main heading */
   text-align: center;
   padding: 60px 20px;
@@ -1345,17 +1352,18 @@ body {
 }
 
 .newsletter-form button {
-  background-color: #6A7F94;
-  color: white;
+ background-color: #B3A0D6;
   border: none;
-  padding: 12px 24px;
-  font-size: 1em;
-  border-radius: 6px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease; 
 }
 
 .newsletter-form button:hover {
-  background-color: #5a6f80;
+  background-color: #a28ec7;
 }
 
 .newsletter-message {
@@ -1364,7 +1372,7 @@ body {
   margin-top: 15px;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
   background-color: #6A7F94;
   color: white;
