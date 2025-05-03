@@ -42,21 +42,67 @@ body {
   text-decoration: underline;
 }
 
-/* Main image section (full screen) */
-.Image-section img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  display: block;
-  padding: 20px;
-  margin-top: 40px;
+/* Carousel Container */
+.carousel {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Carousel Inner Items */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Add hover zoom effect */
+.carousel-inner img:hover {
+  transform: scale(1.02);
+}
+
+/* Carousel Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  background-color: rgba(106, 127, 148, 0.5); /* Slate Blue with transparency */
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-next {
+  border-radius: 8px 0 0 8px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(106, 127, 148, 0.8);
+}
+
+/* Carousel Icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50% 50%;
+  filter: invert(1); /* Make icons white */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .Image-section img {
-    height: auto;
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
   }
 }
+
 
 /* About message section */
 .about-message {
