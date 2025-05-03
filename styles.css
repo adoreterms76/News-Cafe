@@ -1252,34 +1252,36 @@ body {
   text-decoration: underline;
 }
 
-/* Promo Title Section */
+/* Promo Title */
 .promo-title {
-    text-align: center;
-    padding: 60px 30px 30px 30px;
+  background-color: #F8F8F8; /* optional light background */
+  color: #6A7F94; /* Slate Blue for main heading */
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .promo-title h1 {
-    font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #6A7F94; /* Ensures h1 uses the brand heading color */
 }
 
 .promo-title p {
-    font-size: 1.2rem;
-    color: #666;
+  font-size: 1.2em;
+  color: #B3A0D6; /* Misty Lavender as a subtle complementary subtitle */
 }
 
 /* Promo Section */
 .promo-section {
-    padding: 50px 20px;
+  background-color: white;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
-.promo-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #444;
-}
 
 /* Promo Row */
 .promo-row {
@@ -1310,7 +1312,7 @@ body {
 
 .promo-item h3 {
     font-size: 1.5rem;
-    color: #222;
+    color: #B3A0D6;
     margin-bottom: 10px;
 }
 
@@ -1327,39 +1329,39 @@ body {
 
 /* Newsletter Section */
 #signup-form {
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
+   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 #signup-form input[type="email"] {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
+   padding: 12px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
-#signup-form button {
-    padding: 10px 20px;
-   background-color: #B3A0D6; /* Misty Lavender */
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+.newsletter-form button {
+  background-color: #6A7F94;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-#signup-form button:hover {
-  background-color: #B3A0D6; /* Misty Lavender */ 
+.newsletter-form button:hover {
+  background-color: #5a6f80;
 }
 
 .newsletter-message {
-    text-align: center;
-    margin-top: 20px;
-    color: green;
-    font-weight: bold;
+  color: #6A7F94;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 /* Footer Styles */
