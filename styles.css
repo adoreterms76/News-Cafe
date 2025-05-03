@@ -428,83 +428,20 @@ header h1 {
   font-size: 2.5rem;
 }
 
-/* Carousel Wrapper */
-#BreakfastCarousel {
-  max-width: 1200px;
-  margin: 40px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-  background-color: #fff;
-  padding: 10px;
-}
-
-/* Horizontal Image Row Styling */
-.image-row,
-.menu-gallery {
+.image-row {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Images in Row */
-.image-row img,
-.menu-gallery img {
-  max-width: 45%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.image-row img {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
 }
-
-.image-row img:hover,
-.menu-gallery img:hover {
-  transform: scale(1.03);
-}
-
-/* Carousel Controls */
-.carousel-control-prev,
-.carousel-control-next {
-  width: 6%;
-  background-color: rgba(106, 127, 148, 0.6); /* Slate Blue tone */
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(106, 127, 148, 0.9);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-  background-size: 50% 50%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .image-row img,
-  .menu-gallery img {
-    max-width: 90%;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 12%;
-  }
-
-  .image-row,
-  .menu-gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 
 
 /* Download Button */
@@ -795,40 +732,19 @@ header h1 {
   margin: 0;
 }
 
-/* Carousel */
-.carousel-inner {
-  margin: 20px auto;
-  max-width: 1000px;
-}
-
-.carousel-item {
-  text-align: center;
-}
-
 .image-row {
-  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-row img {
   max-height: 400px;
   width: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-
-/* Carousel Buttons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #B3A0D6;
-  border-radius: 50%;
-  padding: 15px;
-  
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
+  object-fit: contain;
 }
 
 /* PDF Download Section */
