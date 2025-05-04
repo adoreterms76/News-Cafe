@@ -373,13 +373,11 @@ body {
 /* Header */
 header {
   text-align: center;
-  margin: 2rem 0;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  color: #6A7F94;
 }
 
-header h1 {
-  color: var(--primary);
-  font-size: 2.5rem;
-}
 
 .image-row {
   display: flex;
@@ -391,7 +389,7 @@ header h1 {
 }
 
 .image-row img {
-  max-height: 400px;
+  max-height: 500px;
   width: auto;
   object-fit: contain;
 }
