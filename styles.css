@@ -374,6 +374,7 @@ header {
 }
 
 
+
 .image-row {
   display: flex;
   flex-wrap: nowrap !important;
@@ -384,7 +385,7 @@ header {
 }
 
 .image-row img {
-  max-height: 500px;
+  max-height: 400px;
   width: auto;
   object-fit: contain;
 }
@@ -400,6 +401,7 @@ header {
   background-color: transparent;
   filter: invert(1); /* Optional: makes arrows white if needed */
 }
+
 
 
 /* Download Button */
