@@ -1276,14 +1276,12 @@ body {
 }
 
 .newsletter-form button {
- background-color: #D8A7B1;
-  border: none;
-  padding: 10px 20px;
+ padding: 12px 24px;
+  background-color: #D8A7B1; /* Smoky Mauve */
   color: white;
+  text-decoration: none;
+  border-radius: 6px;
   font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease; 
 }
 
 .newsletter-form button:hover {
@@ -1382,7 +1380,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 20px;
-  top-margin: 20;
+  top-margin: 20px;
 }
 
 .faq-item {
@@ -1393,31 +1391,32 @@ body {
 }
 
 .faq-item h3 {
-  color: #6A7F94; /* Slate Blue */
-  font-size: 1.4em;
+  color: #6A7F94;
+  font-size: 1.2em; /* reduced from 1.4em */
   margin-bottom: 10px;
 }
 
 .faq-item p {
   color: #555;
-  font-size: 1em;
+  font-size: 0.95em; /* slightly smaller */
 }
 
 .faq-header {
   text-align: center;
-  background-color: #D3A6A1; /* Dusty Rose */
+  background-color: #D3A6A1;
   padding: 40px 20px;
   color: white;
 }
 
 .faq-header h1 {
-  font-size: 2.5em;
+  font-size: 2em; /* reduced from 2.5em */
   margin-bottom: 10px;
 }
 
 .faq-header p {
-  font-size: 1.2em;
+  font-size: 1em; /* reduced from 1.2em */
 }
+
 
 /* Footer */
 footer {
