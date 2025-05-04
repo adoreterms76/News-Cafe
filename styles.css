@@ -56,6 +56,7 @@ body {
   .Image-section img {
     height: auto;
   }
+}
 
 /* About message section */
 .about-message {
@@ -102,7 +103,7 @@ body {
 .image-row {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   padding: 50px 20px;
   background-color: #fff;
@@ -145,40 +146,34 @@ body {
 
 /* Footer */
 footer {
-  background-color: #6A7F94;
+  background-color: #6A7F94; /* Slate Blue */
   color: white;
-  padding: 30px 20px 15px;
+  padding: 40px 20px 20px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.footer-container div {
+.footer-left,
+.footer-center,
+.footer-right {
   flex: 1;
-  min-width: 250px;
-}
-
-.footer-container a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-container a:hover {
-  text-decoration: underline;
+  min-width: 200px;
 }
 
 .footer-bottom {
   text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 15px;
-  font-size: 0.9em;
-  border-top: 1px solid rgba(255,255,255,0.2);
 }
+
+
 
 
 /* menu layout */
