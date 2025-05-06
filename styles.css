@@ -1052,45 +1052,56 @@ body {
   text-decoration: underline;
 }
 
+
 /* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
+form#contactForm {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  padding: 12px;
-  font-size: 1rem;
+form#contactForm input,
+form#contactForm select,
+form#contactForm textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
-.contact-form button {
+form#contactForm button {
   background-color: #6A7F94;
   color: white;
-  padding: 12px;
-  font-size: 1rem;
   border: none;
-  border-radius: 5px;
+  padding: 14px 20px;
+  font-size: 1em;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
-  background-color: #B3A0D6;
+form#contactForm button:hover {
+  background-color: #55667a;
 }
 
 /* Thank You Message */
 .thank-you-message {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   color: #6A7F94;
-  margin-top: 30px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 /* Footer */
 footer {
   background-color: #6A7F94;
