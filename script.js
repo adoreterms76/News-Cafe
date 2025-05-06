@@ -1,24 +1,14 @@
 // contact layout
-document.addEventListener("DOMContentLoaded", function () {
+function showThankYouMessage(event) {
+  event.preventDefault(); // prevent form from reloading the page
+
+  // Hide the form
   const form = document.getElementById("contactForm");
-  const thankYouMessage = document.querySelector(".thank-you-message");
+  form.style.display = "none";
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // prevent page reload
+  // Show the thank-you message
+  const message = document.querySelector(".thank-you-message");
+  message.style.display = "block";
 
-    // Optionally, you can reset the form
-    form.reset();
-
-    // Hide the form and show thank-you message
-    form.style.display = "none";
-    thankYouMessage.style.display = "block";
-
-function showThankYouMessage() {
-  event.preventDefault(); // Stop the form from submitting
-  document.getElementById("contactForm").style.display = "none";
-  document.querySelector(".thank-you-message").style.display = "block";
-  return false; // Prevent form refresh
+  return false;
 }
-    
-  });
-});
