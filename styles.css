@@ -1021,37 +1021,34 @@ body {
   margin: 10px auto;
 }
 
-/* Contact Info Grid - Two Containers Side by Side */
 .contact-info-container {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap; /* stacks on small screens */
 }
 
-.info-box p, .info-box a {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
+.info-box {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fdfdfd;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box a {
+  display: block;
+  margin: 6px 0;
+  color: #333;
   text-decoration: none;
 }
 
 .info-box a:hover {
-  text-decoration: underline;
-}
-.info-box h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+  color: #6A7F94; /* your Slate Blue */
 }
 
-.info-box p, .info-box a {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-  text-decoration: none;
-}
-
-.info-box a:hover {
-  text-decoration: underline;
-}
 
 
 /* Contact Form */
@@ -1395,7 +1392,7 @@ body {
 }
 
 
-/* faq tittle */
+/* faq Title */
 .faq-title {
   background-color: #D8A7B1; /* Smoky Mauve */
   color: #6A7F94; /* Slate Blue for main heading */
@@ -1407,6 +1404,11 @@ body {
   font-size: 2.5em;
   margin-bottom: 10px;
   color: #6A7F94; /* Slate Blue  */
+}
+
+.faq-title p {
+  font-size: 1.2em;
+  color: #B3A0D6; /* Misty Lavender as a subtle complementary subtitle */
 }
 
 
