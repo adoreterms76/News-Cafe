@@ -19,17 +19,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -198,17 +198,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -321,8 +321,6 @@ footer {
 
 /* breakfast layout */
 /* General Reset */
-
-/* General Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -342,17 +340,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -365,15 +363,14 @@ body {
   text-decoration: underline;
 }
 
+
 /* Header */
-header {
+header h1 {
   text-align: center;
   padding: 1.5rem 0;
   font-size: 2rem;
   color: #6A7F94;
 }
-
-
 
 .image-row {
   display: flex;
@@ -402,8 +399,6 @@ header {
   filter: invert(1); /* Optional: makes arrows white if needed */
 }
 
-
-
 /* Download Button */
 .download-section {
   text-align: center;
@@ -411,40 +406,40 @@ header {
 }
 
 .pdf-button {
-  background-color: var(--secondary);
-  color: #fff;
-  padding: 0.7rem 1.5rem;
+  background-color: #D8A7B1;
+  color: white;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 25px;
-  text-decoration: none;
+  border-radius: 30px;
   font-weight: bold;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .pdf-button:hover {
-  background-color: var(--accent);
+  background-color: #B3A0D6;
 }
 
-/* Menu Navigation Buttons */
+/* Menu Buttons */
 .menu-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin: 2rem 0;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .menu-btn {
-  background-color: var(--soft);
-  color: #fff;
-  padding: 0.6rem 1.3rem;
+  background-color: #D3A6A1;
+  color: white;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  border-radius: 20px;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .menu-btn:hover {
-  background-color: var(--accent);
+  background-color: #B3A0D6;
 }
 
 /* Footer */
@@ -484,6 +479,8 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+
+
 /* food layout */
 /* General Reset */
 * {
@@ -505,17 +502,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -667,17 +664,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -831,11 +828,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
@@ -950,8 +947,8 @@ footer {
 }
 
 
-
-/* Reset & Base Styles */
+/* Conatct laout */
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -971,17 +968,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94;
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -1152,17 +1149,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -1175,13 +1172,13 @@ body {
   text-decoration: underline;
 }
 
-/* Headings */
-.heading-slateblue {
-  color: #6A7F94;
+/* Header */
+.menu-header {
+  background-color:  #B3A0D6; /* Misty Lavender */
   text-align: center;
-  margin-bottom: 1rem;
-  top-margin: 20;
+  padding: 60px 20px 40px;
 }
+
 
 /* Promo Title */
 .promo-title {
@@ -1352,17 +1349,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .navbar .logo-img {
-  height: 40px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -1375,12 +1372,20 @@ body {
   text-decoration: underline;
 }
 
+/* Header */
+.menu-header {
+  background-color:  #B3A0D6; /* Misty Lavender */
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+
 .faq-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 20px;
-  top-margin: 20px;
+  
 }
 
 .faq-item {
