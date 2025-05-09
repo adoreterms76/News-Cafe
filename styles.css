@@ -403,25 +403,6 @@ header h1 {
   filter: invert(1); /* Optional: makes arrows white if needed */
 }
 
-/* PDF Download Section */
-.download-section {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-.pdf-button {
-  background-color: #D3A6A1; /* Dusty Rose */
-  color: #fff;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.pdf-button:hover {
-  background-color: #B3747A;
-}
 
 /* Menu Buttons */
 .menu-buttons {
@@ -567,25 +548,6 @@ header h1 {
   filter: invert(1); /* Optional: makes arrows white if needed */
 }
 
-/* PDF Download Section */
-.download-section {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-.pdf-button {
-  background-color: #D3A6A1; /* Dusty Rose */
-  color: #fff;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.pdf-button:hover {
-  background-color: #B3747A;
-}
 
 /* Menu Buttons */
 .menu-buttons {
@@ -729,26 +691,6 @@ header h1 {
 .carousel-control-next-icon {
   background-color: transparent;
   filter: invert(1); /* Optional: makes arrows white if needed */
-}
-
-/* PDF Download Section */
-.download-section {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-.pdf-button {
-  background-color: #D3A6A1; /* Dusty Rose */
-  color: #fff;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.pdf-button:hover {
-  background-color: #B3747A;
 }
 
 /* Menu Buttons */
