@@ -29,7 +29,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -208,7 +208,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -350,7 +350,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -495,7 +495,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -640,7 +640,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -1110,7 +1110,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -1124,11 +1124,18 @@ body {
 }
 
 /* Header */
-.menu-header {
-  background-color:  #B3A0D6; /* Misty Lavender */
+header {
+  background-color: #D8A7B1; /* Smoky Mauve */
+  color: #fff;
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 20px 10px;
 }
+
+header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
 
 
 /* Promo Title */
@@ -1223,18 +1230,26 @@ body {
   font-size: 1em;
 }
 
-.newsletter-form button {
+/* Buttons */
+.newsletter-btn {
+  padding: 12px 24px;
   background-color: #b9838a; /* Slightly darker Dusty Rose */
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 25px;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  border-radius: 6px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+.newsletter-btn:hover {
+  background-color: #b9838a; /* Slightly darker Dusty Rose */
+  cursor: pointer;
 }
 
-.newsletter-form button:hover {
-  background-color: #b9838a; /* Slightly darker Dusty Rose */
+.btn:focus {
+  outline: 2px solid #D8A7B1;
+  outline-offset: 3px;
 }
 
 
@@ -1312,7 +1327,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-links a {
@@ -1326,10 +1341,16 @@ body {
 }
 
 /* Header */
-.faq-header {
-  background-color:  #B3A0D6; /* Misty Lavender */
+header {
+  background-color: #D8A7B1; /* Smoky Mauve */
+  color: #fff;
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 20px 10px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin: 0;
 }
 
 
