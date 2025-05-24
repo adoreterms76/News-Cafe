@@ -1153,8 +1153,8 @@ footer {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfdfd; /* Soft off-white */
-  color: #333333;
+  background-color: #F4EDF4; 
+  color: #6A7F94;
   line-height: 1.6;
 }
 
@@ -1187,23 +1187,22 @@ body {
   text-decoration: underline;
 }
 
-/* Header */
+/* Promo Title Section */
 .promo-title {
-  background-color:  #B3A0D6; /* Misty Lavender */
+  background-color: #F4EDF4; /* Match liquids background */
   text-align: center;
   padding: 60px 20px 40px;
 }
 
 .promo-title h1 {
   font-size: 48px;
-  color: #6A7F94; /* Slate Blue */
+  color: #6A7F94;
   margin-bottom: 10px;
 }
 
-
 .promo-title p {
   font-size: 1.2em;
-  color: #B3A0D6; /* Misty Lavender as a subtle complementary subtitle */
+  color: #6A7F94;
 }
 
 /* Promo Section */
@@ -1279,9 +1278,10 @@ body {
   font-size: 1em;
 }
 
+/* Buttons (Newsletter) */
 .newsletter-btn {
   padding: 12px 24px;
-  background-color: #6A7F94; /* Slate Blue */
+  background-color: #D3A6A1; /* Dusty Rose - match liquids.html style */
   color: white;
   font-weight: bold;
   border-radius: 8px;
@@ -1291,7 +1291,7 @@ body {
 }
 
 .newsletter-btn:hover {
-  background-color: #4e6578; /* Slightly darker slate blue */
+  background-color: #b67e7a; /* Darker dusty rose for hover */
   cursor: pointer;
 }
 
