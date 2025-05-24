@@ -62,15 +62,10 @@
   <section class="promo-section">
     <h2>Stay Updated with Our Offers</h2>
     <p>Sign up for our newsletter and never miss out on exclusive deals, new menu items, and exciting events!</p>
-    <form mrthod="post">
-      <input type="email" id="email" placeholder="Enter your email" required>
-      <button type="submit">Sign Up</button>
+     <form id="signup-form" action="subscribe.php" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
     </form>
-
-    <!-- This message appears after successful form submission -->
-    <p id="success-message" class="newsletter-message" style="display: none;">
-      Thank you for signing up!
-    </p>
   </section>
 
   <!-- Footer -->
