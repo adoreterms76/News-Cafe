@@ -26,18 +26,30 @@ body {
 }
 
 .navbar .logo-img {
-  height: 20px;
+  height: 30px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
 }
 
 /* Mobile Navbar */
@@ -57,12 +69,20 @@ body {
   .nav-links.active {
     display: flex;
   }
-  
+
+  .nav-links a {
+    color: #6A7F94;
+    padding: 8px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
 
 /* Hero Image Section */
 .Image-section {
-  width: 100%;  
-  object-fit: cover;  
+  width: 100%;
   overflow: hidden;
 }
 
@@ -214,7 +234,6 @@ footer {
     text-align: center;
   }
 }
-
 
 
 /* menu layout */
