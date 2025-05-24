@@ -1,10 +1,9 @@
 // Index layout
 function toggleMenu() {
-  var menu = document.getElementById("mobile-menu");
-  menu.classList.toggle("hidden");
+  document.querySelector('.nav-links').classList.toggle('active');
 }
 
-
+  
 // contact layout
 function showThankYouMessage(event) {
   event.preventDefault(); // prevent form from reloading the page
