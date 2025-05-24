@@ -1,11 +1,15 @@
-// Index layout
-  const toggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+// Promo layout
+  document.querySelector('.newsletter-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const email = document.querySelector('input[type="email"]').value;
+    if (email) {
+      alert("Thanks for subscribing, " + email + "!");
+    } else {
+      alert("Please enter a valid email address.");
+    }
   });
 </script>
+
 
   
 // contact layout
