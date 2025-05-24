@@ -40,39 +40,47 @@ body {
   text-decoration: underline;
 }
 
-/* Show links by default on large screens */
+/* Mobile First: Hide links by default */
 .nav-links {
-  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff; /* or your nav color */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-links.active {
   display: flex;
-  gap: 10px;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: none;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    z-index: 999;
-  }
+/* Menu toggle icon */
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+}
 
-  .nav-links.active {
-    display: flex;
-  }
-
+/* Larger screens: show menu by default and hide toggle */
+@media screen and (min-width: 768px) {
   .menu-toggle {
-    display: inline-block;
-    cursor: pointer;
-    font-size: 28px;
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 2rem;
+    box-shadow: none;
+    background: none;
   }
 }
 
-   
 
 /* Hero Image Section */
 .Image-section {
