@@ -35,11 +35,6 @@ body {
   gap: 12px;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 .nav-links a:hover {
   text-decoration: underline;
@@ -87,7 +82,7 @@ body {
 
 .Image-section img {
   width: 100%;
-  max-height: 800px;
+  max-height: 600px;
   object-fit: cover; 
   display: block;
   margin: 0;
