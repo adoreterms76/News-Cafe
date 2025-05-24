@@ -1,7 +1,3 @@
-// Index layout
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('active');
-}
 
   
 // contact layout
