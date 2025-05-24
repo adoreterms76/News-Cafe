@@ -80,6 +80,30 @@ body {
   }
 }
 
+.hidden {
+  display: none;
+}
+
+#mobile-menu {
+  background-color: #6A7F94;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 200px;
+  z-index: 100;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mobile-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+
 /* Hero Image Section */
 .Image-section {
   width: 100%;
