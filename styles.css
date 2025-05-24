@@ -20,6 +20,9 @@ body {
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
   padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar .logo-img {
@@ -29,7 +32,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 5px;
+  gap: 12px;
 }
 
 .nav-links a {
@@ -38,36 +41,56 @@ body {
   font-weight: bold;
 }
 
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 .menu-toggle {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  color: white;
 }
 
-/* Responsive styles */
+/* Mobile Navbar */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
     background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    z-index: 999;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
   }
 
   .nav-links.active {
     display: flex;
   }
 
+  .nav-links a {
+    color: #6A7F94;
+    padding: 8px 0;
+  }
+
   .menu-toggle {
     display: block;
   }
 }
-.nav-links a:hover {
-  text-decoration: underline;
+
+/* Hero Image Section */
+.Image-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
 }
 
 /* About message section */
@@ -96,13 +119,13 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .about-message .btn:hover,
 .menu-teaser .btn:hover {
-  background-color: #b9838a; /* Slightly darker Dusty Rose */
+  background-color: #b9838a;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .about-message .btn:focus,
@@ -154,11 +177,12 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 /* Footer */
 footer {
-  background-color: #6A7F94; /* Slate Blue */
+  background-color: #6A7F94;
   color: white;
   padding: 40px 20px 20px;
 }
@@ -174,7 +198,7 @@ footer {
 .footer-center,
 .footer-right {
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .footer-bottom {
@@ -185,6 +209,31 @@ footer {
   padding-top: 15px;
 }
 
+@media (max-width: 600px) {
+  .about-message h2,
+  .menu-teaser h2 {
+    font-size: 28px;
+  }
+
+  .about-message p,
+  .menu-teaser p {
+    font-size: 16px;
+  }
+
+  .image-row {
+    gap: 15px;
+  }
+
+  .image-row img {
+    width: 160px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 
 
