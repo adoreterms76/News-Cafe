@@ -45,13 +45,6 @@ body {
   text-decoration: underline;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
 /* Mobile Navbar */
 @media (max-width: 768px) {
   .nav-links {
@@ -78,7 +71,7 @@ body {
   .menu-toggle {
     display: block;
   }
-}
+
 
 /* Hero Image Section */
 .Image-section {
