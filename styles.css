@@ -49,7 +49,7 @@ body {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: white;
+  color: none;
 }
 
 /* Mobile Navbar */
