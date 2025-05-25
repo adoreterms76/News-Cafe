@@ -81,18 +81,13 @@ body {
 }
 
 /* Hero Image Section */
-.Image-section {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-}
-
 .Image-section img {
-  width: 100%;
-  height: 100%
-  object-fit: cover;
-  margin: 0;
+  width: 100%;       /* Makes it responsive */
+  max-width: 800px;  /* Adjust max width as needed */
+  height: auto;      /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto;    /* Centers the image */
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
 /* About message section */
