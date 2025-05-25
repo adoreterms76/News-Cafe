@@ -1,28 +1,15 @@
 // Promo layout
- // Wait until the page fully loads
-window.onload = function() {
-  var form = document.getElementById("contactForm");
- 
-  // On form submission
-  form.onsubmit = function(event) {
-    event.preventDefault(); // Prevent the default form submission
- 
-    // Get values from the form inputs
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
- 
-    // Basic validation check (optional)
-    if (name && email && message) {
-      // Show a thank you alert
-      alert("Thank you, " + name + "! Your sign up has been sent successfully.");
-      // Reset the form after submission
-      form.reset();
-    } else {
-      alert("Please fill in all fields.");
-    }
-  };
-};
+<script>
+  const form = document.getElementById('SubscribekForm');
+  const thankYou = document.getElementById('thankYouMsg');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page reload
+    thankYou.style.display = 'block'; // show thank you message
+    form.reset(); // clear the form
+  });
+</script>
+
 // contact layout
 function showThankYouMessage(event) {
   event.preventDefault(); // prevent form from reloading the page
