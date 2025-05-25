@@ -49,7 +49,7 @@ body {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: none;
+  color: white;
 }
 
 /* Mobile Navbar */
@@ -78,6 +78,7 @@ body {
   .menu-toggle {
     display: block;
   }
+}
 
 /* Hero Image Section */
 .Image-section {
@@ -87,13 +88,11 @@ body {
 
 .Image-section img {
   width: 100%;
-  height: 500 auto;
+  height: auto;
   display: block;
   margin: 0;
 }
 
-
-  
 /* About message section */
 .about-message {
   padding: 60px 20px;
