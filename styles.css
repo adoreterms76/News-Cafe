@@ -1176,7 +1176,7 @@ body {
 
 .promo-title h1 {
   font-size: 48px;
-  color: #6A7F94; /* Slate Blue */
+  color: white;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -1282,9 +1282,7 @@ body {
   font-weight: bold;
   font-size: 1em;
   text-align: center;
-  margin-top: 10px;
 }
-
 
 /* Footer */
 footer {
