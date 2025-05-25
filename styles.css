@@ -78,18 +78,23 @@ body {
   .menu-toggle {
     display: block;
   }
+
+.Image-section {
+  width: 100%;
+  text-align: center;
+  overflow: hidden; /* hides overflow if needed */
 }
 
-/* Hero Image Section */
 .Image-section img {
-  width: 100%;       /* Makes it responsive */
-  max-width: 800px;  /* Adjust max width as needed */
-  height: auto;      /* Maintains aspect ratio */
+  width: 100%;
+  max-width: 500px; /* or reduce if still too big */
+  height: auto;     /* keeps aspect ratio */
   display: block;
-  margin: 0 auto;    /* Centers the image */
-  border-radius: 10px; /* Optional: rounded corners */
+  margin: 0 auto;
+  object-fit: contain; /* makes sure full image fits inside */
 }
 
+  
 /* About message section */
 .about-message {
   padding: 60px 20px;
