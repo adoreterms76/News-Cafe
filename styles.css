@@ -74,17 +74,21 @@ body {
 
 
 /* Hero Image Section */
-.Image-section {
-  width: 100%;
-  overflow: hidden;
+.image-section{
+  max-width: 100%
+  height: auto;
+  display: flex;
+  margin: 20px o; 
+}
+  
+.Image-section img {
+  max-width: 100%;
+  height: aoto;
+  display: flex;
+  margin: 20px o;
+  max-height: 300;
 }
 
-.Image-section img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-}
 
 /* About message section */
 .about-message {
