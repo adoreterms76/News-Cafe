@@ -20,9 +20,7 @@ body {
   align-items: center;
   background-color: #6A7F94; /* Slate Blue */
   padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+
 }
 
 .navbar .logo-img {
@@ -1227,7 +1225,7 @@ body {
 }
 
 /* Newsletter Section */
-#signup-form {
+#subscription-form {
    margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -1235,7 +1233,7 @@ body {
   gap: 15px;
 }
 
-#signup-form input[type="email"] {
+#subscription-form input[type="email"] {
    padding: 12px;
   width: 300px;
   border: 1px solid #ccc;
@@ -1265,7 +1263,9 @@ body {
   font-weight: bold;
   font-size: 1em;
   text-align: center;
+  margin-top: 10px;
 }
+
 
 /* Footer */
 footer {
