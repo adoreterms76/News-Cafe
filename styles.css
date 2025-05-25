@@ -40,19 +40,6 @@ body {
   text-decoration: underline;
 }
 
-/* Mobile First: Hide links by default */
-.nav-links {
-  display: none;
-  flex-direction: column;
-  gap: 1rem;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
 .nav-links.active {
   display: flex;
 }
@@ -1180,18 +1167,19 @@ body {
   text-decoration: underline;
 }
 
-/* Promo Title Section */
+/* Header */
 .promo-title {
-  background-color: #B3A0D6
+  background-color:  #B3A0D6; /* Misty Lavender */
   text-align: center;
   padding: 60px 20px 40px;
 }
 
 .promo-title h1 {
   font-size: 48px;
-  color: #6A7F94;
+  color: #6A7F94; /* Slate Blue */
   margin-bottom: 10px;
 }
+
 
 .promo-title p {
   font-size: 20px;
