@@ -1,22 +1,17 @@
 // Promo layout
-  <form id="newsletter-form">
-  <input type="email" id="newsletter-email" placeholder="Enter your email" required>
-  <button type="submit" class="newsletter-btn">Subscribe</button>
-</form>
-
-<script>
+  <script>
   document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Stop the form from submitting
+    event.preventDefault();
     const email = document.getElementById('newsletter-email').value;
+    const message = document.getElementById('newsletter-message');
+
     if (email) {
-      alert("Thanks for subscribing, " + email + "!");
+      message.textContent = "Thanks for subscribing, " + email + "!";
     } else {
-      alert("Please enter a valid email address.");
+      message.textContent = "Please enter a valid email address.";
     }
   });
 </script>
-
-
 
   
 // contact layout
