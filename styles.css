@@ -50,6 +50,7 @@ body {
   font-size: 28px;
   cursor: pointer;
   color: white;
+}
 
 /* Mobile Navbar */
 @media (max-width: 768px) {
@@ -74,17 +75,21 @@ body {
     padding: 8px 0;
   }
 
- 
-* Hero Image Section */
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Image Section */
 .Image-section {
   width: 100%;
   overflow: hidden;
-  max-height: 500px;
 }
 
 .Image-section img {
   width: 100%;
-  height: auto;
+  max-height: 400px;  
+  object-fit: cover; 
   display: block;
   margin: 0;
 }
