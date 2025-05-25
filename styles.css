@@ -82,17 +82,19 @@ body {
 .Image-section {
   width: 100%;
   text-align: center;
-  overflow: hidden; /* hides overflow if needed */
+  padding: 0;
+  margin: 0;
 }
 
 .Image-section img {
-  width: 100%;
-  max-width: 500px; /* or reduce if still too big */
-  height: auto;     /* keeps aspect ratio */
+  width: auto;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
-  object-fit: contain; /* makes sure full image fits inside */
+  object-fit: contain;
 }
+
 
   
 /* About message section */
