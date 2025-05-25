@@ -1,19 +1,15 @@
 // Promo layout
   <script>
-  document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const email = document.getElementById('newsletter-email').value;
-    const message = document.getElementById('newsletter-message');
+  const form = document.getElementById('feedbackForm');
+  const thankYou = document.getElementById('thankYouMsg');
 
-    if (email) {
-      message.textContent = "Thanks for subscribing, " + email + "!";
-    } else {
-      message.textContent = "Please enter a valid email address.";
-    }
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page reload
+    thankYou.style.display = 'block'; // show thank you message
+    form.reset(); // clear the form
   });
 </script>
 
-  
 // contact layout
 function showThankYouMessage(event) {
   event.preventDefault(); // prevent form from reloading the page
