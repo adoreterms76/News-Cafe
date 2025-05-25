@@ -1,7 +1,13 @@
 // Promo layout
-  document.querySelector('.newsletter-btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    const email = document.querySelector('input[type="email"]').value;
+  <form id="newsletter-form">
+  <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+  <button type="submit" class="newsletter-btn">Subscribe</button>
+</form>
+
+<script>
+  document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Stop the form from submitting
+    const email = document.getElementById('newsletter-email').value;
     if (email) {
       alert("Thanks for subscribing, " + email + "!");
     } else {
@@ -9,6 +15,7 @@
     }
   });
 </script>
+
 
 
   
