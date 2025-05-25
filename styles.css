@@ -45,23 +45,6 @@ body {
 }
 
 
-/* Larger screens: show menu by default and hide toggle */
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    gap: 2rem;
-    box-shadow: none;
-    background: none;
-  }
-}
-
-
 /* Hero Image Section */
 .Image-section {
   width: 100%;
