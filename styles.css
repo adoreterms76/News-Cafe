@@ -79,22 +79,18 @@ body {
     display: block;
   }
 
+/* Hero Image Section */
 .Image-section {
   width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+  overflow: hidden;
 }
 
 .Image-section img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-height: 500px;
   display: block;
-  margin: 0 auto;
-  object-fit: contain;
+  margin: 0;
 }
-
 
   
 /* About message section */
