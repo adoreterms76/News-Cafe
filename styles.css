@@ -1276,6 +1276,13 @@ body {
   cursor: pointer;
 }
 
+.newsletter-message {
+  color: #6A7F94;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   background-color: #6A7F94;
