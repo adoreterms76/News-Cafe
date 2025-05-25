@@ -24,13 +24,13 @@ body {
 }
 
 .navbar .logo-img {
-  height: 30px;
+  height: 15px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 12px;
+  gap: 5px;
 }
 
 
