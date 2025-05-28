@@ -1,20 +1,11 @@
 // contact layout
-<script>
-        const openPopup = document.getElementById('openPopup');
-        const closePopup = document.getElementById('closePopup');
-        const popup = document.getElementById('popup');
-
-        openPopup.addEventListener('click', () => {
-            popup.style.display = 'flex';
-        });
-
-        closePopup.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-
-        window.addEventListener('click', (event) => {
-            if (event.target === popup) {
-                popup.style.display = 'none';
-            }
-        });
+ <script>
+        function showPopup() {
+            Swal.fire({
+                title: 'Thank you!',
+                text: 'Your message has been sent',
+                icon: 'info',
+                confirmButtonText: 'Cool'
+            });
+        }
     </script>
