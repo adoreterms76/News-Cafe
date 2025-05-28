@@ -11,17 +11,12 @@
 </script>
 
 // contact layout
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the form from submitting normally
-      
-      // Hide the form
-      document.getElementById('contactForm').style.display = 'none';
-      
-      // Show the thank you message
-      document.getElementById('thankYouMessage').style.display = 'block';
-      
-      // Optional: You could add form submission logic here (like sending to a server)
-      // For now, we're just showing the message
-    });
-  </script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Stop form from reloading the page
+  document.getElementById("thankYouPopup").style.display = "flex"; // Show popup
+  this.reset(); // Optional: Clear the form
+});
+
+function closePopup() {
+  document.getElementById("thankYouPopup").style.display = "none"; // Hide popup
+}
