@@ -79,15 +79,17 @@
   <button type="submit">Send</button>
 </form>
 
-<!-- Pop-up message (hidden by default) -->
-<div id="thankYouPopup" class="popup">
-  <div class="popup-content">
-    <p>Thank you! Your message has been sent.</p>
-    <button onclick="closePopup()">Close</button>
-  </div>
-</div>
-    
-  </section>
+ <button id="openPopup" style="padding: 10px 20px; background-color: #28a745; 
+                                  color: #fff; border: none; border-radius: 5px;">Open Popup</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Thank you</h2>
+            <p>Your message has been sent</p>
+            <button id="closePopup" style="margin-top: 10px; padding:
+                                           5px 10px; background-color: #dc3545; color: #fff; 
+                                           border: none; border-radius: 3px;">Close</button>
+        </div>
+
 
 
 <footer>
