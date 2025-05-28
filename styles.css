@@ -1070,17 +1070,26 @@ form#contactForm button:hover {
   background-color: #b9838a;
 }
 
-/* Thank You Message */
-.thank-you-message {
+/* Popup styling */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
   text-align: center;
-  font-size: 1.4em;
-  color: #6A7F94;
-  background-color: #f2f2f2;
-  padding: 40px;
-  margin: 50px auto;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
