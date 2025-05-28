@@ -1,3 +1,17 @@
+// promos layout
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('SubscriptionForm');
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const modal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+      modal.show();
+      form.reset();
+    });
+  }
+});
+
 // contact layout
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
