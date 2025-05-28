@@ -78,9 +78,25 @@
     <form id="SubscriptionForm">
       <input type="email" placeholder="Enter your email" required>
       <button type="submit" class="newsletter-btn">Subscribe</button>
-    <p id="thankYouMsg" class="newsletter-message" style="display: none;">Thank you for subscribing!</p>
-    </form>
-  </section>
+      
+   <!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thankYouModalLabel">Subscription Confirmed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you for subscribing to our newsletter! Look out for exclusive deals and updates.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     
 
   <!-- Footer -->
