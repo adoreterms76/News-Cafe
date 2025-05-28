@@ -1071,7 +1071,7 @@ form#contactForm button:hover {
 }
 /* Modal (Popup) Styles */
 .modal-content {
-  background-color: var(--soft-white);
+  background-color: #e6f2ff; /* Light blue */
   border: 2px solid var(--dusty-rose);
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
