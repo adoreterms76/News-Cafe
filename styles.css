@@ -504,7 +504,6 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-
 /* food layout */
 /* General Reset */
 * {
@@ -1206,14 +1205,14 @@ body {
 
 /* title */
 .promo-title {
-  background-color: #D3A6A1; 
+  background-color: #B3A0D6; /* Misty Lavender */
   text-align: center;
   padding: 60px 20px 40px;
 }
 
 .promo-title h1 {
   font-size: 48px;
-  color: white;
+  color: #6A7F94; /* Slate Blue */
   margin-bottom: 10px;
   text-align: center;
 }
@@ -1290,10 +1289,10 @@ body {
 }
 
 #subscription-form input[type="email"] {
-   padding: 12px 24px;
-  width: 300px;
+   padding: 1p6x 34px;
+  width: 400px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1em;
 }
 
@@ -1404,6 +1403,7 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+
 /* faq layout */
 /* General Page Styling */
 * {
@@ -1451,7 +1451,7 @@ body {
 
 /* Header */
 .faq-header {
-  background-color: #D3A6A1; 
+  background-color:  #B3A0D6; /* Misty Lavender */
   text-align: center;
   padding: 60px 20px 40px;
 }
