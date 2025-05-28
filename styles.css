@@ -1072,9 +1072,11 @@ form#contactForm button:hover {
 /* Modal (Popup) Styles */
 .modal-content {
   background-color: #e6f2ff; /* Light blue */
-  border: 2px solid var(--dusty-rose);
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  color: #1a1a1a; /* Darker text */
+  font-weight: 600; /* Bolder text */
+  border: none;
 }
 
 .modal-header {
@@ -1095,6 +1097,7 @@ form#contactForm button:hover {
   padding: 1.5rem;
   color: var(--text-dark);
   font-size: 1rem;
+  background-color: #D8A7B1; /* Smoky Mauve */
 }
 
 .modal-footer {
@@ -1104,6 +1107,19 @@ form#contactForm button:hover {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   text-align: right;
+}
+
+.modal-footer .btn {
+  background-color: var(--dusty-rose);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+  background-color: var(--slate-blue);
 }
 
 
@@ -1298,13 +1314,58 @@ body {
   cursor: pointer;
 }
 
-.newsletter-message {
-  color: #6A7F94;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  margin-top: 10px;
+.modal-content {
+  background-color: #e6f2ff; /* Light blue */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  color: #1a1a1a; /* Darker text */
+  font-weight: 600; /* Bolder text */
+  border: none;
 }
+
+.modal-header {
+  background-color: var(--misty-lavender);
+  color: white;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 1rem 1.5rem;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+  background-color: #D8A7B1; /* Smoky Mauve */
+}
+
+.modal-footer {
+  background-color: var(--soft-white);
+  border-top: none;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: right;
+}
+
+.modal-footer .btn {
+  background-color: var(--dusty-rose);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+  background-color: var(--slate-blue);
+}
+
 
 
 /* Footer */
