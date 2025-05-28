@@ -61,7 +61,7 @@
 </div>
 
       <!-- Contact form -->
-    <form id="contactForm" onsubmit="return showThankYouMessage();">
+    <form id="contactForm">
         <input type="text" placeholder="Name" required>
         <input type="text" placeholder="Surname" required>
         <input type="text" placeholder="Contact Number" required>
@@ -73,17 +73,29 @@
           <option value="suggestion">Suggestion</option>
         </select>
 
- <textarea placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
+             <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
 
-  <!-- Thank you message -->
-   <button onclick="showPopup()">Show Popup</button>
-  Thank you! Your message has been sent.
   </section>
 
-
+  <!-- Thank You Modal -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header border-0">
+          <h5 class="modal-title w-100" id="thankYouModalLabel">Thank you!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your message has been sent.
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 <footer>
