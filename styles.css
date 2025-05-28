@@ -1069,22 +1069,20 @@ form#contactForm button {
 form#contactForm button:hover {
   background-color: #b9838a;
 }
-
- .popup {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+ display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
-        .popup-content {
-            background: #fff;
-            padding: 20px;
+        button {
+            padding: 10px 20px;
+            background-color: #17a2b8;
+            color: #fff;
+            border: none;
             border-radius: 5px;
-            text-align: center;
-        }
+            cursor: pointer
 
 /* Footer */
 footer {
