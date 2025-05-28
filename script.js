@@ -1,10 +1,16 @@
 // contact layout
- // Form Submission Script
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent actual form submission
-      const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
-      thankYouModal.show();
-      this.reset(); // Optional: Clear the form
-    });
-  </script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // prevent actual form submission
+
+    // Optional: clear the form fields
+    form.reset();
+
+    // Show the Bootstrap modal
+    const thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+    thankYouModal.show();
+  });
+});
+
