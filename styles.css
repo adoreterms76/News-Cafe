@@ -1069,20 +1069,43 @@ form#contactForm button {
 form#contactForm button:hover {
   background-color: #b9838a;
 }
- display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #17a2b8;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer
+/* Modal (Popup) Styles */
+.modal-content {
+  background-color: var(--soft-white);
+  border: 2px solid var(--dusty-rose);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  background-color: var(--misty-lavender);
+  color: white;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 1rem 1.5rem;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.modal-footer {
+  background-color: var(--soft-white);
+  border-top: none;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: right;
+}
+
 
 /* Footer */
 footer {
