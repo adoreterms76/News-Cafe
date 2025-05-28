@@ -1189,13 +1189,13 @@ body {
 }
 
 /* Header */
-.promo-title {
+.promo-header {
   background-color: #D8A7B1; /* Smoky Mauve */
   text-align: center;
   padding: 60px 20px 40px;
 }
 
-.promo-title h1 {
+.promo-header h1 {
   font-size: 48px;
   color: white;
   margin-bottom: 10px;
@@ -1203,7 +1203,7 @@ body {
 }
 
 
-.promo-title p {
+.promo-header p {
   font-size: 20px;
   color: #555;
 }
