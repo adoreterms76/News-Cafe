@@ -1,11 +1,10 @@
 // contact layout
- <script>
-        function showPopup() {
-            Swal.fire({
-                title: 'Thank you!',
-                text: 'Your message has been sent',
-                icon: 'info',
-                confirmButtonText: 'Cool'
-            });
-        }
-    </script>
+ // Form Submission Script
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent actual form submission
+      const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+      thankYouModal.show();
+      this.reset(); // Optional: Clear the form
+    });
+  </script>
