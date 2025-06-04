@@ -1549,3 +1549,139 @@ footer {
   font-size: 0.9em;
   border-top: 1px solid rgba(255,255,255,0.2);
 }
+
+/* Feedback page layout */
+.feedback-page {
+  background-color: #fdfdfd; /* Soft off-white to match body */
+  color: #333333;
+  padding: 40px 20px;
+}
+
+/* Feedback Form */
+.feedback-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h1 {
+  font-size: 36px;
+  color: #6A7F94;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-form p {
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Inputs */
+.feedback-form .form-label {
+  font-size: 18px;
+  color: #6A7F94;
+  margin-bottom: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #6A7F94;
+}
+
+.feedback-form button {
+  background-color: #D3A6A1; /* Dusty Rose */
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.feedback-form button:hover {
+  background-color: #b9838a;
+}
+
+.feedback-form button:focus {
+  outline: 2px solid #6A7F94;
+  outline-offset: 3px;
+}
+
+/* Footer (same as index footer) */
+footer {
+  background-color: #6A7F94;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .feedback-form {
+    padding: 20px;
+  }
+
+  .feedback-form h1 {
+    font-size: 28px;
+  }
+
+  .feedback-form p {
+    font-size: 16px;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    font-size: 14px;
+  }
+
+  .feedback-form button {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
